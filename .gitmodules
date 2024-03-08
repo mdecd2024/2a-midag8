@@ -4,3 +4,6 @@
 [submodule "41023155"]
 	path = 41023155
 	url = https://github.com/41023155/cd2024.git
+[submodule "KEHUEISIN"]
+	path = KEHUEISIN
+	url = https://github.com/KEHUEISIN/cd2024.git
