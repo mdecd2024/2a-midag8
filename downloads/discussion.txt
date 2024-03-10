@@ -1,0 +1,14 @@
+\chapter{結果與討論}
+這是結果與討論部分的內容
+\lipsum[4]
+
+這是xx中的一段內容：
+\begin{quote}
+內容
+\end{quote}
+
+
+
+\section*{大標}
+
+\subsection*{大標中的小標}
