@@ -1,12 +1,13 @@
 [submodule "41023110"]
-	path = 41023110
-	url = https://github.com/41023110/cd2024.git
+    path = 41023110
+    url = https://github.com/41023110/cd2024.git
 [submodule "41023155"]
-	url = https://github.com/41023155/cd2024.git
-[submodule "KEHUEISIN"]
-	path = KEHUEISIN
-	url = https://github.com/KEHUEISIN/cd2024.git
-[submodule "Wmrtbij49h"]
-	path = Wmrtbij49h
-	url = https://github.com/Wmrtbij49h/cd2024.git
->>>>>>> refs/remotes/origin/main
+    path = 41023155
+    url = https://github.com/41023155/cd2024.git
+[submodule "41023108"]
+    path = 41023108
+    url = https://github.com/KEHUEISIN/cd2024.git
+[submodule "41023211"]
+    path = 41023211
+    url = https://github.com/Wmrtbij49h/cd2024.git
+
