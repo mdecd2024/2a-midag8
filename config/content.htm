@@ -22,35 +22,34 @@
 <p>如何在倉儲中設定子模組, 為何要將資料設為子模組?</p>
 <p>能不能在 Replit 維護分組網站? 其他方法還可以直接使用 Codespaces, Gitpod 與 localhost 維護倉儲與網站</p>
 <p>假如仍希望使用 Replit 維護分組網站, 該如何進行?</p>
-<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
 <p>2. 請各組員將負責分工處理的 <a aria-label="連結 https://webthesis.biblio.polito.it/16429/1/tesi.pdf" class="fui-Link ___1rxvrpe f2hkw1w f3rmtva f1ewtqcl fyind8e f1k6fduh f1w7gpdv fk6fouc fjoy568 figsok6 f1hu3pq6 f11qmguv f19f4twv f1tyq0we f1g0x7ka fhxju0i f1qch9an f1cnd47f fqv5qza f1vmzxwi f1o700av f13mvf36 f1cmlufx f9n3di6 f1ids18y f1tx3yz7 f1deo86v f1eh06m1 f1iescvh fhgqx19 f1olyrje f1p93eir f1nev41a f1h8hb77 f1lqvz6u f10aw75t fsle3fq f17ae5zn" href="https://webthesis.biblio.polito.it/16429/1/tesi.pdf" rel="noreferrer noopener" target="_blank" title="https://webthesis.biblio.polito.it/16429/1/tesi.pdf">https://webthesis.biblio.polito.it/16429/1/tesi.pdf</a> 中英文並列資料 (LaTeX) 放在個人的倉儲網站, 最後在分組倉儲中整合建立出各組的期中報告 pdf 檔案</p>
-<p>該文章有 87 頁, 若有八名組員, 則每人可分工負責 11 頁, 若兩組以上結合協同, 則可按照規劃, 從文章標題開始到最後一頁, 先分配各組員任務後展開中英文並列編輯, 可以使用翻譯軟體或 ChatGPT 協助進行內容解釋或翻譯, 各組通篇完成中英並列資料整合後, 各學員必須於個人的課程倉儲 cd2024 中整理出協同過程的心得.</p>
-<p> ---------------------------------------------------------------------------------------------------------</p>
-<p>我們將以4人分配87頁翻譯資料，平均1人22頁，並將各分配到的段數翻譯完成後放在自己的倉儲下，最後由組長統一</p>
-<p>在分組倉儲中整合建立出各組的期中報告 pdf 檔案。  </p>
-<p></p>
-<p>第一段  1-21page  由KEHUEISIN</p>
-<p>第二段  21-43page  由41023155</p>
-<p>第三段  43-65page  由41023110</p>
-<p>第四段  65-87page  由Wmrtbij49h</p>
-<p>2. 請各組員將負責分工處理的 https://webthesis.biblio.polito.it/16429/1/tesi.pdf 中英文並列資料 (LaTeX) 放在個人的倉儲網站, 最後在分組倉儲中整合建立出各組的期中報告 pdf 檔案</p>
 <p>該文章有 87 頁, 若有八名組員, 則每人可分工負責 11 頁, 若兩組以上結合協同, 則可按照規劃, 從文章標題開始到最後一頁, 先分配各組員任務後展開中英文並列編輯, 可以使用翻譯軟體或 ChatGPT 協助進行內容解釋或翻譯, 各組通篇完成中英並列資料整合後, 各學員必須於個人的課程倉儲 cd2024 中整理出協同過程的心得.</p>
 <p>---------------------------------------------------------------------------------------------------------</p>
 <p>1.需先將分組倉儲clone到近端可攜環境中的tmp目錄下，權限的部分依照前面putty設立的key.</p>
 <pre class="tw-data-text tw-text-large tw-ta" data-placeholder="翻译" data-ved="2ahUKEwjssN-vlOmEAxVLs1YBHZ8ABe0Q3ewLegQIDhAU" dir="ltr" id="tw-target-text"><span class="Y2IQFc" lang="en" style="background-color: #ffff00;">method:</span></pre>
-<p><span style="color: #000000;">第一步:git clone --recurse-submodules git@mdecycu:mdecd2024/2a-midag8.git  </span><span style="color: #000000;">#需有權限才能抓取到</span></p>
-<p><span style="color: #000000;">第二步:直接進入tmp目錄下分組倉儲，後輸入 git submodule add https://github.com/41023110/cd2024.git 41023110  </span><span style="color: #000000;">#分組組員個人cd2024倉儲<span>，並以組員倉儲名當作目錄</span></span></p>
-<p><span style="color: #000000;"><span>第三步:git add .      </span></span><span style="color: #000000;"><span>git commit -m "add"      git push</span></span></p>
-<p>2.我們將以4人分配87頁翻譯資料，平均1人22頁，並將各分配到的段數翻譯完成後放在自己的倉儲下，最後統一</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">第一步:git clone --recurse-submodules git@mdecycu:mdecd2024/2a-midag8.git  #需有權限才能抓取到
+
+第二步:直接進入tmp目錄下分組倉儲，後輸入 git submodule add https://github.com/41023110/cd2024.git 41023110  #分組組員個人cd2024倉儲，並以組員學號當作子目錄名稱，其中名稱並不影響組員抓取內容
+
+第三步:git add .      git commit -m "add"      git push #將近端內容推致遠端</pre>
+<p><span style="color: #000000;"></span>2.我們將以4人分配87頁翻譯資料，平均1人22頁，並將各分配到的段數翻譯完成後放在自己的倉儲下，最後統一</p>
 <p>在分組倉儲中整合建立出各組的期中報告 pdf 檔案。</p>
-<p>第一段 1-21page 由KEHUEISIN</p>
+<p>第一段 1-21page 由41023108</p>
 <p>第二段 21-43page 由41023155</p>
 <p>第三段 43-65page 由41023110</p>
-<p>第四段 65-87page 由Wmrtbij49h</p>
-<h2>w4 Task</h2>
+<p>第四段 65-87page 由41023211</p><h2>w4 Task</h2>
 <p>W4 各組員任務</p>
+<p><span style="background-color: #ffff00;">作業1:</span></p>
 <p>各組員必須能在各自的個人課程倉儲放置所被交付編寫的  .txt (in LaTeX 格式), 然後整合至各組的分組倉儲, 由 xelatex 編譯出各週的分組報告 pdf 檔案.</p>
-<p></p>
+<p>w4 2a 分組任務</p>
+<p><span style="background-color: #ffff00;">作業2:</span></p>
+<p>請各組自行搜尋前面已經發布的教學影片, 分別</p>
+<ul>
+<li>在影片上填上字幕, 另行上傳到可以嵌入到各分組的網站上</li>
+<li>從影片字幕中整理出逐字稿, 放在影片下方, 以 .txt 連結安排</li>
+<li>並在各嵌入的教學影片下方, 以摘要方式說明該影片的教學重點</li>
+</ul>
+<p></p><h2>w5 Task</h2>
 <h1>cmsimde</h1>
 <p><span style="background-color: #ccffcc;">SMap</span> - SiteMap - 依照階次列出網站的所有頁面.</p>
 <p><span style="background-color: #ccffcc;">EditA</span> - Edit All page - 將所有頁面放入編輯模式中, 主要用來處理頁面搬遷, 刪除或決定衝突頁面內容版本.</p>
