@@ -1,0 +1,5 @@
+% 參考資料部分
+\begin{thebibliography}{99}
+\bibitem{melville1851} Herman Melville, \emph{Moby-Dick}, 2023.
+\bibitem{odoo2024} Mike Cohen, \emph{Journal of the International PLM Advances}, 2024.
+\end{thebibliography}

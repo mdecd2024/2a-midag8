@@ -1,0 +1,24 @@
+\chapter{前言}
+\renewcommand{\baselinestretch}{10.0} %設定行距
+\pagenumbering{arabic} %設定頁號阿拉伯數字
+\setcounter{page}{1}  %設定頁數
+\fontsize{14pt}{2.5pt}\sectionef
+\section{設計架構}
+此次 pj3 專題目標有建立場景中的計時器、球員外型及移動優化、添加球員擊球和翻車再起能、進球後收集並隨機投下新的一顆球、建立以機械式轉盤傳動計分系統。由於目標繁多，需要組員間分工負責，在每個禮拜的協同中逐步完成 pj3 專題。\\
+
+\begin{figure}[hbt!]
+\begin{center}
+\includegraphics[width=15cm]{35}
+\caption{\Large 設計目標圖}\label{fig.35}
+\end{center}
+\end{figure}
+\section{規則說明}\emph{}
+類似於足球遊戲，一開始時球會置於場中央，遊戲開始後雙方即可以鍵盤操控機器人，透過防守敵方以及與隊友間的傳球推球至已方的球門得分。\\
+遊戲規則如下：
+\begin{enumerate}
+\item 球觸碰到球門感測器即算得分。
+\item 在十分鐘的比賽時間內，獲得最多分數的隊伍即獲勝。
+\item 任一方進球得分後，隨機在場內投下新的球，雙方接續進行比賽。
+\end{enumerate}
+
+\renewcommand{\baselinestretch}{0.5} %設定行距

@@ -1,0 +1,12 @@
+\chapter{文獻回顧}
+這是文獻回顧部分的內容。這裡我們再加入一些假文：
+\lipsum[2]
+
+% 引用 figure2.png 圖片
+% 下面程式碼跟introduction_orig檔案解釋一樣
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.5\linewidth]{./../images/figure2.png}
+  \caption{這是第二張圖片}
+  \label{fig:figure2}
+\end{figure}

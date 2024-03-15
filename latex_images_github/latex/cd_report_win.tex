@@ -1,0 +1,153 @@
+\documentclass[12pt,a4paper]{report}  %紙張設定
+\usepackage{xeCJK}%中文字體模組
+\setCJKmainfont{標楷體} %設定中文字體
+%\setCJKmainfont{MoeStandardKai.ttf}
+\newfontfamily\sectionef{Times New Roman}%設定英文字體
+%\newfontfamily\sectionef{Nimbus Roman}
+\usepackage{enumerate}
+\usepackage{amsmath,amssymb}%數學公式、符號
+\usepackage{amsfonts} %數學簍空的英文字
+\usepackage{graphicx, subfigure}%圖形
+\usepackage{fontawesome5} %引用icon
+\usepackage{type1cm} %調整字體絕對大小
+\usepackage{textpos} %設定文字絕對位置
+\usepackage[top=2.5truecm,bottom=2.5truecm,
+left=3truecm,right=2.5truecm]{geometry}
+\usepackage{titlesec} %目錄標題設定模組
+\usepackage{titletoc} %目錄內容設定模組
+\usepackage{textcomp} %表格設定模組
+\usepackage{multirow} %合併行
+%\usepackage{multicol} %合併欄
+\usepackage{CJK} %中文模組
+\usepackage{CJKnumb} %中文數字模組
+\usepackage{wallpaper} %浮水印
+\usepackage{listings} %引用程式碼
+\usepackage{hyperref} %引用url連結
+\usepackage{setspace}
+\usepackage{lscape}%設定橫式
+\lstset{language=Python, %設定語言
+		basicstyle=\fontsize{10pt}{2pt}\selectfont, %設定程式內文字體大小
+		frame=lines,	%設定程式框架為線
+}
+%\usepackage{subcaption}%副圖標
+\graphicspath{{./../images/}} %圖片預設讀取路徑
+\usepackage{indentfirst} %設定開頭縮排模組
+\renewcommand{\figurename}{\Large 圖.} %更改圖片標題名稱
+\renewcommand{\tablename}{\Large 表.}
+\renewcommand{\lstlistingname}{\Large 程式.} %設定程式標示名稱
+\hoffset=-5mm %調整左右邊界
+\voffset=-8mm %調整上下邊界
+\setlength{\parindent}{3em}%設定首行行距縮排
+\usepackage{appendix} %附錄
+\usepackage{diagbox}%引用表格
+\usepackage{multirow}%表格置中
+%\usepackage{number line}
+%=------------------更改標題內容----------------------=%
+\titleformat{\chapter}[hang]{\center\sectionef\fontsize{20pt}{1pt}\bfseries}{\LARGE 第\CJKnumber{\thechapter}章}{1em}{}[]
+\titleformat{\section}[hang]{\sectionef\fontsize{18pt}{2.5pt}\bfseries}{{\thesection}}{0.5em}{}[]
+\titleformat{\subsection}[hang]{\sectionef\fontsize{18pt}{2.5pt}\bfseries}{{\thesubsection}}{1em}{}[]
+%=------------------更改目錄內容-----------------------=%
+\titlecontents{chapter}[11mm]{}{\sectionef\fontsize{18pt}{2.5pt}\bfseries\makebox[3.5em][l]
+{第\CJKnumber{\thecontentslabel}章}}{}{\titlerule*[0.7pc]{.}\contentspage}
+\titlecontents{section}[18mm]{}{\sectionef\LARGE\makebox[1.5em][l]
+{\thecontentslabel}}{}{\titlerule*[0.7pc]{.}\contentspage}
+\titlecontents{subsection}[4em]{}{\sectionef\Large\makebox[2.5em][l]{{\thecontentslabel}}}{}{\titlerule*[0.7pc]{.}\contentspage}
+%=----------------------章節間距----------------------=%
+\titlespacing*{\chapter} {0pt}{0pt}{18pt}
+\titlespacing*{\section} {0pt}{12pt}{6pt}
+\titlespacing*{\subsection} {0pt}{6pt}{6pt}
+%=----------------------標題-------------------------=%             
+\begin{document} %文件
+\sectionef %設定英文字體啟用
+\vspace{12em}
+\begin{titlepage}%開頭
+\begin{center}   %標題  
+\makebox[1.5\width][s] %[s] 代表 Stretch the interword space in text across the entire width
+{\fontsize{24pt}{2.5pt}國立虎尾科技大學}\\[18pt]
+\makebox[1.5\width][s]
+{\fontsize{24pt}{2.5pt}機械設計工程系}\\[18pt]
+\sectionef\fontsize{24pt}{1em}\selectfont\textbf
+{
+\vspace{0.5em}
+ODOO PLM 在協同產品設計上的應用}\\[18pt]
+%設定文字盒子 [方框寬度的1.5倍寬][對其方式為文字平均分分布於方框中]\\距離下方18pt
+\vspace{1em} %下移
+\fontsize{24pt}{1pt}\selectfont\textbf{- 以鋼球平衡台系統設計為例}\\
+\vspace{1em}
+\sectionef\fontsize{24pt}{1em}\selectfont\textbf
+{
+\vspace{0.5em}
+Steel Ball Balancing Platform System Design}
+ \vspace{1em}
+%=---------------------參與人員-----------------------=%             
+\end{center}
+\begin{flushleft}
+\begin{LARGE}
+
+\hspace{32mm}\makebox[5cm][s]
+{指導教授：\quad 嚴\quad 家\quad 銘\quad 老\quad 師}\\[6pt]
+\hspace{32mm}\makebox[5cm][s]
+{班\qquad 級：\quad 四\quad 設\quad 二\quad 甲}\\[6pt]
+\hspace{32mm}\makebox[5cm][s]
+{學\qquad 生：\quad 第\quad 一\quad 位\quad(411231xx)}
+\\[6pt]
+\hspace{32mm}\makebox[5cm][s]
+{\hspace{43mm}第\quad 二\quad 位\quad(411231xx)}\\[6pt]
+\hspace{32mm}\makebox[5cm][s]
+{\hspace{43mm}第\quad  三\quad 位\quad(411231xx)}\\[6pt]
+\hspace{32mm}\makebox[5cm][s]
+{\hspace{43mm}第\quad 四\quad 位\quad(411231xx)}\\[6pt]
+\hspace{32mm}\makebox[5cm][s]
+{\hspace{43mm}第\quad 五\quad 位\quad(411231xx)}\\[6pt]
+\hspace{32mm}\makebox[5cm][s]
+{\hspace{43mm}第\quad 六\quad 位\quad(411231xx)}\\[6pt]
+\hspace{32mm}\makebox[5cm][s]
+{\hspace{43mm}第\quad 七\quad 位\quad(411231xx)}\\[6pt]
+\hspace{32mm}\makebox[5cm][s]
+{\hspace{43mm}第\quad 八\quad 位\quad(411231xx)}\\[6pt]
+%設定文字盒子[寬度為5cm][對其方式為文字平均分分布於方框中]空白距離{36.5mm}\空白1em
+\end{LARGE}
+\end{flushleft}
+\vspace{4em}
+\fontsize{18pt}{2pt}\selectfont\centerline{\makebox[\width][s]
+{中華民國\hspace{3em} 
+113 \quad 年\quad 3\quad 月}}
+\end{titlepage}
+\newpage
+
+
+%=------------------------摘要-----------------------=%
+\input{abstract.tex}
+\newpage
+%=------------------------目錄----------------------=%
+\renewcommand{\contentsname}{\centerline{\fontsize{18pt}{\baselineskip}\selectfont\textbf{目\quad 錄}}}
+\tableofcontents　　%目錄產生
+\newpage
+%=------------------圖表目錄產生----------------------=%
+\renewcommand{\listfigurename}{\centerline{\fontsize{18pt}{\baselineskip}\selectfont\textbf{圖\quad 目\quad 錄 }}}
+\newcommand{\loflabel}{圖} %定義\loflabel 文字為圖
+\renewcommand{\numberline}[1]{\loflabel~#1\hspace*{0.5em}}
+\listoffigures
+%\newcommand{\captioname}{圖}
+%\newpage
+%\renewcommand{\listtablename}{\centerline{\fontsize{18pt}{\baselineskip}\selectfont\textbf{表\quad 目\quad 錄 }}}
+%\newcommand{\lotlabel}{表} %定義\lotlabel 文字為表
+%\renewcommand{\numberline}[1]{\lotlabel~#1\hspace*{0.5em}}
+%\listoftables
+
+\end{center}
+%=-------------------------內容----------------------=%
+\input{1_introduction.tex}
+\input{2_player_making_process.tex}
+\input{3_Lua_source_code.tex}
+\input{4_timer_scooreboard.tex}
+\input{5_Coppeliasim_simulate_scene.tex}
+\input{6_game_conection.tex}
+\input{7_suggestion.tex}
+%=---------------------相關資料----------------------=%
+%\input{9_reference.tex}
+%=---------------附錄-----------------=%
+%\addcontentsline{toc}{chapter}{附錄} %新增目錄名稱
+%\input{10_appendix.tex}
+\newpage
+\end{document}

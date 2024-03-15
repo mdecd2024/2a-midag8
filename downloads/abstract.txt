@@ -1,0 +1,3 @@
+\begin{abstract}
+這是摘要的內容。這是摘要的內容。這是摘要的內容。
+\end{abstract}

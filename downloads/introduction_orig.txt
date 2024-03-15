@@ -1,0 +1,21 @@
+% 第一章內容
+\chapter{專題簡介}
+這是專題簡介部分的內容。
+\lipsum[2]
+
+% 引用 platform.png 圖片檔案
+% 圖片寬度佔整個行寬的一半。
+圖片標題為「鋼球平衡台」。
+圖片標籤為 fig:platform，你可以在文中使用 \ref{fig:platform} 來引用這個圖片。
+建立兩個超連結：
+
+第一個連結是到網站 http://mde.tw 的超連結，顯示文字為 mde.tw。
+第二個連結也是到同一個網站的超連結，但顯示文字為 here。
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.5\linewidth]{images/platform.png}
+  \caption{鋼球平衡台}
+  \label{fig:platform}
+\end{figure}
+
+To visit the website \href{http://mde.tw}{mde.tw}, click \href{http://mde.tw}{here}.

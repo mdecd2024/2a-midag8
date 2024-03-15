@@ -1,0 +1,18 @@
+\chapter{Odoo PLM}
+這是 Odoo 與 PLM 模組部分的內容。這裡依然加入一些假文：
+\lipsu4]
+m[
+% 引用 odoo_plm.png 圖片檔案
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=1.2\linewidth]{./../images/odoo_plm.png}
+  \caption{Odoo PLM 套件}
+  \label{fig:odoo_plm}
+\end{figure}
+
+這是有關 Odoo 開源套件的一段內容：
+\begin{quote}
+Call me Ishmael. Some years ago -- never mind how long precisely -- having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.
+\end{quote}
+
+在這段中，我們提到了一個重要名詞\cite{odoo2024}，即《Odoo》。同時，這裡也是我們引入參考文獻的地方。
