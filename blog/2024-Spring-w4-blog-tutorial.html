@@ -7,25 +7,26 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
 
-  <title>About</title>
+  <title>2024 Spring 課程</title>
 
 
   <meta name="HandheldFriendly" content="True" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="referrer" content="origin" />
   <meta name="generator" content="Pelican" />
-  <link href="../../" rel="canonical" />
+  <link href="./" rel="canonical" />
 
   <!-- Feed -->
         <link href="./feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="網際內容管理系統 Full Atom Feed" />
+          <link href="./feeds/{slug}.atom.xml" type="application/atom+xml" rel="alternate" title="網際內容管理系統 Categories Atom Feed" />
 
-  <link href="../../theme/css/style.css" type="text/css" rel="stylesheet" />
+  <link href="./theme/css/style.css" type="text/css" rel="stylesheet" />
 
   <!-- Code highlight color scheme -->
-      <link href="../../theme/css/code_blocks/tomorrow_night.css" rel="stylesheet">
+      <link href="./theme/css/code_blocks/tomorrow_night.css" rel="stylesheet">
 
   
-    <link href="../../theme/tipuesearch/tipuesearch.css" rel="stylesheet">
+    <link href="./theme/tipuesearch/tipuesearch.css" rel="stylesheet">
 
   <!-- Custom fonts -->
   <link href='https://fonts.googleapis.com/css?family=Montserrat:400,300' rel='stylesheet' type='text/css' />
@@ -39,27 +40,49 @@
   <![endif]-->
 
 
+    <link href="./2024-Spring-w4-blog-tutorial.html" rel="canonical" />
+
+        <meta name="description" content="第四週實作內容報告">
+
+        <meta name="author" content="kmol">
+
+        <meta name="tags" content="網誌編寫">
+
+
 
 
 <!-- Open Graph -->
 <meta property="og:site_name" content="網際內容管理系統"/>
-<meta property="og:type" content="blog"/>
-<meta property="og:title" content="網際內容管理系統"/>
-<meta property="og:description" content="View the blog."/>
+<meta property="og:title" content="2024 Spring 課程"/>
+<meta property="og:description" content="第四週實作內容報告"/>
 <meta property="og:locale" content="en_US"/>
-<meta property="og:url" content="../../"/>
-<meta property="og:image" content="../../theme/images/home-bg.jpg">
+<meta property="og:url" content="./2024-Spring-w4-blog-tutorial.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2024-03-15 16:18:00+08:00"/>
+<meta property="article:modified_time" content="2024-03-15 16:38:47.361001+08:00"/>
+<meta property="article:author" content="./author/kmol.html">
+<meta property="article:section" content="w4"/>
+<meta property="article:tag" content="網誌編寫"/>
+<meta property="og:image" content="./theme/images/post-bg.jpg">
 
 <!-- Twitter Card -->
 
 <script type="application/ld+json">
 {
-  "@context" : "http://schema.org",
-  "@type" : "Website",
-  "name": " 網際內容管理系統 ",
-  "url" : "../../",
-  "image": "../../theme/images/home-bg.jpg",
-  "description": "View the blog."
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "name": "2024 Spring 課程",
+  "headline": "2024 Spring 課程",
+  "datePublished": "2024-03-15 16:18:00+08:00",
+  "dateModified": "2024-03-15 16:38:47.361001+08:00",
+  "author": {
+    "@type": "Person",
+    "name": "kmol",
+    "url": "./author/kmol.html"
+  },
+  "image": "./theme/images/post-bg.jpg",
+  "url": "./2024-Spring-w4-blog-tutorial.html",
+  "description": "第四週實作內容報告"
 }
 </script>
 <script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
@@ -150,34 +173,46 @@ init_mathjax();
     <ul>
     <!--
 
-              <li class="nav-about active" role="presentation"><a href="../../pages/about/">About</a></li>
+              <li role="presentation"><a href="./pages/about/">About</a></li>
       -->
 
-            <li><a href="../../pages/about/index.html">About</span></a></li>
+            <li><a href="./pages/about/index.html">About</span></a></li>
             
-            <li><a href="../../archives.html">Archives</span></a></li>
+            <li><a href="./archives.html">Archives</span></a></li>
             
-            <li><a href="../../categories.html">Categories</span></a></li>
+            <li><a href="./categories.html">Categories</span></a></li>
             
-            <li><a href="../../tags.html">Tags</span></a></li>
+            <li><a href="./tags.html">Tags</span></a></li>
 
     </ul>
   </div>
 </nav>
+    <!-- Progressbar -->
+    <div class="progress-container">
+        <span class="progress-bar"></span>
+    </div>
+
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
     <header id="post-header" class="has-cover">
       <div class="inner">
         <nav id="navigation">
             <span id="home-button" class="nav-button">
-                <a class="home-button" href="../../" title="Home"><i class="ic ic-arrow-left"></i> Home</a>
+                <a class="home-button" href="./index.html" title="Home"><i class="ic ic-arrow-left"></i> Home</a>
             </span>
           <span id="menu-button" class="nav-button">
             <a class="menu-button"><i class="ic ic-menu"></i> Menu</a>
           </span>
         </nav>
-        <h1 class="post-title">About</h1>
-            <div class="post-cover cover" style="background-image: url('../../theme/images/post-bg.jpg')">
+        <h1 class="post-title">2024 Spring 課程</h1>
+        <!-- TODO : Proper class for headline -->
+        <span class="post-meta">
+                <a href="./author/kmol.html">Kmol</a>
+            | <time datetime="週五 15 三月 2024">週五 15 三月 2024</time>
+        </span>
+        <!-- TODO : Modified check -->
+            <span class="post-meta"> | Updated on 週五 15 三月 2024</span>
+            <div class="post-cover cover" style="background-image: url('./theme/images/post-bg.jpg')">
       </div>
     </header>
 
@@ -185,25 +220,49 @@ init_mathjax();
     <a class="hidden-close"></a>
 
 <section class="search">
-      <form class="navbar-search" action="../../search.html">
+      <form class="navbar-search" action="./search.html">
       <input type="text"  placeholder="Search" name="q" id="tipue_search_input" required>
     </form>
 </section>
 
-  <!-- Post content -->
-  <main class="content" role="main">
-      <article class="post">
-      <div class="inner">
-          <section class="post-content">
-              <h1>cmsimde 內容管理系統</h1>
-<p>倉儲: <a href="https://github.com/mdecycu/cmsimde_site">https://github.com/mdecycu/cmsimde_site</a></p>
-<p>網站: <a href="https://mde.tw/cmsimde_site/">https://mde.tw/cmsimde_site/</a></p>
-<p>簡報: <a href="https://mde.tw/cmsimde_site/reveal">https://mde.tw/cmsimde_site/reveal</a></p>
-<p>網誌: <a href="https://mde.tw/cmsimde_site/blog">https://mde.tw/cmsimde_site/blog</a></p>
-          </section>
-      </div>
-      </article>
-  </main>
+
+    <!-- Post content -->
+    <main class="content" role="main">
+        <article class="post">
+        <div class="inner">
+            <section class="post-content">
+                <p>第四週實作內容報告</p>
+
+
+<h1>w4</h1>
+<p>影片上字幕</p>
+<h2></h2>
+            </section>
+
+            <section class="post-info">
+                <aside class="post-tags">
+<a href="./tag/wang-zhi-bian-xie.html">網誌編寫</a>                </aside>
+
+                <div class="clear"></div>
+
+
+                </section>
+
+
+                <aside class="post-nav">
+                    <a class="post-nav-prev" href="./2024-Spring-w1~w3-blog-tutorial.html">
+                        <section class="post-nav-teaser">
+                            <i class="ic ic-arrow-right"></i>
+                                <h2 class="post-nav-title">2024 Spring 課程</h2>
+                            <p class="post-nav-excerpt">前三週實作內容報告</p>
+                        </section>
+                    </a>
+                    <div class="clear"></div>
+                </aside>
+
+            </div>
+        </article>
+    </main>
       <!-- TODO : Body class -->
     <div id="body-class" style="display: none;" class=""></div>
 
@@ -219,7 +278,7 @@ init_mathjax();
     </footer>
   </section>
   
-  <script type="text/javascript" src="../../theme/js/script.js"></script>
+  <script type="text/javascript" src="./theme/js/script.js"></script>
 
  
 

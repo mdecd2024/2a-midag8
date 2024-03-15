@@ -1,0 +1,1 @@
+pelican markdown -o blog -s local_publishconf.py
