@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>網際內容管理系統 - w2</title><link href="./" rel="alternate"></link><link href="./feeds/w2.atom.xml" rel="self"></link><id>./</id><updated>2024-03-19T23:47:14+08:00</updated><entry><title>W2</title><link href="./2024-Spring-w2-blog-tutorial.html" rel="alternate"></link><published>2024-03-01T18:43:00+08:00</published><updated>2024-03-19T23:47:14+08:00</updated><author><name>kmol</name></author><id>tag:None,2024-03-01:./2024-Spring-w2-blog-tutorial.html</id><content type="html">&lt;p&gt;第二週實作內容報告&lt;/p&gt;
+&lt;h1&gt;w2&lt;/h1&gt;
+&lt;p&gt;建立Github Classroom 指定分組倉儲，並使用replit、Codespaces及可攜環境維護分組倉儲，在git clone至近端執行動態網站.&lt;/p&gt;
+&lt;h2&gt;&lt;/h2&gt;</content><category term="w2"></category><category term="網誌編寫"></category></entry></feed>

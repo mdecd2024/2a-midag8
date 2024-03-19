@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>網際內容管理系統 - w3</title><link href="./" rel="alternate"></link><link href="./feeds/w3.atom.xml" rel="self"></link><id>./</id><updated>2024-03-19T23:48:36+08:00</updated><entry><title>W3</title><link href="./2024-Spring-w3-blog-tutorial.html" rel="alternate"></link><published>2024-03-11T18:49:00+08:00</published><updated>2024-03-19T23:48:36+08:00</updated><author><name>kmol</name></author><id>tag:None,2024-03-11:./2024-Spring-w3-blog-tutorial.html</id><content type="html">&lt;p&gt;第三週實作內容報告&lt;/p&gt;
+&lt;h1&gt;w3&lt;/h1&gt;
+&lt;p&gt;如何協同製作分組報告，並將各組組員加入至分組倉儲建立子模組，LaTeX 轉 pdf教學.&lt;/p&gt;
+&lt;h2&gt;內容&lt;/h2&gt;</content><category term="w3"></category><category term="網誌編寫"></category></entry></feed>
