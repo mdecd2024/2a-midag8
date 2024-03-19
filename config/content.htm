@@ -37,7 +37,8 @@
 <p>第一段 1-21page 由41023108  (<span>ACKNOWLEDGMENTS.txt, Creative Commons.txt, LIST OF ACRONYMS.txt, abstract.txt, introduction_orig.txt, </span></p>
 <p>第二段 21-43page 由41023155 (<span>introduction_orig.txt,</span></p>
 <p>第三段 43-65page 由41023110 (<span>introduction_orig.txt,</span></p>
-<p>第四段 65-87page 由41023211 (<span>introduction_orig.txt,</span></p><h2>w4 Task</h2>
+<p>第四段 65-87page 由41023211 (<span>introduction_orig.txt,</span></p>
+<h2>w4 Task</h2>
 <p>W4 各組員任務</p>
 <p><span style="background-color: #ffff00;">作業1:</span></p>
 <p>各組員必須能在各自的個人課程倉儲放置所被交付編寫的  .txt (in LaTeX 格式), 然後整合至各組的分組倉儲, 由 xelatex 編譯出各週的分組報告 pdf 檔案.</p>
@@ -76,7 +77,8 @@
 <p><strong>使用 Gitpod 維護倉儲與網站</strong></p>
 <p><strong>將組員的個人倉儲設為分組倉儲子模組</strong> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/SXq6d-gRFqE?si=qYDJGuMDZUGkb7TD" title="YouTube video player" width="560"></iframe></p>
 <p><strong><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/EDbiE8X_GA0?si=TzM1OLPb2hFl6c2D" title="YouTube video player" width="560"></iframe></strong></p>
-<p><strong>有關 LaTeX 轉 pdf</strong></p><h3>w4 2a hw2(w4</h3>
+<p><strong>有關 LaTeX 轉 pdf</strong></p>
+<h3>w4 2a hw2(w4</h3>
 <p><strong></strong><span style="background-color: #ffff00;">w4</span></p>
 <p><strong>第一種介紹的倉儲維護方式 - Replit</strong></p>
 <p><strong></strong>1.如何在 Replit 檢視靜態網站</p>
@@ -89,8 +91,50 @@
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/8HV4LlRK-nw?si=3hoqcDW0ADr7gYuo" title="YouTube video player" width="560"></iframe></p>
 <p><a href="https://github.com/KEHUEISIN/cd2024/blob/main/downloads/20240319092559049.txt">https://github.com/KEHUEISIN/cd2024/blob/main/downloads/20240319092559049.txt</a></p>
 <p><span style="background-color: #ffff00;">如何下載 replit_main2.7z 並在倉儲中建立兩個檔案 摘要:</span></p>
-<p>依照上部影片檔內容將兩個7z下載<span>，並在倉儲中建立兩個檔案，且要會啟動跟關掉，注意!!!這邊動態及靜態在不能同時以80開啟</span>。</p><h2>w5 Task</h2>
-<p>統整各週網誌</p><h1>cmsimde</h1>
+<p>依照上部影片檔內容將兩個7z下載<span>，並在倉儲中建立兩個檔案，且要會啟動跟關掉，注意!!!這邊動態及靜態在不能同時以80開啟</span>。</p>
+<h2>w5 Task</h2>
+<p>統整各週網誌</p>
+<h1>blog</h1>
+<p><span style="color: #ff0000;">Replit/Codespaces</span></p>
+<ol>
+<li>
+<p><code>chmod u+x gen_blog</code>:</p>
+<ul>
+<li><code>chmod</code> 是用於改變文件或目錄的權限設置的命令。</li>
+<li><code>u+x</code> 表示為擁有該文件的用戶（User）增加可執行（Execute）的權限。</li>
+<li><code>gen_blog</code> 是要設置權限的文件或可執行程序的名稱。</li>
+</ul>
+<p>總之，這個命令將 <code>gen_blog</code> 這個文件的用戶（擁有者）設置為可執行的。</p>
+</li>
+<li>
+<p><code>./gen_blog</code>:</p>
+<ul>
+<li><code>./</code> 表示當前目錄（Working Directory），也就是這個命令所在的目錄。</li>
+<li><code>gen_blog</code> 是要執行的可執行文件或腳本。</li>
+</ul>
+<p>當你運行這個命令時，系統將查找當前目錄中的 <code>gen_blog</code> 文件，並執行它。這通常用於運行可執行文件或腳本。</p>
+</li>
+</ol>
+<p>綜合起來，這兩個命令的組合是：</p>
+<ol>
+<li>將 <code>gen_blog</code> 文件設置為可執行。</li>
+<li>執行 <code>gen_blog</code> 文件，通常用於運行一個生成或處理網站的腳本或命令。</li>
+</ol>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">chmod u+x gen_blog 
+./gen_blog   #網誌推到靜態網站指令</pre>
+<p></p>
+<p><span style="color: #ff0000;">localhost(可攜環境</span></p>
+<p>以下指令是使用 Pelican 的命令行指令，用於將 Markdown 文件轉換為靜態網站，並將結果輸出到名為 <code>blog</code> 的目錄中。讓我來解釋一下每個部分的含義：</p>
+<ul>
+<li><code>pelican</code>: 這是 Pelican 靜態網站生成器的命令行工具。</li>
+<li><code>markdown</code>: 指定要處理的標記語言為 Markdown，這意味著要轉換的文件是 Markdown 格式的。</li>
+<li><code>-o blog</code>: 這個選項指定輸出目錄，即將生成的靜態網站文件輸出到名為 <code>blog</code> 的目錄中。</li>
+<li><code>-s local_publishconf.py</code>: 這個選項指定了一個配置文件，用於指導 Pelican 如何生成網站。在這個例子中，指定的是 <code>local_publishconf.py</code> 配置文件。這個文件通常包含了一些設置，比如指定主題、插件、輸出路徑等。</li>
+</ul>
+<p>總的來說，這個命令告訴 Pelican 使用 Markdown 格式的文件，根據 <code>local_publishconf.py</code> 配置文件的指示，將生成的靜態網站文件輸出到 <code>blog</code> 目錄中。</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">pelican markdown -o blog -s local_publishconf.py #網誌推到靜態網站指令</pre>
+<p></p>
+<h1>cmsimde</h1>
 <p><span style="background-color: #ccffcc;">SMap</span> - SiteMap - 依照階次列出網站的所有頁面.</p>
 <p><span style="background-color: #ccffcc;">EditA</span> - Edit All page - 將所有頁面放入編輯模式中, 主要用來處理頁面搬遷, 刪除或決定衝突頁面內容版本.</p>
 <p><span style="background-color: #ccffcc;">Edit</span> - Edit page - 先選擇要編輯的單一頁面後, 再點選 Edit, 即可進入單一頁面的編輯模式.</p>
