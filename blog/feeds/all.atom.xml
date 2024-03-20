@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>網際內容管理系統</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2024-03-20T09:32:27+08:00</updated><entry><title>W4</title><link href="./2024-Spring-w4-blog-tutorial.html" rel="alternate"></link><published>2024-03-15T16:18:00+08:00</published><updated>2024-03-15T22:36:52+08:00</updated><author><name>kmol</name></author><id>tag:None,2024-03-15:./2024-Spring-w4-blog-tutorial.html</id><summary type="html">&lt;p&gt;第四週實作內容報告&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>網際內容管理系統</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2024-03-20T16:55:25+08:00</updated><entry><title>W4</title><link href="./2024-Spring-w4-blog-tutorial.html" rel="alternate"></link><published>2024-03-15T16:18:00+08:00</published><updated>2024-03-15T22:36:52+08:00</updated><author><name>kmol</name></author><id>tag:None,2024-03-15:./2024-Spring-w4-blog-tutorial.html</id><summary type="html">&lt;p&gt;第四週實作內容報告&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;第四週實作內容報告&lt;/p&gt;
 
 
@@ -23,17 +23,28 @@
 &lt;p&gt;進入個人倉儲settings中的ssh and gpg key 項目裡two-factor authentication選項啟動雙重認證，可以綁定手機或手錶，軟體名稱為authy app
 有一點別重要，那就是當認證遺失只能以回復碼，才能找回帳號。&lt;/p&gt;
 &lt;h2&gt;如何 import 倉儲至 Replit 進行改版&lt;/h2&gt;
-&lt;p&gt;Replit中設定個人網誌的方法，使用markdown目錄原始檔做複製，可複製Pelican的程式碼，只需將其中的內容改成自己所要發表的內容即可，而Pelican轉換完的網誌內容則會出現在blog目錄下，如要將markdown中.md檔轉入blog中變成.html檔指令為pelican markdown -o blog -s local_publishconf.py，除了這個設定外還有其他別的的方式設定，這就得看使用者的帳號是甚麼在做其他設定。&lt;/p&gt;</content><category term="w1"></category><category term="網誌編寫"></category></entry><entry><title>W2</title><link href="./2024-Spring-w2-blog-tutorial.html" rel="alternate"></link><published>2024-03-01T18:43:00+08:00</published><updated>2024-03-20T09:32:27+08:00</updated><author><name>kmol</name></author><id>tag:None,2024-03-01:./2024-Spring-w2-blog-tutorial.html</id><summary type="html">&lt;p&gt;第二週實作內容報告&lt;/p&gt;
+&lt;p&gt;Replit中設定個人網誌的方法，使用markdown目錄原始檔做複製，可複製Pelican的程式碼，只需將其中的內容改成自己所要發表的內容即可，而Pelican轉換完的網誌內容則會出現在blog目錄下，如要將markdown中.md檔轉入blog中變成.html檔指令為pelican markdown -o blog -s local_publishconf.py，除了這個設定外還有其他別的的方式設定，這就得看使用者的帳號是甚麼在做其他設定。&lt;/p&gt;</content><category term="w1"></category><category term="網誌編寫"></category></entry><entry><title>W2</title><link href="./2024-Spring-w2-blog-tutorial.html" rel="alternate"></link><published>2024-03-01T18:43:00+08:00</published><updated>2024-03-20T16:55:25+08:00</updated><author><name>kmol</name></author><id>tag:None,2024-03-01:./2024-Spring-w2-blog-tutorial.html</id><summary type="html">&lt;p&gt;第二週實作內容報告&lt;/p&gt;
 &lt;h1&gt;w2&lt;/h1&gt;
 &lt;p&gt;建立Github Classroom 指定分組倉儲，並使用replit、Codespaces及可攜環境維護分組倉儲，在git clone至近端執行動態網站.&lt;/p&gt;
 &lt;h2&gt;利用 Github Classroom 指定分組倉儲&lt;/h2&gt;
-&lt;p&gt;由組長建立2a-midagx名稱的倉儲分組網站，並找定組員join至剛建立的網站 …&lt;/p&gt;</summary><content type="html">&lt;p&gt;第二週實作內容報告&lt;/p&gt;
+&lt;p&gt;1.由組長建立2a-midagx名稱的倉儲分組網站，並找定組員 …&lt;/p&gt;</summary><content type="html">&lt;p&gt;第二週實作內容報告&lt;/p&gt;
 &lt;h1&gt;w2&lt;/h1&gt;
 &lt;p&gt;建立Github Classroom 指定分組倉儲，並使用replit、Codespaces及可攜環境維護分組倉儲，在git clone至近端執行動態網站.&lt;/p&gt;
 &lt;h2&gt;利用 Github Classroom 指定分組倉儲&lt;/h2&gt;
-&lt;p&gt;由組長建立2a-midagx名稱的倉儲分組網站，並找定組員join至剛建立的網站，使用codespaces維護倉儲網站，可直接安裝模組啟動動態網站，做法上和replit很像，一樣使用python3 main.py進入分組動態網站，使用python3 -m http.sever開啟靜態網站，說明codespaces使用上的限制。&lt;/p&gt;
+&lt;p&gt;1.由組長建立2a-midagx名稱的倉儲分組網站，並找定組員join至剛建立的網站，使用codespaces維護倉儲網站，可直接安裝模組啟動動態網站，做法上和replit很像，一樣使用python3 main.py進入分組動態網站，使用python3 -m http.sever開啟靜態網站，說明codespaces使用上的限制。
+2.使用replit管理github分組倉儲&lt;/p&gt;
 &lt;h2&gt;利用 Codespaces 維護倉儲與網站&lt;/h2&gt;
-&lt;h2&gt;在近端執行動態網站&lt;/h2&gt;</content><category term="w2"></category><category term="網誌編寫"></category></entry><entry><title>2024 Spring 課程</title><link href="./2024-Spring-w0-blog-tutorial.html" rel="alternate"></link><published>2024-02-26T21:37:00+08:00</published><updated>2024-03-19T23:53:37+08:00</updated><author><name>kmol</name></author><id>tag:None,2024-02-26:./2024-Spring-w0-blog-tutorial.html</id><summary type="html">&lt;p&gt;各週上課內容心得及實作項目&lt;/p&gt;
+&lt;p&gt;利用code中的Codespaces維護，開啟後用終端機開啟動態靜態網站，也可以在裡面更新網誌，記得在開啟python3前需要先安裝模組，就跟replit一樣需先確認是否有安裝過模組。&lt;/p&gt;
+&lt;h2&gt;在近端執行動態網站&lt;/h2&gt;
+&lt;p&gt;可攜環境需先至mde.tw網站上下載 portable_2024.7z 這個壓縮檔案，解壓縮至個人隨身系統，步驟如下&lt;/p&gt;
+&lt;pre class="brush: python"&gt;
+1.創建putty 
+2.開啟可攜系統cmd
+3.開啟後輸入cd tmp 導入tmp目錄中
+4.進去tmp後 輸入git clone --recurse-submodules 倉儲網址.git(克隆遠端數據庫)
+5.確認tmp目錄下有自己倉儲目錄後 輸入cd 倉儲名稱
+6.進入倉儲目錄後，cms即可開啟動態網站
+&lt;/pre&gt;</content><category term="w2"></category><category term="網誌編寫"></category></entry><entry><title>2024 Spring 課程</title><link href="./2024-Spring-w0-blog-tutorial.html" rel="alternate"></link><published>2024-02-26T21:37:00+08:00</published><updated>2024-03-19T23:53:37+08:00</updated><author><name>kmol</name></author><id>tag:None,2024-02-26:./2024-Spring-w0-blog-tutorial.html</id><summary type="html">&lt;p&gt;各週上課內容心得及實作項目&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;各週上課內容心得及實作項目&lt;/p&gt;
 
 
