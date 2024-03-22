@@ -108,4 +108,43 @@ Package xtemplate Info: Declaring object type 'xeCJK/punctuation' taking 0
 \g__xeCJK_fam_allocation_int=\count271
 \l__xeCJK_verb_case_int=\count272
 \l__xeCJK_verb_exspace_skip=\skip57
- (y:\miktex-portable\texmfs\
+ (y:\miktex-portable\texmfs\install\tex/latex/fontspec\fontspec.sty
+(y:\miktex-portable\texmfs\install\tex/latex/l3packages/xparse\xparse.sty
+Package: xparse 2023-01-16 L3 Experimental document command parser
+)
+Package: fontspec 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTeX
+
+(y:\miktex-portable\texmfs\install\tex/latex/fontspec\fontspec-xetex.sty
+Package: fontspec-xetex 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTe
+X
+\l__fontspec_script_int=\count273
+\l__fontspec_language_int=\count274
+\l__fontspec_strnum_int=\count275
+\l__fontspec_tmp_int=\count276
+\l__fontspec_tmpa_int=\count277
+\l__fontspec_tmpb_int=\count278
+\l__fontspec_tmpc_int=\count279
+\l__fontspec_em_int=\count280
+\l__fontspec_emdef_int=\count281
+\l__fontspec_strong_int=\count282
+\l__fontspec_strongdef_int=\count283
+\l__fontspec_tmpa_dim=\dimen169
+\l__fontspec_tmpb_dim=\dimen170
+\l__fontspec_tmpc_dim=\dimen171
+
+(y:\miktex-portable\texmfs\install\tex/latex/base\fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+)
+(y:\miktex-portable\texmfs\install\tex/latex/fontspec\fontspec.cfg)))
+(y:\miktex-portable\texmfs\install\tex/xelatex/xecjk\xeCJK.cfg
+File: xeCJK.cfg 2022/08/05 v3.9.1 Configuration file for xeCJK package
+))
+
+! Package fontspec Error: The font "MoeStandardKai" cannot be found.
+
+For immediate help type H <return>.
+ ...                                              
+                                                  
+l.6 \newfontfamily
+                  \sectionef{Nimbus Roman}
+? 
