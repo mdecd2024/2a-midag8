@@ -14,7 +14,33 @@
 <p><span style="background-color: #ffff00;"><strong>練習2:</strong></span><strong>請各分組製作一個 Web-based 網誌與簡報, 說明如何在 </strong><strong><a href="https://www.coppeliarobotics.com/">CoppeliaSim</a> 環境中, 利用 IPv6 <a href="https://manual.coppeliarobotics.com/en/zmqRemoteApiOverview.htm">ZeroMQ Remote API</a> Python 進行兩個自由度的鋼球平衡檯自動控制系統模擬?</strong></p>
 <p><span style="background-color: #ff0000;"><strong>答:</strong></span></p>
 <p><span style="background-color: #ffff00;"><strong>練習3:</strong></span></p>
-<p><span style="background-color: #ffff00;"><b>期中作業:</b></span></p>
+<p><strong>建立 foot_basket_ball 模擬場景</strong></p>
+<p><strong>延續 cd2023 的足球競技模擬場景檔案: <a href="http://229.cycu.org/cd2023_pj3_football_field_specification_ttt.7z">cd2023_pj3_football_field_specification_ttt.7z</a> (需要密碼)</strong></p>
+<p><strong>產品設計不是一項簡單的事, 尤其當設計的目的, 是希望建構一套可以永續且韌性較強的組成, 而非單單只想得到能應付當下需求的內容.</strong></p>
+<p><strong>以 cd2024 的分組協同期末專案而言, 可以在上列 cd2023 課程中的場景加以延伸, 其中將碰到以下議題:</strong></p>
+<ol>
+<li><strong>附加的零組件要採用何種套件製作, 當團隊選擇一項 MCAD(Mechanical Computer Aided Design, 電腦輔助設計) 套件後, 隨即便產生, 協同團隊成員是否都能使用所選擇的套件? 各成員所使用同一套件的不同版本進行零組件繪圖, 之後的協同流程會不會產生問題?</strong></li>
+<li><strong>當零件在各協同成員的 MCAD 套件中進行繪圖, 是否使用相同的單位尺寸設定? 各零組件選擇不同的絕對與相對座標系統, 對於接下來在不同套件間的轉檔, 會不會產生問題, 或者讓協同設計流程更加繁瑣?</strong></li>
+<li><strong>從 MCAD 將零組件轉出時, 各成員即便選擇了相同的輸出(Export)檔案格式, 不同的轉檔格式疏密度, 對於後續的零組件應用有沒有影響?</strong></li>
+<li><strong>當零組件轉入機電模擬系統時, 將牽涉到輸入(Import)縮放比例, 以及各零件轉入後的絕對與相對座標選擇, 不同的選擇會不會對後續的動態模擬系統設定造成一定的影響?尤其過程中牽涉開放機構(Open-chain) 與封閉(Closed-chain)機構組件時, 選擇不同的零組件絕對與區域座標系統之後, 會不會對之後的機構連桿運動設定造成問題?</strong></li>
+<li><strong>而最後, 當所需要的基本場景已經建立完成, 由於客戶或機電整合流程的配合需求, 必須改變特定零件的組立架構, 或是零組件的參數尺寸, 前面的所有步驟都需要重來一次嗎?</strong></li>
+<li><strong>以下是在面對上列諸多議題時, 以 Solvespace 建立一塊籃球板, 然後正設法放置到規定位置的參考場景檔案: <a href="http://229.cycu.org/cd2024_footbasket_ball_spec_add_slvs_board.7z">cd2024_footbasket_ball_spec_add_slvs_board.7z</a></strong></li>
+</ol>
+<p><strong><img alt="" height="178" src="https://mde.tw/cd2024/images/cd2024_field_step1.png" width="400"/></strong></p>
+<p><strong>操作過程如下:</strong></p>
+<ol>
+<li><strong>開啟 Solvespace, 確認作圖單位為 mm, 繪製一個 100mmx200mmx300mm 的方塊零件, 準備最為籃球板.</strong></li>
+<li><strong>由於 CoppeliaSim 內定的場景地面座標為 X-Y, 因此若在 Solvespace 中建立零件, 必須要確定零件的局部座標系與絕對坐標系的關係.</strong></li>
+<li><strong>由於開啟 cd2023 模擬場景後, 發現所有的零件都以其自身的局域坐標系原點, 放在零件的正中央, 因此若將零件轉入 CoppeliaSim 後, 希望精確掌握零件的定位, 則在繪製零件草圖時, 必須設定好輪廓與絕對座標系統之間的關係.</strong></li>
+<li><strong>另外, 由於 CoppeliaSim 4.5.1 版會將所有的轉入零件採同一個座標原點, 而非如舊版本轉入後各自以其局部座標系統進行定位.</strong></li>
+<li><strong>而且還必須了解 CoppeliaSim 內建的尺寸單位為 m, 目前 Solvespace 轉出的製圖單位則是 mm, 因此中間差別了 1000 倍, 所以將作圖單位設為 mm 的 Solvespace 零件, 轉入 CoppeliaSim 若要使用其原先的作圖尺寸, 則必須縮小 0.001 倍.</strong></li>
+<li><strong>之後, 還必須利用 Edit -&gt; Shape reference frame -&gt; Relocate to mesh center 將各零件的參考座標系統原點, 從廣域座標系原點, 轉換到零件個別的物件中心原點.</strong></li>
+<li><strong>若零件轉入 CoppeliaSim 時選擇 Z 軸向上, 則籃球板零件轉入後, 將平躺在場景中, 若要轉至與現有的足球門相同方位, 則必須分別對自己的 X 軸與 Y 軸個旋轉 90 度.</strong></li>
+<li><strong>最後再任選一座球門的 X, Y 座標系統原點位置(position), 逐步將 basketball board 放到正確的位置, 結果如: <a href="http://229.cycu.org/cd2024_footbasket_ball_spec_add_slvs_board.7z">cd2024_footbasket_ball_spec_add_slvs_board.7z</a></strong></li>
+</ol>
+<p></p>
+<p><strong>協同零組件繪圖: Onshape</strong></p>
+<p><strong>協同分組報告: LaTeX -&gt; pdf</strong></p>
 <h2>W3 Task</h2>
 <p><span style="background-color: #ffff00;">cd2024 w3 任務頁面</span></p>
 <p>cd2024 w3 任務</p>
@@ -178,19 +204,26 @@
 </ol>
 <pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">chmod u+x gen_blog 
 ./gen_blog   #網誌推到靜態網站指令</pre>
-<p></p>
-<p><span style="color: #ff0000;">localhost(可攜環境</span></p>
-<p>以下指令是使用 Pelican 的命令行指令，用於將 Markdown 文件轉換為靜態網站，並將結果輸出到名為 <code>blog</code> 的目錄中。讓我來解釋一下每個部分的含義：</p>
+<p><span>localhost(可攜環境</span></p>
+<p>以下指令是使用 Pelican 的命令行指令，用於將 Markdown 文件轉換為靜態網站，並將結果輸出到名為<span> </span><code>blog</code><span> </span>的目錄中。讓我來解釋一下每個部分的含義：</p>
 <ul>
 <li><code>pelican</code>: 這是 Pelican 靜態網站生成器的命令行工具。</li>
 <li><code>markdown</code>: 指定要處理的標記語言為 Markdown，這意味著要轉換的文件是 Markdown 格式的。</li>
-<li><code>-o blog</code>: 這個選項指定輸出目錄，即將生成的靜態網站文件輸出到名為 <code>blog</code> 的目錄中。</li>
-<li><code>-s local_publishconf.py</code>: 這個選項指定了一個配置文件，用於指導 Pelican 如何生成網站。在這個例子中，指定的是 <code>local_publishconf.py</code> 配置文件。這個文件通常包含了一些設置，比如指定主題、插件、輸出路徑等。</li>
+<li><code>-o blog</code>: 這個選項指定輸出目錄，即將生成的靜態網站文件輸出到名為<span> </span><code>blog</code><span> </span>的目錄中。</li>
+<li><code>-s local_publishconf.py</code>: 這個選項指定了一個配置文件，用於指導 Pelican 如何生成網站。在這個例子中，指定的是<span> </span><code>local_publishconf.py</code><span> </span>配置文件。這個文件通常包含了一些設置，比如指定主題、插件、輸出路徑等。</li>
 </ul>
-<p>總的來說，這個命令告訴 Pelican 使用 Markdown 格式的文件，根據 <code>local_publishconf.py</code> 配置文件的指示，將生成的靜態網站文件輸出到 <code>blog</code> 目錄中。</p>
+<p>總的來說，這個命令告訴 Pelican 使用 Markdown 格式的文件，根據<span> </span><code>local_publishconf.py</code><span> </span>配置文件的指示，將生成的靜態網站文件輸出到<span> </span><code>blog</code><span> </span>目錄中。</p>
 <pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">pelican markdown -o blog -s local_publishconf.py #網誌推到靜態網站指令</pre>
-<p></p>
-<h1>cmsimde</h1>
+<h1>Exercise</h1>
+<h2>1</h2>
+<p><strong><span style="background-color: #ffff00;">練習1:</span>如何用Github Codespaces維護網站內容</strong></p>
+<p><strong><span style="background-color: #ff0000;">答:</span>每一個倉儲都有&lt;code&gt;，在完成建立組倉儲後有code就可以改版。<br/>任何一個倉儲中都有配置code，codespaces是一個線上整合環境與replit相似，只是介面是另一個配置。在倉儲下可以建一個在主分之來建codespaces。<br/>先啟動動態在功能表還原終端系統，並新增一個終端系統，有兩意思給指令分別啟動動態與靜態。在開始run後要執行python3 main.py，遇到執行時沒有flask模組。就要去chmod u+x init-replit讓程式可以執行，讓他幫其安裝對應模組。最後在./init-replit。網站就會給一個阜可以開啟動態。<br/>要在python3 mhttp.senver 啟動一個模組，因系統帶有一個動態一個靜態，靜態還有一個index，更且有一個index可以啟動，帶進編輯器。index阻礙小輸送快速，約0秒就跳進content跟index，只要用這指令啟用靜態就可以看到更改了，改版會力馬有反應。每一次阜號都是不一樣安全性高。<br/>code每月給定數量相同，編輯可以在介面外，在上傳時開啟就好，使用完後要記得關閉，每月用量平均好就可以一直免費使用。</strong></p>
+<h2>2</h2>
+<p><span style="background-color: #ffff00;"><strong>練習2:</strong></span><strong>請各分組製作一個 Web-based 網誌與簡報, 說明如何在 </strong><strong><a href="https://www.coppeliarobotics.com/">CoppeliaSim</a> 環境中, 利用 IPv6 <a href="https://manual.coppeliarobotics.com/en/zmqRemoteApiOverview.htm">ZeroMQ Remote API</a> Python 進行兩個自由度的鋼球平衡檯自動控制系統模擬?</strong></p>
+<p><span style="background-color: #ff0000;"><strong>答:</strong></span></p>
+<h2>3</h2>
+<p><strong>建立 foot_basket_ball 模擬場景</strong></p>
+<p><span style="color: #ff0000;"></span></p><h1>cmsimde</h1>
 <p><span style="background-color: #ccffcc;">SMap</span> - SiteMap - 依照階次列出網站的所有頁面.</p>
 <p><span style="background-color: #ccffcc;">EditA</span> - Edit All page - 將所有頁面放入編輯模式中, 主要用來處理頁面搬遷, 刪除或決定衝突頁面內容版本.</p>
 <p><span style="background-color: #ccffcc;">Edit</span> - Edit page - 先選擇要編輯的單一頁面後, 再點選 Edit, 即可進入單一頁面的編輯模式.</p>
