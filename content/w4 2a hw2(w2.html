@@ -147,16 +147,60 @@ img.add_border {
 <p><strong><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">利用Github Classroom 指定分組錢包</span></span></strong></p>
 <p><strong><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">1.甲班第一組長如何組成midag1隊， </span></span></strong></p>
 <p><strong><strong><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/jcXKOmJ4uk0?si=rEC6RRICLek1avK5" title="YouTube video player" width="560"></iframe></strong></strong></p>
-<p><strong><strong>https://github.com/41023155/cd2024/blob/main/downloads/13.24.txt</strong></strong></p>
+<p><strong><strong><a href="https://github.com/41023155/cd2024/blob/main/downloads/13.24.txt">https://github.com/41023155/cd2024/blob/main/downloads/13.24.txt</a></strong></strong></p>
+<p>用<span> Codespaces </span>開啟動態網頁</p>
+<p>執行以下命令使<span> init_replit </span>檔案具有執行權限：</p>
+<p><span>chmod u+x init_replit</span></p>
+<p>執行<span> init_replit </span>檔案：</p>
+<p><span>./init_replit</span></p>
+<p>執行<span> main.py </span>檔案：</p>
+<p><span>python3 main.py</span></p>
+<p>用<span> Codespaces </span>開啟靜態網頁</p>
+<p>執行以下命令啟動<span> Python </span>內建的簡易伺服器：</p>
+<p><span>python3 -m http.server</span></p>
+<p>如何進行改版</p>
+<p>使用<span> git status </span>命令查看目前的修改狀態。</p>
+<p>使用<span> git add . </span>命令將所有修改的檔案添加到暫存區。</p>
+<p>使用<span> git commit -m "</span>新增的的內容<span>" </span>命令提交修改，並填入適合的提交訊息。</p>
+<p>使用<span> git push </span>將本地的提交推送到遠端倉儲。</p>
+<p></p>
 <p><strong><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">2.</span></span></strong><strong><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">利用Codespaces 維護錢包與網站</span></span></strong></p>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/3eINkT8euc4?si=lgVGYJ-jE5tkto7l" title="YouTube video player" width="560"></iframe></p>
-<p>https://github.com/41023155/cd2024/blob/main/downloads/11.58.txt</p>
+<p><a href="https://github.com/41023155/cd2024/blob/main/downloads/11.58.txt">https://github.com/41023155/cd2024/blob/main/downloads/11.58.txt</a></p>
+<p></p>
 <p><strong><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">在近端執行動態網站</span></span></strong><br/><strong></strong></p>
 <p><strong><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/UQAJtNkploA?si=p9iNYCuuhe-YBGXS" title="YouTube video player" width="560"></iframe></strong></p>
-<p><strong>https://github.com/41023155/cd2024/blob/main/downloads/14.18.txt</strong></p>
+<p><strong><a href="https://github.com/41023155/cd2024/blob/main/downloads/14.18.txt">https://github.com/41023155/cd2024/blob/main/downloads/14.18.txt</a></strong></p>
+<ol>
+<li><span> SSH </span>金鑰： 使用<span> Puttygen </span>建立一把<span> SSH </span>金鑰並將其存儲為<span> .ppk </span>格式的檔案。</li>
+</ol>
+<p><span>2.SSH </span>金鑰導入<span> Putty</span>： 使用<span> Putty </span>將<span> SSH </span>金鑰導入，以便在遠端伺服器上進行身份驗證。</p>
+<ol start="3">
+<li><span> PuTTY </span>會話設定： 在<span> Regedit </span>中找到<span> HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\Sessions\github.com </span>鍵，將其匯出為<span> .reg </span>檔案，這將保存你的<span> PuTTY </span>會話設定。</li>
+</ol>
+<p><span>4.</span>本地端進行改版：</p>
+<p>切換到暫存目錄：</p>
+<p><span>cd tmp</span></p>
+<p>克隆倉庫：</p>
+<p><span>git clone --recurse-submodules git@github.com:mdecd2024/2a-midag1.git</span></p>
+<p>進入克隆的倉庫目錄：</p>
+<p><span>cd 2a-midag1</span></p>
+<p>進行修改和提交：</p>
+<p><span># </span>進行修改<span>...</span></p>
+<p><span>git add .</span></p>
+<p><span>git commit -m "</span>自己要推的東西<span>"</span></p>
+<p>推送到遠端倉庫：</p>
+<p><span>git push</span></p>
+<p><span>5.</span>其他使用者推送：</p>
+<p>獲取你的<span> IPv4 </span>地址：</p>
+<p><span>ipconfig</span></p>
+<p>在組別下的<span> Python </span>腳本中導入你的<span> IPv4 </span>環境。</p>
+<p>允許組別中的其他成員更新和推送修改。</p>
+<p></p>
 <p><strong><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">利用 Replit 管理從 Classroom 取得的錢包錢包</span></span></strong></p>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/ddvwsYU_g_o?si=rHjEjeRhJCqoQVyq" title="YouTube video player" width="560"></iframe></p>
-<p>https://github.com/41023155/cd2024/blob/main/downloads/25.txt</p><br />w4 2a hw2(w1 << <a href='w4 2a hw2(w1.html'>Previous</a> <a href='w4 2a hw2(w3.html'>Next</a> >> w4 2a hw2(w3</div>
+<p><a href="https://github.com/41023155/cd2024/blob/main/downloads/25.txt">https://github.com/41023155/cd2024/blob/main/downloads/25.txt</a></p>
+<p></p><br />w4 2a hw2(w1 << <a href='w4 2a hw2(w1.html'>Previous</a> <a href='w4 2a hw2(w3.html'>Next</a> >> w4 2a hw2(w3</div>
 
     <!-- footer -->
       <div class="container">
