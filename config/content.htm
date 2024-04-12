@@ -234,7 +234,11 @@
 <h2>2</h2>
 <p><span style="background-color: #ffff00;"><strong>練習2:</strong></span><strong>請各分組製作一個 Web-based 網誌與簡報, 說明如何在 </strong><strong><a href="https://www.coppeliarobotics.com/">CoppeliaSim</a> 環境中, 利用 IPv6 <a href="https://manual.coppeliarobotics.com/en/zmqRemoteApiOverview.htm">ZeroMQ Remote API</a> Python 進行兩個自由度的鋼球平衡檯自動控制系統模擬?</strong></p>
 <p><span style="background-color: #ff0000;"><strong>答:</strong></span></p>
-<h2>3</h2>
+<p>ZeroMQ遠端API<br/>共分了7種不同的程式語言。</p>
+<p>1.Python客戶端<br/>2.C++客戶端<br/>3.Java客戶端<br/>4.Matlab用戶端<br/>5.Octave用戶端<br/>6.Lua客戶端<br/>7.Rust用戶端</p>
+<p>每個語言都需要套件<br/>1.Python客戶端:$ python3 -m pip install coppeliasim-zmqremoteapi-client<br/>2.C++客戶端:jsoncons和cppzmq套件<br/>3.Java客戶端:Apache Maven 建構ex. $ export COPPELIASIM_ROOT_DIR=path/to/CoppeliaSim/exec/folder/or/resources/folder/on/macOS<br/>$ cd zmqRemoteApi/clients/java<br/>$ mvn package -D"GENERATE_INCLUDE_OBJECTS=sim,simIK"</p>
+<p>#注意需確保您的資料夾名稱不包含任何空格，並且 CoppeliaSim 正在運行（API 函數從 CoppeliaSim 取得)前面只考慮了 sim 和 simIK 命名空間，您可以根據需要添加更多命名空間#<br/>4.Matlab用戶端:需要捆綁的JeroMQ，如果尚不存在，它會自動安裝<br/>5.Octave用戶端:需要 Octave 6.4+、octave 通訊和 Zeromq 軟體包<br/>6.Lua客戶端:目前，僅在 CoppeliaSim 腳本內支援 Lua 用戶端，也就是支援API用戶端程式碼<br/>7.Rust用戶端: Samuel Cavalcanti 提供</p>
+<p>上面為各程式語言對於ZeroMQ遠端API應用程式與 CoppeliaSim 連接的多種方式及要連接所需要的插件程式庫，後續能續分下去，上述指示統整。</p><h2>3</h2>
 <p><strong>建立 foot_basket_ball 模擬場景</strong></p>
 <p><span style="color: #ff0000;"></span></p>
 <h1>cmsimde</h1>
