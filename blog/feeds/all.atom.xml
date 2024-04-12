@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>網際內容管理系統</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2024-04-12T15:48:53+08:00</updated><entry><title>W7-8</title><link href="./2024-Spring-w7-8-blog-tutorial.html" rel="alternate"></link><published>2024-04-12T13:29:00+08:00</published><updated>2024-04-12T15:48:53+08:00</updated><author><name>kmol</name></author><id>tag:None,2024-04-12:./2024-Spring-w7-8-blog-tutorial.html</id><summary type="html">&lt;p&gt;第七-八週實作內容報告&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>網際內容管理系統</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2024-04-12T18:17:40+08:00</updated><entry><title>W7-8</title><link href="./2024-Spring-w7-8-blog-tutorial.html" rel="alternate"></link><published>2024-04-12T13:29:00+08:00</published><updated>2024-04-12T15:48:53+08:00</updated><author><name>kmol</name></author><id>tag:None,2024-04-12:./2024-Spring-w7-8-blog-tutorial.html</id><summary type="html">&lt;p&gt;第七-八週實作內容報告&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;第七-八週實作內容報告&lt;/p&gt;
 
 
@@ -36,7 +36,7 @@
 
 &lt;h1&gt;w5&lt;/h1&gt;
 &lt;h2&gt;統整網誌&lt;/h2&gt;
-&lt;p&gt;將組員個人網誌納入分組倉儲目錄下，並持續更新各影片剪輯後製，在嶔入影片過程中多次校正文檔，我們使用的軟體是https://www.capcut.com/my-edit這個軟體，目前字幕只支援簡體中文所以我們必須在翻完後再重新拉回進度條去逐字更改翻錯的內容及將簡體字改成繁體字，20分鐘以上的影片通常都會要剪上1hr以上時間。&lt;/p&gt;</content><category term="w5"></category><category term="網誌編寫"></category></entry><entry><title>W4</title><link href="./2024-Spring-w4-blog-tutorial.html" rel="alternate"></link><published>2024-03-15T16:18:00+08:00</published><updated>2024-03-21T18:48:42+08:00</updated><author><name>kmol</name></author><id>tag:None,2024-03-15:./2024-Spring-w4-blog-tutorial.html</id><summary type="html">&lt;p&gt;第四週實作內容報告&lt;/p&gt;
+&lt;p&gt;將組員個人網誌納入分組倉儲目錄下，並持續更新各影片剪輯後製，在嶔入影片過程中多次校正文檔，我們使用的軟體是https://www.capcut.com/my-edit這個軟體，目前字幕只支援簡體中文所以我們必須在翻完後再重新拉回進度條去逐字更改翻錯的內容及將簡體字改成繁體字，20分鐘以上的影片通常都會要剪上1hr以上時間。&lt;/p&gt;</content><category term="w5"></category><category term="網誌編寫"></category></entry><entry><title>W4</title><link href="./2024-Spring-w4-blog-tutorial.html" rel="alternate"></link><published>2024-03-15T16:18:00+08:00</published><updated>2024-04-12T18:17:40+08:00</updated><author><name>kmol</name></author><id>tag:None,2024-03-15:./2024-Spring-w4-blog-tutorial.html</id><summary type="html">&lt;p&gt;第四週實作內容報告&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;第四週實作內容報告&lt;/p&gt;
 
 
@@ -241,7 +241,7 @@ Steel Ball Balancing Platform System Design}
 \newpage
 \end{document}
 &lt;/pre&gt;
-&lt;p&gt;只需將自己資料依照上面模式排版即可得出一個.txt檔案，後續以xelatex 檔名.txt，它就會幫你在分組downloads目錄下上傳一個轉完的.pdf&lt;/p&gt;</content><category term="w3"></category><category term="網誌編寫"></category></entry><entry><title>W1</title><link href="./2024-Spring-w1-blog-tutorial.html" rel="alternate"></link><published>2024-03-09T14:43:00+08:00</published><updated>2024-03-20T09:01:17+08:00</updated><author><name>kmol</name></author><id>tag:None,2024-03-09:./2024-Spring-w1-blog-tutorial.html</id><summary type="html">&lt;p&gt;第一週實作內容報告&lt;/p&gt;
+&lt;p&gt;只需將自己資料依照上面模式排版即可得出一個.txt檔案，後續以xelatex 檔名.txt，它就會幫你在分組downloads目錄下上傳一個轉完的.pdf&lt;/p&gt;</content><category term="w3"></category><category term="網誌編寫"></category></entry><entry><title>W1</title><link href="./2024-Spring-w1-blog-tutorial.html" rel="alternate"></link><published>2024-03-09T14:43:00+08:00</published><updated>2024-04-12T18:16:26+08:00</updated><author><name>kmol</name></author><id>tag:None,2024-03-09:./2024-Spring-w1-blog-tutorial.html</id><summary type="html">&lt;p&gt;第一週實作內容報告&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;第一週實作內容報告&lt;/p&gt;
 
 
@@ -277,7 +277,7 @@ Steel Ball Balancing Platform System Design}
 4.進去tmp後 輸入git clone --recurse-submodules 倉儲網址.git(克隆遠端數據庫)
 5.確認tmp目錄下有自己倉儲目錄後 輸入cd 倉儲名稱
 6.進入倉儲目錄後，cms即可開啟動態網站
-&lt;/pre&gt;</content><category term="w2"></category><category term="網誌編寫"></category></entry><entry><title>2024 Spring 課程</title><link href="./2024-Spring-w0-blog-tutorial.html" rel="alternate"></link><published>2024-02-26T21:37:00+08:00</published><updated>2024-03-19T23:53:37+08:00</updated><author><name>kmol</name></author><id>tag:None,2024-02-26:./2024-Spring-w0-blog-tutorial.html</id><summary type="html">&lt;p&gt;各週上課內容心得及實作項目&lt;/p&gt;
+&lt;/pre&gt;</content><category term="w2"></category><category term="網誌編寫"></category></entry><entry><title>2024 Spring 課程</title><link href="./2024-Spring-w0-blog-tutorial.html" rel="alternate"></link><published>2024-02-26T21:37:00+08:00</published><updated>2024-04-12T18:17:40+08:00</updated><author><name>kmol</name></author><id>tag:None,2024-02-26:./2024-Spring-w0-blog-tutorial.html</id><summary type="html">&lt;p&gt;各週上課內容心得及實作項目&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;各週上課內容心得及實作項目&lt;/p&gt;
 
 
