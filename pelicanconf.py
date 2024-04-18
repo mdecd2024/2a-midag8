@@ -9,6 +9,46 @@ USE_FOLDER_AS_CATEGORY = False
 
 #PATH = 'markdown'
 
+# 開始將組員的個別網誌目錄納入分組倉儲中 and skip copying .md file under pages directory
+import os
+import shutil
+
+# Directories you want to include, 包含分組倉儲中的 markdown 與學員子模組對應目錄下的 markdown 等目錄中的 .md 網誌原始檔案
+input_directories = ['markdown', '41023108\markdown','41023110\markdown',]
+
+# Temporary directory to store combined Markdown files
+combined_directory = 'combined_markdown'
+
+# Create the combined directory if it doesn't exist
+if not os.path.exists(combined_directory):
+    os.makedirs(combined_directory)
+else:
+    # Clean the existing content of the combined directory
+    for root, dirs, files in os.walk(combined_directory):
+        for file in files:
+            os.remove(os.path.join(root, file))
+        for dir in dirs:
+            shutil.rmtree(os.path.join(root, dir))
+
+# Copy Markdown files from input directories to the combined directory
+for directory in input_directories:
+    for root, _, files in os.walk(directory):
+        for file in files:
+            if file.endswith('.md'):
+                # Check if the file is not under the "pages" subdirectory
+                if "pages" not in root.split(os.path.sep):
+                    source_file = os.path.join(root, file)
+                    destination_file = os.path.join(combined_directory, file)
+                    shutil.copy(source_file, destination_file)
+
+# Get the paths of the combined directories
+combined_paths = os.path.abspath(combined_directory)
+
+# Set the Pelican PATH to the combined directory
+PATH = combined_paths
+
+# 結束將組員的個別網誌目錄納入分組倉儲中
+
 #OUTPUT_PATH = 'blog'
 
 TIMEZONE = 'Asia/Taipei'
