@@ -7,25 +7,26 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
 
-  <title>網際內容管理系統 - Tag 網誌編寫</title>
+  <title>2024 Spring 課程 W2</title>
 
 
   <meta name="HandheldFriendly" content="True" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="referrer" content="origin" />
   <meta name="generator" content="Pelican" />
-  <link href="../" rel="canonical" />
+  <link href="./" rel="canonical" />
 
   <!-- Feed -->
         <link href="./feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="網際內容管理系統 Full Atom Feed" />
+          <link href="./feeds/{slug}.atom.xml" type="application/atom+xml" rel="alternate" title="網際內容管理系統 Categories Atom Feed" />
 
-  <link href="../theme/css/style.css" type="text/css" rel="stylesheet" />
+  <link href="./theme/css/style.css" type="text/css" rel="stylesheet" />
 
   <!-- Code highlight color scheme -->
-      <link href="../theme/css/code_blocks/tomorrow_night.css" rel="stylesheet">
+      <link href="./theme/css/code_blocks/tomorrow_night.css" rel="stylesheet">
 
   
-    <link href="../theme/tipuesearch/tipuesearch.css" rel="stylesheet">
+    <link href="./theme/tipuesearch/tipuesearch.css" rel="stylesheet">
 
   <!-- Custom fonts -->
   <link href='https://fonts.googleapis.com/css?family=Montserrat:400,300' rel='stylesheet' type='text/css' />
@@ -39,27 +40,49 @@
   <![endif]-->
 
 
+    <link href="./2024-Spring-w2-blog-tutorial.html" rel="canonical" />
+
+        <meta name="description" content="2024 Spring 網際內容管理與協同產品設計實習課程教學導引.">
+
+        <meta name="author" content="kmol">
+
+        <meta name="tags" content="網誌編寫 41023155">
+
+
 
 
 <!-- Open Graph -->
 <meta property="og:site_name" content="網際內容管理系統"/>
-<meta property="og:type" content="blog"/>
-<meta property="og:title" content="網際內容管理系統"/>
-<meta property="og:description" content="View the blog."/>
+<meta property="og:title" content="2024 Spring 課程 W2"/>
+<meta property="og:description" content="2024 Spring 網際內容管理與協同產品設計實習課程教學導引."/>
 <meta property="og:locale" content="en_US"/>
-<meta property="og:url" content="../"/>
-<meta property="og:image" content="../theme/images/home-bg.jpg">
+<meta property="og:url" content="./2024-Spring-w2-blog-tutorial.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2024-04-12 17:56:00+08:00"/>
+<meta property="article:modified_time" content="2024-04-19 13:50:52.410616+08:00"/>
+<meta property="article:author" content="./author/kmol.html">
+<meta property="article:section" content="w2"/>
+<meta property="article:tag" content="網誌編寫 41023155"/>
+<meta property="og:image" content="./theme/images/post-bg.jpg">
 
 <!-- Twitter Card -->
 
 <script type="application/ld+json">
 {
-  "@context" : "http://schema.org",
-  "@type" : "Website",
-  "name": " 網際內容管理系統 ",
-  "url" : "../",
-  "image": "../theme/images/home-bg.jpg",
-  "description": "View the blog."
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "name": "2024 Spring 課程 W2",
+  "headline": "2024 Spring 課程 W2",
+  "datePublished": "2024-04-12 17:56:00+08:00",
+  "dateModified": "2024-04-19 13:50:52.410616+08:00",
+  "author": {
+    "@type": "Person",
+    "name": "kmol",
+    "url": "./author/kmol.html"
+  },
+  "image": "./theme/images/post-bg.jpg",
+  "url": "./2024-Spring-w2-blog-tutorial.html",
+  "description": "2024 Spring 網際內容管理與協同產品設計實習課程教學導引."
 }
 </script>
 <script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
@@ -152,32 +175,43 @@ init_mathjax();
 
       -->
 
-            <li><a href="../pages/about/index.html">About</span></a></li>
+            <li><a href="./pages/about/index.html">About</span></a></li>
             
-            <li><a href="../archives.html">Archives</span></a></li>
+            <li><a href="./archives.html">Archives</span></a></li>
             
-            <li><a href="../categories.html">Categories</span></a></li>
+            <li><a href="./categories.html">Categories</span></a></li>
             
-            <li><a href="../tags.html">Tags</span></a></li>
+            <li><a href="./tags.html">Tags</span></a></li>
 
     </ul>
   </div>
 </nav>
+    <!-- Progressbar -->
+    <div class="progress-container">
+        <span class="progress-bar"></span>
+    </div>
+
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header id="blog-header" class="has-cover">
+    <header id="post-header" class="has-cover">
       <div class="inner">
         <nav id="navigation">
             <span id="home-button" class="nav-button">
-                <a class="home-button" href="../" title="Home"><i class="ic ic-arrow-left"></i> Home</a>
+                <a class="home-button" href="./index.html" title="Home"><i class="ic ic-arrow-left"></i> Home</a>
             </span>
           <span id="menu-button" class="nav-button">
             <a class="menu-button"><i class="ic ic-menu"></i> Menu</a>
           </span>
         </nav>
-        <h1 class="post-title">Tag 網誌編寫</h1>
-        <span class="blog-description">Posts: 1</span>
-            <div class="post-cover cover" style="background-image: url('../theme/images/post-bg.jpg')">
+        <h1 class="post-title">2024 Spring 課程 W2</h1>
+        <!-- TODO : Proper class for headline -->
+        <span class="post-meta">
+                <a href="./author/kmol.html">Kmol</a>
+            | <time datetime="週五 12 四月 2024">週五 12 四月 2024</time>
+        </span>
+        <!-- TODO : Modified check -->
+            <span class="post-meta"> | Updated on 週五 19 四月 2024</span>
+            <div class="post-cover cover" style="background-image: url('./theme/images/post-bg.jpg')">
       </div>
     </header>
 
@@ -185,51 +219,85 @@ init_mathjax();
     <a class="hidden-close"></a>
 
 <section class="search">
-      <form class="navbar-search" action="../search.html">
+      <form class="navbar-search" action="./search.html">
       <input type="text"  placeholder="Search" name="q" id="tipue_search_input" required>
     </form>
 </section>
 
 
-<div id="index" class="container">
-  <main class="content" role="main">
-    <div class="extra-pagination">
-<nav class="pagination" role="pagination">
-  <div class="inner">
-    <span class="pagination-info">Page 1 / 1</span>
-    <div class="clear"></div>
-  </div>
-</nav>
-    </div>
-
+    <!-- Post content -->
+    <main class="content" role="main">
         <article class="post">
         <div class="inner">
-            <header class="post-header">         
-                <h2 class="post-title"><a href="../2024-Spring-w6-blog-tutorial.html" rel="bookmark" title="Permalink to W6">W6</a>
-                </h2>
-                <span class="post-meta">
-                        <a href="../author/kmol.html">Kmol</a>
-                     | <time datetime="週四 28 三月 2024">週四 28 三月 2024</time>
-                </span>
-                <div class="clear"></div>
-            </header>
-                <section class="post-excerpt">
-                    <p>
-                        <p>第六週實作內容報告</p>
+            <section class="post-content">
+                <p>2024 Spring 網際內容管理與協同產品設計實習課程教學導引.</p>
 
-                    </p>
+<h1>甲班第一組組長如何建立 midag1 Team</h1>
+<p>在這部影片我學到了如何用Codespaces維護2a-midag8分組倉儲 操作歸納如下
+用 Codespaces 開啟動態網頁
+執行以下命令使 init_replit 檔案具有執行權限：
+chmod u+x init_replit
+執行 init_replit 檔案：
+./init_replit
+執行 main.py 檔案：
+python3 main.py
+用 Codespaces 開啟靜態網頁
+執行以下命令啟動 Python 內建的簡易伺服器：
+python3 -m http.server
+如何進行改版
+使用 git status 命令查看目前的修改狀態。
+使用 git add . 命令將所有修改的檔案添加到暫存區。
+使用 git commit -m "新增的的內容" 命令提交修改，並填入適合的提交訊息。
+使用 git push 將本地的提交推送到遠端倉儲。</p>
+<h1>如何利用近端可攜系統維護分組網站</h1>
+<p>在這部影片我學到了如何用近端可攜系統維護分組網站 操作歸納如下
+1.SSH 金鑰： 使用 Puttygen 建立一把 SSH 金鑰並將其存儲為 .ppk 格式的檔案。
+2.SSH 金鑰導入 Putty： 使用 Putty 將 SSH 金鑰導入，以便在遠端伺服器上進行身份驗證。
+3.PuTTY 會話設定： 在 Regedit 中找到 HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\Sessions\github.com 鍵，將其匯出為 .reg 檔案，這將保存你的 PuTTY 會話設定。
+4.本地端進行改版：
+切換到暫存目錄：
+cd tmp
+克隆倉庫：
+git clone --recurse-submodules git@github.com:mdecd2024/2a-midag1.git
+進入克隆的倉庫目錄：
+cd 2a-midag1
+進行修改和提交：</p>
+<h1>進行修改...</h1>
+<p>git add .
+git commit -m "自己要推的東西"
+推送到遠端倉庫：
+git push
+5.其他使用者推送：
+獲取你的 IPv4 地址：
+ipconfig
+在組別下的 Python 腳本中導入你的 IPv4 環境。
+允許組別中的其他成員更新和推送修改。</p>
+            </section>
+
+            <section class="post-info">
+                <aside class="post-tags">
+<a href="./tag/wang-zhi-bian-xie-41023155.html">網誌編寫 41023155</a>                </aside>
+
+                <div class="clear"></div>
+
+
                 </section>
+
+
+                <aside class="post-nav">
+                    <a class="post-nav-prev" href="./2024-Spring-W3-blog-tutorial.html">
+                        <section class="post-nav-teaser">
+                            <i class="ic ic-arrow-right"></i>
+                                <h2 class="post-nav-title">2024 Spring 課程 W3</h2>
+                            <p class="post-nav-excerpt">2024 Spring 網際內容管理與協同產品設計實習課程教學導引.</p>
+                        </section>
+                    </a>
+                    <div class="clear"></div>
+                </aside>
+
             </div>
         </article>
-
-<nav class="pagination" role="pagination">
-  <div class="inner">
-    <span class="pagination-info">Page 1 / 1</span>
-    <div class="clear"></div>
-  </div>
-</nav>
-  </main>
-</div>
+    </main>
       <!-- TODO : Body class -->
     <div id="body-class" style="display: none;" class=""></div>
 
@@ -245,7 +313,7 @@ init_mathjax();
     </footer>
   </section>
   
-  <script type="text/javascript" src="../theme/js/script.js"></script>
+  <script type="text/javascript" src="./theme/js/script.js"></script>
 
  
 
