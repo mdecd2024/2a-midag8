@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
 
-  <title>網際內容管理系統 - Authors</title>
+  <title>2024 協同課程a-w2</title>
 
 
   <meta name="HandheldFriendly" content="True" />
@@ -18,6 +18,7 @@
 
   <!-- Feed -->
         <link href="./feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="網際內容管理系統 Full Atom Feed" />
+          <link href="./feeds/{slug}.atom.xml" type="application/atom+xml" rel="alternate" title="網際內容管理系統 Categories Atom Feed" />
 
   <link href="./theme/css/style.css" type="text/css" rel="stylesheet" />
 
@@ -39,27 +40,49 @@
   <![endif]-->
 
 
+    <link href="./2024-協同課程a-w2-41023110.html" rel="canonical" />
+
+        <meta name="description" content="2024 Spring 網際內容管理與協同產品設計實習課程教學導引。">
+
+        <meta name="author" content="kmol">
+
+        <meta name="tags" content="網誌編寫 41023110">
+
+
 
 
 <!-- Open Graph -->
 <meta property="og:site_name" content="網際內容管理系統"/>
-<meta property="og:type" content="blog"/>
-<meta property="og:title" content="網際內容管理系統"/>
-<meta property="og:description" content="View the blog."/>
+<meta property="og:title" content="2024 協同課程a-w2"/>
+<meta property="og:description" content="2024 Spring 網際內容管理與協同產品設計實習課程教學導引。"/>
 <meta property="og:locale" content="en_US"/>
-<meta property="og:url" content="./"/>
-<meta property="og:image" content="./theme/images/home-bg.jpg">
+<meta property="og:url" content="./2024-協同課程a-w2-41023110.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2024-03-08 18:50:00+08:00"/>
+<meta property="article:modified_time" content="2024-04-19 13:50:52.408623+08:00"/>
+<meta property="article:author" content="./author/kmol.html">
+<meta property="article:section" content="a-w2-41023110"/>
+<meta property="article:tag" content="網誌編寫 41023110"/>
+<meta property="og:image" content="./theme/images/post-bg.jpg">
 
 <!-- Twitter Card -->
 
 <script type="application/ld+json">
 {
-  "@context" : "http://schema.org",
-  "@type" : "Website",
-  "name": " 網際內容管理系統 ",
-  "url" : "./",
-  "image": "./theme/images/home-bg.jpg",
-  "description": "View the blog."
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "name": "2024 協同課程a-w2",
+  "headline": "2024 協同課程a-w2",
+  "datePublished": "2024-03-08 18:50:00+08:00",
+  "dateModified": "2024-04-19 13:50:52.408623+08:00",
+  "author": {
+    "@type": "Person",
+    "name": "kmol",
+    "url": "./author/kmol.html"
+  },
+  "image": "./theme/images/post-bg.jpg",
+  "url": "./2024-協同課程a-w2-41023110.html",
+  "description": "2024 Spring 網際內容管理與協同產品設計實習課程教學導引。"
 }
 </script>
 <script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
@@ -163,19 +186,31 @@ init_mathjax();
     </ul>
   </div>
 </nav>
+    <!-- Progressbar -->
+    <div class="progress-container">
+        <span class="progress-bar"></span>
+    </div>
+
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header id="blog-header" class="has-cover">
+    <header id="post-header" class="has-cover">
       <div class="inner">
         <nav id="navigation">
             <span id="home-button" class="nav-button">
-                <a class="home-button" href="./" title="Home"><i class="ic ic-arrow-left"></i> Home</a>
+                <a class="home-button" href="./index.html" title="Home"><i class="ic ic-arrow-left"></i> Home</a>
             </span>
           <span id="menu-button" class="nav-button">
             <a class="menu-button"><i class="ic ic-menu"></i> Menu</a>
           </span>
         </nav>
-        <h1 class="post-title">Articles by </h1>
+        <h1 class="post-title">2024 協同課程a-w2</h1>
+        <!-- TODO : Proper class for headline -->
+        <span class="post-meta">
+                <a href="./author/kmol.html">Kmol</a>
+            | <time datetime="週五 08 三月 2024">週五 08 三月 2024</time>
+        </span>
+        <!-- TODO : Modified check -->
+            <span class="post-meta"> | Updated on 週五 19 四月 2024</span>
             <div class="post-cover cover" style="background-image: url('./theme/images/post-bg.jpg')">
       </div>
     </header>
@@ -189,15 +224,54 @@ init_mathjax();
     </form>
 </section>
 
-      <article class="post">
+
+    <!-- Post content -->
+    <main class="content" role="main">
+        <article class="post">
         <div class="inner">
-            <a href="./author/kmol.html" rel="bookmark">
-                <h2 class="post-title">
-                    kmol (12)
-                </h2>
-            </a>
-        </div>
-      </article>
+            <section class="post-content">
+                <p>2024 Spring 網際內容管理與協同產品設計實習課程教學導引。</p>
+
+
+<h1>w2-1 說明甲班第一組組長如何建立 midag1 Team, 並利用 Codespaces 維護 2a-midag1 分組倉儲</h1>
+<p>用github classroom建立組別倉儲，組長在or create a new team處以midag X 來稱謂組別名稱並+create team創立。在組別創立後，組員各自去join進入組別內。倉儲完全建立好後去到倉儲的settings並選取pages就可進入主分支。啟動完github pages就可以做code，並使用codespaces來維護內容。在codespaces中有許多終端機許多埠號資源可使用，不需要再公用443。啟動終端機要先安裝模組。使用者+執行+檔案位置=chmod u+x init_replit執行，執行安裝好後會直接給予2記憶體容量。但沒有run了，所以要在自己設定python3 main.py執行動態，利用8080幫我們開啟瀏覽器。連結埠號會呈現亂碼，所以別人無法進入。login進入動態後就可更改內容。終端機每個人每月都有120code小時。要push倉儲要新增終端機後，進行git add-&gt;git commit"網頁標題"，執行後就會直接推上不需要在轉檔。啟動靜態要在新增終端機，有python3內建模組了就可以直接http.server直接啟動埠號，8000會自動開啟瀏覽器連結，就可以直接進入到靜態。用完codespaces要在關閉code讓計時暫停。</p>
+<h1>w2-2 說明如何利用Replit管理從 Classroom 取得的分組倉儲</h1>
+<p>在Replit中需要新建import中不會有分組的網站，需要用from url來導入。導入後要改成python模式在import，就會推入分組倉儲，但是權限並沒有Replit上。我們還沒有身分去維護分組倉儲，要在shell中執行ssh-keygen就會跟s.cycu上一樣。之後要去找導入的倉儲位置，利用出現+工作=pwd執行，就會出現倉儲位置在home runnre下面。就知道讓分組倉儲跳到runner就可以進入.ssh。回到shell中利用更換目錄cd ../執行就可以跳到runner下，在常列印ls -l執行。就可以看到出現的pub在組長下，就有可用pub。再來要建立個人id。到檔案中尋找putty，確認有putty就要新增ssh並複製上import儲存。再去到putty內看到puttygen.exe要對應格式，在puttygen.exe要generate產生亂數，並出現內容全部複製到對應組長倉儲設定下settings，在settings中貼上複製的內容。id要存兩個地方，另一個要在ssh裡就是rsa，兩個id都儲存後就會載入並秀出pub key。</p>
+<h1>w2-3 如何利用近端可攜環境與外部 IPv4 開啟動態網站。</h1>
+<p>用ssh來啟動它，要克隆它去到靜態拉出putty，近端中沒有任何settings。建立之後會存在系統登錄閘，在黑窗用regedit機制跑可以使三個倉儲同步，就不怕code用完。並且有外擴ipv4等同有一個伺服器，就算在遠端去到防火牆設置ip就能進入。用PuTTY Configuration輸入ip定github.com，在sessions也是輸入github.com，並到ssh把剛設立的ppk給予它。倉儲要在常用資料位置，讓他可以隨時啟動，啟動近端時目錄可以方便鎖定。在ssh的credentials中的機制設置對應的資料夾中的ppk位置，在任何一台開起可攜環境後續就不會出現跑掉的問題。save後open後會給予一把key，此key連線時是無法取得的。存取github.com的檔案要匯出在可攜環境。若有對應的key並有open過了兩條件，那是可以有權限用ssh抓取下來。改版後就可以推回倉儲。在近端就自由了，可以啟動動態進入。之後小組可以各自獨立編輯，不會受他人干擾。若要讓組員連接過來，要先改密碼之後查詢ip，並複製到槽中的init.py去修改，丟入外部ip儲存，使其電腦變成一台主機。在cms一次組員就可以動作了</p>
+            </section>
+
+            <section class="post-info">
+                <aside class="post-tags">
+<a href="./tag/wang-zhi-bian-xie-41023110.html">網誌編寫 41023110</a>                </aside>
+
+                <div class="clear"></div>
+
+
+                </section>
+
+
+                <aside class="post-nav">
+                    <a class="post-nav-next" href="./41023108-w4.html">
+                        <section class="post-nav-teaser">
+                            <i class="ic ic-arrow-left"></i>
+                                <h2 class="post-nav-title">W4</h2>
+                            <p class="post-nav-excerpt">第四週實作內容報告</p>
+                        </section>
+                    </a>
+                    <a class="post-nav-prev" href="./41023108-w2.html">
+                        <section class="post-nav-teaser">
+                            <i class="ic ic-arrow-right"></i>
+                                <h2 class="post-nav-title">W2</h2>
+                            <p class="post-nav-excerpt">第二週實作內容報告</p>
+                        </section>
+                    </a>
+                    <div class="clear"></div>
+                </aside>
+
+            </div>
+        </article>
+    </main>
       <!-- TODO : Body class -->
     <div id="body-class" style="display: none;" class=""></div>
 
