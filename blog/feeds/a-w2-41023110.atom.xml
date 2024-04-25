@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>網際內容管理系統 - a-w2.-41023110</title><link href="./" rel="alternate"></link><link href="./feeds/a-w2-41023110.atom.xml" rel="self"></link><id>./</id><updated>2024-04-19T13:50:52+08:00</updated><entry><title>2024 協同課程a-w2.</title><link href="./2024-%E5%8D%94%E5%90%8C%E8%AA%B2%E7%A8%8Ba-w2.-41023110.html" rel="alternate"></link><published>2024-03-29T17:18:00+08:00</published><updated>2024-04-19T13:50:52+08:00</updated><author><name>kmol</name></author><id>tag:None,2024-03-29:./2024-協同課程a-w2.-41023110.html</id><summary type="html">&lt;p&gt;2024 Spring 網際內容管理與協同產品設計實習課程教學導引.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>網際內容管理系統 - a-w2.-41023110</title><link href="./" rel="alternate"></link><link href="./feeds/a-w2-41023110.atom.xml" rel="self"></link><id>./</id><updated>2024-04-25T23:15:33+08:00</updated><entry><title>2024 協同課程a-w2.</title><link href="./2024-%E5%8D%94%E5%90%8C%E8%AA%B2%E7%A8%8Ba-w2.-41023110.html" rel="alternate"></link><published>2024-03-29T17:18:00+08:00</published><updated>2024-04-25T23:15:33+08:00</updated><author><name>kmol</name></author><id>tag:None,2024-03-29:./2024-協同課程a-w2.-41023110.html</id><summary type="html">&lt;p&gt;2024 Spring 網際內容管理與協同產品設計實習課程教學導引.&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;2024 Spring 網際內容管理與協同產品設計實習課程教學導引.&lt;/p&gt;
 
 
@@ -22,7 +22,7 @@ code每月給定數量相同，編輯可以在介面外，在上傳時開啟就�
 從PuTTY開始連線到github.com並把settings也存到github.com，要把剛才的ppy給它。
 但目前ppk是在C槽中，開關機的話就會不見，所以要拉到外部隨身碟，就編可攜的。
 在實體的路徑下去進入，就可以去clone下來，並切換到c槽git clone+submodules git+帳號+倉儲作業名稱執行。
-有對應settings的key並且open過了，就有權限可以拉下來。&lt;/p&gt;</content><category term="a-w2.-41023110"></category><category term="網誌編寫 41023110"></category></entry><entry><title>2024 協同課程a-w2</title><link href="./2024-%E5%8D%94%E5%90%8C%E8%AA%B2%E7%A8%8Ba-w2-41023110.html" rel="alternate"></link><published>2024-03-08T18:50:00+08:00</published><updated>2024-04-19T13:50:52+08:00</updated><author><name>kmol</name></author><id>tag:None,2024-03-08:./2024-協同課程a-w2-41023110.html</id><summary type="html">&lt;p&gt;2024 Spring 網際內容管理與協同產品設計實習課程教學導引。&lt;/p&gt;
+有對應settings的key並且open過了，就有權限可以拉下來。&lt;/p&gt;</content><category term="a-w2.-41023110"></category><category term="網誌編寫 41023110"></category></entry><entry><title>2024 協同課程a-w2</title><link href="./2024-%E5%8D%94%E5%90%8C%E8%AA%B2%E7%A8%8Ba-w2-41023110.html" rel="alternate"></link><published>2024-03-08T18:50:00+08:00</published><updated>2024-04-25T23:15:33+08:00</updated><author><name>kmol</name></author><id>tag:None,2024-03-08:./2024-協同課程a-w2-41023110.html</id><summary type="html">&lt;p&gt;2024 Spring 網際內容管理與協同產品設計實習課程教學導引。&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;2024 Spring 網際內容管理與協同產品設計實習課程教學導引。&lt;/p&gt;
 
 
