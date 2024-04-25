@@ -1,0 +1,232 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>cmsimde_site</title>
+        <meta charset="utf-8">
+<meta property="head" content="H1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <!-- for Wink3 客製化關閉 -->
+        <!--
+        <link rel="stylesheet" type="text/css" href="./../cmsimde/static/winkPlayer.css" />
+        <script type="text/javascript" src="./../cmsimde/static/winkPlayer.js"></script>
+        -->
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPowerShell.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushMojo.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushRust.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container">
+                <div class="row align-items-center">
+                <h1>midag8 分組網站</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">midag8 分組網站</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">SMap</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='About.html'>About</a><li class='has-children'><a href='Practice.html'>Practice</a><ul class='dropdown'><li><a href='W3 Task.html'>W3 Task</a><li class='has-children'><a href='w4 Task.html'>w4 Task</a><ul class='dropdown'><li><a href='w4 2a hw2(w1.html'>w4 2a hw2(w1</a><li><a href='w4 2a hw2(w2.html'>w4 2a hw2(w2</a><li><a href='w4 2a hw2(w3.html'>w4 2a hw2(w3</a><li><a href='w4 2a hw2(w4.html'>w4 2a hw2(w4</a><li><a href='w4 2b hw2(w1.html'>w4 2b hw2(w1</a><li><a href='w4 2b hw2(w2.html'>w4 2b hw2(w2</a><li><a href='w4 2b hw2(w3.html'>w4 2b hw2(w3</a><li><a href='w4 2b hw2(w4.html'>w4 2b hw2(w4</a></li></ul><li><a href='w5 Task.html'>w5 Task</a><li><a href='w6 Task.html'>w6 Task</a></li></ul><li><a href='blog.html'>blog</a><li class='has-children'><a href='Exercise.html'>Exercise</a><ul class='dropdown'><li><a href='1.html'>1</a><li><a href='2.html'>2</a><li><a href='3.html'>3</a></li></ul><li><a href='cmsimde.html'>cmsimde</a><li><a href='Replit.html'>Replit</a><li><a href='Brython.html'>Brython</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+
+        </header>
+    <div id="tipue_search_content">About << <a href='About.html'>Previous</a> <a href='W3 Task.html'>Next</a> >> W3 Task<br /><h1>Practice</h1>
+<p><strong><span style="background-color: #ffff00;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">練習1：</span></span></span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">請各包製作一個以Web為基礎的網誌與簡報，了解如何利用隨身碟、  </span></span><a href="https://replit.com/"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">Replit</span></span></a><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"> 與 </span></span><a href="https://www.google.com/search?q=github+codespaces"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">Codespaces</span></span></a><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"> 中維護個人與包的網站內容？</span></span></strong></p>
+<p><strong><span style="background-color: #ff0000;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">答：</span></span></span><span style="vertical-align: inherit;"></span><br/><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">每個一個Blog</span><span style="vertical-align: inherit;">都有&lt;code&gt;，在完成建立組Blog後有code就可以修改版本。</span><span style="vertical-align: inherit;">是另一個設定</span></span><br/><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">。開始運作後要執行python3 main。 -replit </span></span><br/><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">。編輯器</span></span><br/><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">。月給定數量相同，編輯可以在界面外，上傳時開啟就好，使用完後要記得關閉，每月用量平均好就可以一直免費使用。</span></span></strong></p>
+<p><span style="background-color: #ffff00;"><strong><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">練習2：</span></span></strong></span><strong><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">請各包製作一個基於Web的網誌與簡報，說明如何在 </span></span></strong><strong><a href="https://www.coppeliarobotics.com/"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">CoppeliaSim</span></span></a><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"> 環境中，利用IPv6  </span></span><a href="https://manual.coppeliarobotics.com/en/zmqRemoteApiOverview.htm"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">ZeroMQ Remote API</span></span></a><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">  Python進行兩個自由度的鋼球平衡台自動控制系統模擬？</span></span></strong></p>
+<p><span style="background-color: #ff0000;"><strong><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">答：</span></span></strong></span></p>
+<p><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">ZeroMQ最終API</span></span><br/><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">共分了7種不同的程式語言。</span></span></p>
+<p><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">1.Python客戶端</span></span><br/><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">2.C++客戶端</span></span><br/><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">3.Java客戶端</span></span><br/><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">4.Matlab用戶端</span></span><br/><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">5.Octave用戶端</span></span><br/><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">6.Lua客戶端</span></span><br/><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">7.Rust用戶端</span></span></p>
+<p><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">每種語言都需要套件</span></span><br/><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">1.Python客戶端:$ python3 -m pip install coppeliasim-zmqremoteapi-client </span></span><br/><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">2.C++客戶端:jsoncons和cppzmq套件</span></span><br/><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">3.Java客戶端:Apache Maven 今天ex. $ 匯出 COPPELIASIM_ROOT_DIR=path/to/CoppeliaSim/exec/folder/or/resources/folder/on/macOS </span></span><br/><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">$ cd zmqRemoteApi/clients/java </span></span><br/><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">$ mvn package -D"GENERATE_INCLUDE_OBJECTSsim,IK."</span></span></p>
+<p><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">#注意需確保您的資料夾名稱不包含任何空格，並且 CoppeliaSim 正在運行（API 函數從 CoppeliaSim 獲取）前面只考慮了 sim 和 simIK 命名空間，您可以根據需要添加更多命名空間# </span></span><br/><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">4.Matlab 用戶端：需要數十個JeroMQ，如果尚不存在，它會自動安裝</span></span><br/><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">5.Octave用戶端：需要Octave 6.4+、octave通訊和Zeromq軟體包</span></span><br/><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">6.Lua客戶端：目前，僅在CoppeliaSim腳本內支援Lua用戶端，或支援API用戶端方案碼</span></span><br/><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">7.Rust用戶端：Samuel Cavalcanti 提供</span></span></p>
+<p><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">上面為ZeroMQ最終API應用程式與CoppeliaSim連接的多種方式及要連接所需的插件程式庫的各程式語言，後續能繼續分下去，上述指示統整。</span></span></p>
+<p><span style="background-color: #ffff00;"><strong><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">練習3：</span></span></strong></span></p>
+<p><strong><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">建立 foot_basket_ball 模擬場景</span></span></strong></p>
+<p><strong><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">挽救cd2023的足球競技場景模擬檔：  </span></span><a href="http://229.cycu.org/cd2023_pj3_football_field_specification_ttt.7z"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">cd2023_pj3_football_field_specation_ttt.7z</span></span></a><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">  （需要密碼）</span></span></strong></p>
+<p><strong><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">產品設計不是一件簡單的事，尤其是當設計的目的，是希望當前一套可以永續且認知的組成，而非單一的得到能滿足必需需求的內容。</span></span></strong></p>
+<p><strong><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">以 cd2024 的部分美好期末專案來說，可以在上列 cd2023 課程中的場景剛才延伸，其中將底座以下：</span></span></strong></p>
+<ol>
+<li><strong>附加的零組件要採用何種套件製作, 當團隊選擇一項 MCAD(Mechanical Computer Aided Design, 電腦輔助設計) 套件後, 隨即便產生, 協同團隊成員是否都能使用所選擇的套件? 各成員所使用同一套件的不同版本進行零組件繪圖, 之後的協同流程會不會產生問題?</strong></li>
+<li><strong>當零件在各協同成員的 MCAD 套件中進行繪圖, 是否使用相同的單位尺寸設定? 各零組件選擇不同的絕對與相對座標系統, 對於接下來在不同套件間的轉檔, 會不會產生問題, 或者讓協同設計流程更加繁瑣?</strong></li>
+<li><strong>從 MCAD 將零組件轉出時, 各成員即便選擇了相同的輸出(Export)檔案格式, 不同的轉檔格式疏密度, 對於後續的零組件應用有沒有影響?</strong></li>
+<li><strong>當零組件轉入機電模擬系統時, 將牽涉到輸入(Import)縮放比例, 以及各零件轉入後的絕對與相對座標選擇, 不同的選擇會不會對後續的動態模擬系統設定造成一定的影響?尤其過程中牽涉開放機構(Open-chain) 與封閉(Closed-chain)機構組件時, 選擇不同的零組件絕對與區域座標系統之後, 會不會對之後的機構連桿運動設定造成問題?</strong></li>
+<li><strong>而最後, 當所需要的基本場景已經建立完成, 由於客戶或機電整合流程的配合需求, 必須改變特定零件的組立架構, 或是零組件的參數尺寸, 前面的所有步驟都需要重來一次嗎?</strong></li>
+<li><strong>以下是在面對上列諸多議題時, 以 Solvespace 建立一塊籃球板, 然後正設法放置到規定位置的參考場景檔案: <a href="http://229.cycu.org/cd2024_footbasket_ball_spec_add_slvs_board.7z">cd2024_footbasket_ball_spec_add_slvs_board.7z</a></strong></li>
+</ol>
+<p><strong><img alt="" height="178" src="https://mde.tw/cd2024/images/cd2024_field_step1.png" width="400"/></strong></p>
+<p><strong>操作過程如下:</strong></p>
+<ol>
+<li><strong>開啟 Solvespace, 確認作圖單位為 mm, 繪製一個 100mmx200mmx300mm 的方塊零件, 準備最為籃球板.</strong></li>
+<li><strong>由於 CoppeliaSim 內定的場景地面座標為 X-Y, 因此若在 Solvespace 中建立零件, 必須要確定零件的局部座標系與絕對坐標系的關係.</strong></li>
+<li><strong>由於開啟 cd2023 模擬場景後, 發現所有的零件都以其自身的局域坐標系原點, 放在零件的正中央, 因此若將零件轉入 CoppeliaSim 後, 希望精確掌握零件的定位, 則在繪製零件草圖時, 必須設定好輪廓與絕對座標系統之間的關係.</strong></li>
+<li><strong>另外, 由於 CoppeliaSim 4.5.1 版會將所有的轉入零件採同一個座標原點, 而非如舊版本轉入後各自以其局部座標系統進行定位.</strong></li>
+<li><strong>而且還必須了解 CoppeliaSim 內建的尺寸單位為 m, 目前 Solvespace 轉出的製圖單位則是 mm, 因此中間差別了 1000 倍, 所以將作圖單位設為 mm 的 Solvespace 零件, 轉入 CoppeliaSim 若要使用其原先的作圖尺寸, 則必須縮小 0.001 倍.</strong></li>
+<li><strong>之後, 還必須利用 Edit -&gt; Shape reference frame -&gt; Relocate to mesh center 將各零件的參考座標系統原點, 從廣域座標系原點, 轉換到零件個別的物件中心原點.</strong></li>
+<li><strong>若零件轉入 CoppeliaSim 時選擇 Z 軸向上, 則籃球板零件轉入後, 將平躺在場景中, 若要轉至與現有的足球門相同方位, 則必須分別對自己的 X 軸與 Y 軸個旋轉 90 度.</strong></li>
+<li><strong>最後再任選一座球門的 X, Y 座標系統原點位置(position), 逐步將 basketball board 放到正確的位置, 結果如: <a href="http://229.cycu.org/cd2024_footbasket_ball_spec_add_slvs_board.7z">cd2024_footbasket_ball_spec_add_slvs_board.7z</a></strong></li>
+</ol>
+<p></p>
+<p><strong>協同零組件繪圖: Onshape</strong></p>
+<p><strong>協同分組報告: LaTeX -&gt; pdf</strong></p><br />About << <a href='About.html'>Previous</a> <a href='W3 Task.html'>Next</a> >> W3 Task</div>
+
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        
