@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>網際內容管理系統 - w2-41023108</title><link href="./" rel="alternate"></link><link href="./feeds/w2-41023108.atom.xml" rel="self"></link><id>./</id><updated>2024-04-26T15:05:45+08:00</updated><entry><title>W2</title><link href="./41023108-w2.html" rel="alternate"></link><published>2024-03-04T00:00:00+08:00</published><updated>2024-04-26T15:05:45+08:00</updated><author><name>kmol</name></author><id>tag:None,2024-03-04:./41023108-w2.html</id><summary type="html">&lt;p&gt;第二週實作內容報告&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;第二週實作內容報告&lt;/p&gt;
+
+&lt;h1&gt;w2&lt;/h1&gt;
+&lt;p&gt;建立Github Classroom 指定分組倉儲，並使用replit、Codespaces及可攜環境維護分組倉儲，在git clone至近端執行動態網站.&lt;/p&gt;
+&lt;h2&gt;利用 Github Classroom 指定分組倉儲&lt;/h2&gt;
+&lt;p&gt;1.由組長建立2a-midagx名稱的倉儲分組網站，並找定組員join至剛建立的網站，使用codespaces維護倉儲網站，可直接安裝模組啟動動態網站，做法上和replit很像，一樣使用python3 main.py進入分組動態網站，使用python3 -m http.sever開啟靜態網站，說明codespaces使用上的限制。
+2.使用replit管理github分組倉儲&lt;/p&gt;
+&lt;h2&gt;利用 Codespaces 維護倉儲與網站&lt;/h2&gt;
+&lt;p&gt;利用code中的Codespaces維護，開啟後用終端機開啟動態靜態網站，也可以在裡面更新網誌，記得在開啟python3前需要先安裝模組，就跟replit一樣需先確認是否有安裝過模組。&lt;/p&gt;
+&lt;h2&gt;在近端執行動態網站&lt;/h2&gt;
+&lt;p&gt;可攜環境需先至mde.tw網站上下載 portable_2024.7z 這個壓縮檔案，解壓縮至個人隨身系統，步驟如下&lt;/p&gt;
+&lt;pre class="brush: python"&gt;
+1.創建putty中的key
+2.開啟可攜系統cmd
+3.開啟後輸入cd tmp 導入tmp目錄中
+4.進去tmp後 輸入git clone --recurse-submodules 倉儲網址.git(克隆遠端數據庫)
+5.確認tmp目錄下有自己倉儲目錄後 輸入cd 倉儲名稱
+6.進入倉儲目錄後，cms即可開啟動態網站
+&lt;/pre&gt;</content><category term="w2-41023108"></category><category term="網誌編寫 41023108"></category></entry></feed>
