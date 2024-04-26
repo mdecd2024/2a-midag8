@@ -306,8 +306,29 @@
 <p><span><span style="color: #ff0000;">這部分內容與blog上一致:</span>將組員個人網誌納入分組倉儲目錄下，並持續更新各影片剪輯後製，在嶔入影片過程中多次校正文檔，我們使用的軟體是https://www.capcut.com/my-edit這個軟體，目前字幕只支援簡體中文所以我們必須在翻完後再重新拉回進度條去逐字更改翻錯的內容及將簡體字改成繁體字，20分鐘以上的影片通常都會要剪上1hr以上時間。</span></p>
 <h2>w6 Task</h2>
 <p>將w4-w5影片剪輯內容上繳至回報區，並指派w6 NX相關零件檔繪製內容<span>以及 CoppeliaSim 場景模擬相關檔案格式作業給與各組員</span></p>
-<p><span></span></p>
-<h1>blog</h1>
+<h2>w10 Task</h2>
+<p><!-- add 1 to 100 part2 結束--></p>
+<p><!-- editor2 開始 --></p>
+<p><!-- 用來顯示程式碼的 editor 區域 --></p>
+<div id="kw_editor2" style="width: 600px; height: 300px;"></div>
+<p><!-- 以下的表單與按鈕與前面的 Javascript doSave 函式以及 FileSaver.min.js 互相配合 --></p>
+<p><!-- 存擋表單開始 --></p>
+<form><label>Filename: <input id="kw_filename2" placeholder="input file name" type="text"/>.py</label> <input onclick="doSave('kw_py_src2', 'kw_filename2');" type="submit" value="Save"/></form>
+<p><!-- 存擋表單結束 --></p>
+<p></p>
+<p><!-- 執行與清除按鈕開始 --></p>
+<p><button id="kw_run2">Run</button> <button id="kw_show_console2">Output</button> <button id="kw_clear_console2">清除輸出區</button><button id="clear_bd2">清除繪圖區</button><button onclick="window.location.reload()">Reload</button></p>
+<p><!-- 執行與清除按鈕結束 --></p>
+<p></p>
+<p><!-- 程式執行 ouput 區 --></p>
+<div style="width: 100%; height: 100%;"><textarea autocomplete="off" id="kw_console2"></textarea></div>
+<p><!-- Brython 程式執行的結果, 都以 brython_div1 作為切入位置 --></p>
+<div id="brython_div2"></div>
+<p><!-- editor2 結束 --></p>
+<hr/>
+<p>
+<script src="https://unpkg.com/three@0.144.0/build/three.js" type="text/javascript"></script>
+</p><h1>blog</h1>
 <p><span style="color: #ff0000;">Replit/Codespaces</span></p>
 <ol>
 <li>
@@ -348,7 +369,8 @@
 <h2>Blog 2</h2>
 <p>分組網誌統整指令為下面html檔</p>
 <pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">pelican combined_markdown -o blog -s local_publishconf.py</pre>
-<p>我先在近端資料夾中建立一個gen_cblog.bat的批次檔，每次抓取各組員網誌內容時，直接在小黑窗輸入<span>gen_cblog.bat指令則會自動跑上面html檔程式碼。無須特別記程式碼</span></p><h1>Exercise</h1>
+<p>我先在近端資料夾中建立一個gen_cblog.bat的批次檔，每次抓取各組員網誌內容時，直接在小黑窗輸入<span>gen_cblog.bat指令則會自動跑上面html檔程式碼。無須特別記程式碼</span></p>
+<h1>Exercise</h1>
 <p>此頁面用來放置練習題標題網頁內容</p>
 <p><span style="background-color: #ffff00;">練習1</span>對映網頁1</p>
 <p><span><span style="background-color: #ffff00;">練習2</span>對映網頁2</span></p>
