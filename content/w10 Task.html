@@ -143,28 +143,82 @@ img.add_border {
 
         </header>
     <div id="tipue_search_content">w6 Task << <a href='w6 Task.html'>Previous</a> <a href='blog.html'>Next</a> >> blog<br /><h1>w10 Task</h1>
-<p><!-- add 1 to 100 part2 結束--></p>
-<p><!-- editor2 開始 --></p>
-<p><!-- 用來顯示程式碼的 editor 區域 --></p>
-<div id="kw_editor2" style="width: 600px; height: 300px;"></div>
-<p><!-- 以下的表單與按鈕與前面的 Javascript doSave 函式以及 FileSaver.min.js 互相配合 --></p>
-<p><!-- 存擋表單開始 --></p>
-<form><label>Filename: <input id="kw_filename2" placeholder="input file name" type="text"/>.py</label> <input onclick="doSave('kw_py_src2', 'kw_filename2');" type="submit" value="Save"/></form>
-<p><!-- 存擋表單結束 --></p>
-<p></p>
-<p><!-- 執行與清除按鈕開始 --></p>
-<p><button id="kw_run2">Run</button> <button id="kw_show_console2">Output</button> <button id="kw_clear_console2">清除輸出區</button><button id="clear_bd2">清除繪圖區</button><button onclick="window.location.reload()">Reload</button></p>
-<p><!-- 執行與清除按鈕結束 --></p>
-<p></p>
-<p><!-- 程式執行 ouput 區 --></p>
-<div style="width: 100%; height: 100%;"><textarea autocomplete="off" id="kw_console2"></textarea></div>
-<p><!-- Brython 程式執行的結果, 都以 brython_div1 作為切入位置 --></p>
-<div id="brython_div2"></div>
-<p><!-- editor2 結束 --></p>
-<hr/>
-<p>
-<script src="https://unpkg.com/three@0.144.0/build/three.js" type="text/javascript"></script>
-</p><br />w6 Task << <a href='w6 Task.html'>Previous</a> <a href='blog.html'>Next</a> >> blog</div>
+<p>下面這段<span>程式</span>由mde.tw的blog中w10抓取的程式碼內容，<span>將一個 CSV 文件中的資料讀取出來，每一行包含學號、GitHub 用戶名和小組號碼。然後根據這些資料，建立對應的網站和倉儲連結，最後將這些連結插入到 HTML 頁面的特定位置。</span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">from browser import window, ajax, document, html
+
+def fetch_csv_data():
+  # CSV 檔案網址
+  url = "https://mdecd2024.github.io/2astud-2asite/downloads/2a.txt"
+  
+  def on_complete(req):
+    # 檢查請求是否成功完成
+    if req.status == 200 or req.status == 0:
+      # 讀取 CSV 檔案內容
+      content = req.text
+  
+      # 依照換行符號拆分資料
+      lines = content.split('\n')
+  
+      # 建立空列表儲存資料
+      data = []
+  
+      # 遍歷每一行資料
+      for line in lines:
+        # 忽略空白行
+        if line.strip() == "":
+          continue
+  
+        # 依照逗號拆分資料
+        items = line.split(',')
+  
+        # 將拆分後的資料加入列表
+        data.append(items)
+      
+      # 必須去除 data 的第一列標題資料, 只取序號為 1 之後的資料
+      data = data[1:]
+  
+      # 取得 html 可以插入的標註位置
+      brython_div = document["brython_div1"]
+      course_title = "cd2024"
+
+      # 逐一處理學員資料
+      index = 0
+      for items in data:
+        index += 1
+        student_id, github_username, group = items
+        
+        if github_username == "":
+          github_username = "000"
+        
+        # 建立網站和倉儲連結，使用正確的模板
+        site_url = f"https://{github_username}.github.io/{course_title}"
+        repo_url = f"https://github.com/{github_username}/{course_title}"
+        group_site_url = f"https://mdecd2024.github.io/2a-midag{group}"
+        group_repo_url = f"https://github.com/mdecd2024/2a-midag{group}"
+
+        # 添加學號, 網站, 倉儲連結和序號到 brython_div
+        brython_div &lt;= str(index) + ". " + html.A(student_id, href=site_url)  # 插入學號和學生網站連結
+        brython_div &lt;= " ("  # 插入左括號
+        brython_div &lt;= html.A("repo", href=repo_url)  # 插入倉儲連結
+        brython_div &lt;= ") | "  # 插入右括號和分隔符號
+        brython_div &lt;= html.A("Group Site", href=group_site_url)  # 插入小組網站連結
+        brython_div &lt;= " | "  # 插入分隔符號
+        brython_div &lt;= html.A("Group Repo", href=group_repo_url)  # 插入小組倉儲連結
+        brython_div &lt;= html.BR()  # 插入換行符號
+
+    else:
+      print("Error:", req.text)
+  
+  # 發送 AJAX 請求
+  req = ajax.ajax()
+  req.bind('complete', on_complete)
+  req.open('GET', url, True)
+  req.set_header('content-type', 'application/x-www-form-urlencoded')
+  req.send()
+  
+# 呼叫函式讀取 CSV 資料
+fetch_csv_data()</pre>
+<p></p><br />w6 Task << <a href='w6 Task.html'>Previous</a> <a href='blog.html'>Next</a> >> blog</div>
 
     <!-- footer -->
       <div class="container">
