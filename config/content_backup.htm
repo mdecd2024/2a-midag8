@@ -282,11 +282,15 @@
 <p><strong>1.以第六組為例, 利用 Codespaces 維護倉儲內容</strong></p>
 <p><strong><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/dvASd8GCuXA?si=rIqUmHGgk3Vs55sz" title="YouTube video player" width="560"></iframe></strong></p>
 <p><strong><a href="https://github.com/KEHUEISIN/cd2024/blob/main/downloads/20240426003837164.txt">https://github.com/KEHUEISIN/cd2024/blob/main/downloads/20240426003837164.txt</a></strong></p>
+<p><span style="background-color: #ffff99;"><strong>摘要:</strong></span></p>
 <p><strong>2.如何利用 Github Actions 編譯 LaTeX 得到分組 pdf 報告</strong></p>
-<p><strong></strong></p>
+<p><strong><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/fiuucRC7RQg?si=9phP5Sw3rQEmx0d3" title="YouTube video player" width="560"></iframe></strong></p>
+<p><strong><a href="https://github.com/KEHUEISIN/cd2024/blob/main/downloads/20240427223554128.txt">https://github.com/KEHUEISIN/cd2024/blob/main/downloads/20240427223554128.txt</a></strong></p>
+<p><span style="background-color: #ffff99;"><strong>摘要:</strong></span></p>
 <p><strong>3.如何利用 Gitpod 加上 token 取得分組倉儲權限</strong></p>
 <p><strong><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/KRuWZgbiNYs?si=d6LVo_MxzFq730An" title="YouTube video player" width="560"></iframe></strong></p>
 <p><strong><a href="https://github.com/KEHUEISIN/cd2024/blob/main/downloads/20240426095652300.txt">https://github.com/KEHUEISIN/cd2024/blob/main/downloads/20240426095652300.txt</a></strong></p>
+<p><span style="background-color: #ffff99;"><strong>摘要:</strong></span></p>
 <p><strong>Replit 靜態網站檢視</strong></p>
 <p><strong></strong><span style="background-color: #ffff00;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">沿用2a w4</span></span></span></p>
 <p><strong>Replit 靜態網站檢視</strong></p>
@@ -306,7 +310,86 @@
 <p><span><span style="color: #ff0000;">這部分內容與blog上一致:</span>將組員個人網誌納入分組倉儲目錄下，並持續更新各影片剪輯後製，在嶔入影片過程中多次校正文檔，我們使用的軟體是https://www.capcut.com/my-edit這個軟體，目前字幕只支援簡體中文所以我們必須在翻完後再重新拉回進度條去逐字更改翻錯的內容及將簡體字改成繁體字，20分鐘以上的影片通常都會要剪上1hr以上時間。</span></p>
 <h2>w6 Task</h2>
 <p>將w4-w5影片剪輯內容上繳至回報區，並指派w6 NX相關零件檔繪製內容<span>以及 CoppeliaSim 場景模擬相關檔案格式作業給與各組員</span></p>
-<h2>w10 Task</h2><h1>blog</h1>
+<h2>w10 Task</h2>
+<p><span style="background-color: #ffff00;">任務一:</span>建立各班學員的倉儲、網站與分組連結</p>
+<p>下面這段<span>程式</span>由mde.tw的blog中w10抓取的程式碼內容，<span>將一個 CSV 文件中的資料讀取出來，每一行包含學號、GitHub 用戶名和小組號碼。然後根據這些資料，建立對應的網站和倉儲連結，最後將這些連結插入到 HTML 頁面的特定位置。</span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">from browser import window, ajax, document, html
+
+def fetch_csv_data():
+  # CSV 檔案網址
+  url = "https://mdecd2024.github.io/2astud-2asite/downloads/2a.txt"
+  
+  def on_complete(req):
+    # 檢查請求是否成功完成
+    if req.status == 200 or req.status == 0:
+      # 讀取 CSV 檔案內容
+      content = req.text
+  
+      # 依照換行符號拆分資料
+      lines = content.split('\n')
+  
+      # 建立空列表儲存資料
+      data = []
+  
+      # 遍歷每一行資料
+      for line in lines:
+        # 忽略空白行
+        if line.strip() == "":
+          continue
+  
+        # 依照逗號拆分資料
+        items = line.split(',')
+  
+        # 將拆分後的資料加入列表
+        data.append(items)
+      
+      # 必須去除 data 的第一列標題資料, 只取序號為 1 之後的資料
+      data = data[1:]
+  
+      # 取得 html 可以插入的標註位置
+      brython_div = document["brython_div1"]
+      course_title = "cd2024"
+
+      # 逐一處理學員資料
+      index = 0
+      for items in data:
+        index += 1
+        student_id, github_username, group = items
+        
+        if github_username == "":
+          github_username = "000"
+        
+        # 建立網站和倉儲連結，使用正確的模板
+        site_url = f"https://{github_username}.github.io/{course_title}"
+        repo_url = f"https://github.com/{github_username}/{course_title}"
+        group_site_url = f"https://mdecd2024.github.io/2a-midag{group}"
+        group_repo_url = f"https://github.com/mdecd2024/2a-midag{group}"
+
+        # 添加學號, 網站, 倉儲連結和序號到 brython_div
+        brython_div &lt;= str(index) + ". " + html.A(student_id, href=site_url)  # 插入學號和學生網站連結
+        brython_div &lt;= " ("  # 插入左括號
+        brython_div &lt;= html.A("repo", href=repo_url)  # 插入倉儲連結
+        brython_div &lt;= ") | "  # 插入右括號和分隔符號
+        brython_div &lt;= html.A("Group Site", href=group_site_url)  # 插入小組網站連結
+        brython_div &lt;= " | "  # 插入分隔符號
+        brython_div &lt;= html.A("Group Repo", href=group_repo_url)  # 插入小組倉儲連結
+        brython_div &lt;= html.BR()  # 插入換行符號
+
+    else:
+      print("Error:", req.text)
+  
+  # 發送 AJAX 請求
+  req = ajax.ajax()
+  req.bind('complete', on_complete)
+  req.open('GET', url, True)
+  req.set_header('content-type', 'application/x-www-form-urlencoded')
+  req.send()
+  
+# 呼叫函式讀取 CSV 資料
+fetch_csv_data()</pre><h3>w10 task2</h3>
+<p><span style="background-color: #ffff00;">任務二:</span>鋼球平衡台 PID 控制與模擬</p>
+<p></p><h3>w10 task3</h3>
+<h1>blog</h1>
 <p><span style="color: #ff0000;">Replit/Codespaces</span></p>
 <ol>
 <li>
