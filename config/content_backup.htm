@@ -312,7 +312,7 @@
 <p>將w4-w5影片剪輯內容上繳至回報區，並指派w6 NX相關零件檔繪製內容<span>以及 CoppeliaSim 場景模擬相關檔案格式作業給與各組員</span></p>
 <h2>w10 Task</h2>
 <p><span style="background-color: #ffff00;">任務一:</span>建立各班學員的倉儲、網站與分組連結</p>
-<p>下面這段<span>程式</span>由mde.tw的blog中w10抓取的程式碼內容，<span>將一個 CSV 文件中的資料讀取出來，每一行包含學號、GitHub 用戶名和小組號碼。然後根據這些資料，建立對應的網站和倉儲連結，最後將這些連結插入到 HTML 頁面的特定位置。</span></p>
+<p><span style="color: #ff0000;"><strong>老師寫的:</strong></span></p>
 <pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">from browser import window, ajax, document, html
 
 def fetch_csv_data():
@@ -320,7 +320,6 @@ def fetch_csv_data():
   url = "https://mdecd2024.github.io/2astud-2asite/downloads/2a.txt"
   
   def on_complete(req):
-    # 檢查請求是否成功完成
     if req.status == 200 or req.status == 0:
       # 讀取 CSV 檔案內容
       content = req.text
@@ -366,14 +365,14 @@ def fetch_csv_data():
         group_repo_url = f"https://github.com/mdecd2024/2a-midag{group}"
 
         # 添加學號, 網站, 倉儲連結和序號到 brython_div
-        brython_div &lt;= str(index) + ". " + html.A(student_id, href=site_url)  # 插入學號和學生網站連結
-        brython_div &lt;= " ("  # 插入左括號
-        brython_div &lt;= html.A("repo", href=repo_url)  # 插入倉儲連結
-        brython_div &lt;= ") | "  # 插入右括號和分隔符號
-        brython_div &lt;= html.A("Group Site", href=group_site_url)  # 插入小組網站連結
-        brython_div &lt;= " | "  # 插入分隔符號
-        brython_div &lt;= html.A("Group Repo", href=group_repo_url)  # 插入小組倉儲連結
-        brython_div &lt;= html.BR()  # 插入換行符號
+        brython_div &lt;= str(index) + ". " + html.A(student_id, href=site_url)
+        brython_div &lt;= " ("
+        brython_div &lt;= html.A("repo", href=repo_url)
+        brython_div &lt;= ") | " 
+        brython_div &lt;= html.A("Group Site", href=group_site_url)
+        brython_div &lt;= " | "
+        brython_div &lt;= html.A("Group Repo", href=group_repo_url)
+        brython_div &lt;= html.BR()
 
     else:
       print("Error:", req.text)
@@ -386,10 +385,80 @@ def fetch_csv_data():
   req.send()
   
 # 呼叫函式讀取 CSV 資料
-fetch_csv_data()</pre><h3>w10 task2</h3>
+fetch_csv_data()</pre>
+<p><span style="color: #ff0000;"><strong>chatgpt相似不同寫法程式碼:</strong></span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">import requests
+
+def fetch_csv_data():
+    # CSV文件的URL
+    url = "https://mdecd2024.github.io/2astud-2asite/downloads/2a.txt"
+    
+    # 發送GET請求來獲取CSV數據
+    response = requests.get(url)
+    
+    # 檢查請求是否成功
+    if response.status_code == 200:
+        # 解析CSV數據
+        lines = response.text.split('\n')
+        data = [line.split(',') for line in lines if line.strip()]
+        
+        # 刪除標題行
+        data = data[1:]
+        
+        # 獲取插入鏈接的HTML元素
+        brython_div = document["brython_div1"]
+        course_title = "cd2024"
+
+        # 處理每個學生的數據
+        for index, items in enumerate(data, start=1):
+            student_id, github_username, group = items
+            
+            # 如果未提供GitHub用戶名，則設置默認值
+            if not github_username:
+                github_username = "000"
+            
+            # 構造網站和倉庫鏈接
+            site_url = f"https://{github_username}.github.io/{course_title}"
+            repo_url = f"https://github.com/{github_username}/{course_title}"
+            group_site_url = f"https://mdecd2024.github.io/2a-midag{group}"
+            group_repo_url = f"https://github.com/mdecd2024/2a-midag{group}"
+            
+            # 將鏈接插入到brython_div中
+            brython_div &lt;= f"{index}. " + html.A(student_id, href=site_url)  # 學生網站鏈接
+            brython_div &lt;= " ("  # 左括號
+            brython_div &lt;= html.A("repo", href=repo_url)  # 倉庫鏈接
+            brython_div &lt;= ") | "  # 右括號和分隔符
+            brython_div &lt;= html.A("Group Site", href=group_site_url)  # 小組網站鏈接
+            brython_div &lt;= " | "  # 分隔符
+            brython_div &lt;= html.A("Group Repo", href=group_repo_url)  # 小組倉庫鏈接
+            brython_div &lt;= html.BR()  # 換行
+    else:
+        print("錯誤:", response.text)
+
+# 調用函數來獲取CSV數據
+fetch_csv_data()
+</pre>
+<p></p>
+<p><span style="color: #ff0000;">兩者差別:</span></p>
+<p>段程式碼是為了從 CSV 文件中獲取數據並生成相應的 HTML 鏈接，和之前提供的程式碼相比，主要有以下幾點不同：</p>
+<ol>
+<li>
+<p><strong>使用 <code>requests</code> 函式庫進行請求</strong>：與之前使用的 <code>ajax.ajax()</code> 不同，這裡使用了 <code>requests</code> 函式庫來發送 GET 請求以獲取 CSV 數據。</p>
+</li>
+<li>
+<p><strong>CSV 數據的解析</strong>：在這個程式碼中，CSV 數據通過 <code>response.text</code> 直接讀取並解析，而不是透過 <code>split('\n')</code> 進行分割。</p>
+</li>
+<li>
+<p><strong>使用 <code>enumerate</code> 函式</strong>：在處理學生數據時，使用了 <code>enumerate</code> 函式來獲取索引值，這樣可以更加簡潔地處理序號。</p>
+</li>
+<li>
+<p><strong>錯誤處理</strong>：這段程式碼包含了一個錯誤處理部分，用於處理請求失敗時的情況，並輸出相應的錯誤信息。</p>
+</li>
+</ol>
+<p>除了這些主要的不同之外，其餘部分基本相同，都是根據 CSV 數據生成相應的 HTML 鏈接並插入到特定的 HTML 元素中。</p><h3>w10 task2</h3>
 <p><span style="background-color: #ffff00;">任務二:</span>鋼球平衡台 PID 控制與模擬</p>
 <p></p><h3>w10 task3</h3>
-<h1>blog</h1>
+<p><span style="background-color: #ffff00;">任務三:</span>鋼球平衡台零組件繪圖</p><h1>blog</h1>
 <p><span style="color: #ff0000;">Replit/Codespaces</span></p>
 <ol>
 <li>

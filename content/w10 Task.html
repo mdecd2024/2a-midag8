@@ -144,7 +144,7 @@ img.add_border {
         </header>
     <div id="tipue_search_content">w6 Task << <a href='w6 Task.html'>Previous</a> <a href='w10 task2.html'>Next</a> >> w10 task2<br /><h1>w10 Task</h1>
 <p><span style="background-color: #ffff00;">任務一:</span>建立各班學員的倉儲、網站與分組連結</p>
-<p>下面這段<span>程式</span>由mde.tw的blog中w10抓取的程式碼內容，<span>將一個 CSV 文件中的資料讀取出來，每一行包含學號、GitHub 用戶名和小組號碼。然後根據這些資料，建立對應的網站和倉儲連結，最後將這些連結插入到 HTML 頁面的特定位置。</span></p>
+<p><span style="color: #ff0000;"><strong>老師寫的:</strong></span></p>
 <pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">from browser import window, ajax, document, html
 
 def fetch_csv_data():
@@ -152,7 +152,6 @@ def fetch_csv_data():
   url = "https://mdecd2024.github.io/2astud-2asite/downloads/2a.txt"
   
   def on_complete(req):
-    # 檢查請求是否成功完成
     if req.status == 200 or req.status == 0:
       # 讀取 CSV 檔案內容
       content = req.text
@@ -198,14 +197,14 @@ def fetch_csv_data():
         group_repo_url = f"https://github.com/mdecd2024/2a-midag{group}"
 
         # 添加學號, 網站, 倉儲連結和序號到 brython_div
-        brython_div &lt;= str(index) + ". " + html.A(student_id, href=site_url)  # 插入學號和學生網站連結
-        brython_div &lt;= " ("  # 插入左括號
-        brython_div &lt;= html.A("repo", href=repo_url)  # 插入倉儲連結
-        brython_div &lt;= ") | "  # 插入右括號和分隔符號
-        brython_div &lt;= html.A("Group Site", href=group_site_url)  # 插入小組網站連結
-        brython_div &lt;= " | "  # 插入分隔符號
-        brython_div &lt;= html.A("Group Repo", href=group_repo_url)  # 插入小組倉儲連結
-        brython_div &lt;= html.BR()  # 插入換行符號
+        brython_div &lt;= str(index) + ". " + html.A(student_id, href=site_url)
+        brython_div &lt;= " ("
+        brython_div &lt;= html.A("repo", href=repo_url)
+        brython_div &lt;= ") | " 
+        brython_div &lt;= html.A("Group Site", href=group_site_url)
+        brython_div &lt;= " | "
+        brython_div &lt;= html.A("Group Repo", href=group_repo_url)
+        brython_div &lt;= html.BR()
 
     else:
       print("Error:", req.text)
@@ -218,7 +217,64 @@ def fetch_csv_data():
   req.send()
   
 # 呼叫函式讀取 CSV 資料
-fetch_csv_data()</pre><br />w6 Task << <a href='w6 Task.html'>Previous</a> <a href='w10 task2.html'>Next</a> >> w10 task2</div>
+fetch_csv_data()</pre>
+<p><span style="color: #ff0000;"><strong>chatgpt相似不同寫法程式碼:</strong></span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">from browser import ajax, document, html
+
+def fetch_csv_data():
+    # CSV 文件的 URL
+    url = "https://mdecd2024.github.io/2astud-2asite/downloads/2a.txt"
+
+    def on_complete(req):
+        if req.status == 200 or req.status == 0:
+            # 读取 CSV 文件内容
+            content = req.text
+
+            # 解析 CSV 数据并去除标题行
+            data = [line.strip().split(',') for line in content.split('\n')[1:] if line.strip()]
+
+            # 获取 HTML 中的标记位置
+            brython_div = document["brython_div1"]
+            course_title = "cd2024"
+
+            # 生成学生信息链接并添加到 brython_div 中
+            for index, (student_id, github_username, group) in enumerate(data, start=1):
+                github_username = github_username if github_username else "000"
+                site_url = f"https://{github_username}.github.io/{course_title}"
+                repo_url = f"https://github.com/{github_username}/{course_title}"
+                group_site_url = f"https://mdecd2024.github.io/2a-midag{group}"
+                group_repo_url = f"https://github.com/mdecd2024/2a-midag{group}"
+
+                brython_div &lt;= f"{index}. " + html.A(student_id, href=site_url)
+                brython_div &lt;= " ("
+                brython_div &lt;= html.A("repo", href=repo_url)
+                brython_div &lt;= ") | "
+                brython_div &lt;= html.A("Group Site", href=group_site_url)
+                brython_div &lt;= " | "
+                brython_div &lt;= html.A("Group Repo", href=group_repo_url)
+                brython_div &lt;= html.BR()
+
+        else:
+            print("Error:", req.text)
+
+    # 发送 AJAX 请求
+    req = ajax.ajax()
+    req.bind('complete', on_complete)
+    req.open('GET', url, True)
+    req.set_header('content-type', 'application/x-www-form-urlencoded')
+    req.send()
+
+# 调用函数读取 CSV 数据
+fetch_csv_data()
+</pre>
+<p></p>
+<p><span style="color: #ff0000;">兩者差別:</span></p>
+<p><span>這段代碼與之前的代碼相比，主要的改進在於我要求其精簡化，相比之前73行，這段精簡程式碼只有47行 及可做跟73行相同方式列出學員數據，寫法講解如下。</span></p>
+<ul>
+<li><span>使用列表推導式來解析 CSV 數據，並在生成學生信息時省略了對空白行的額外判斷。</span></li>
+<li><span> 直接在 enumerate() 函數中指定 start=1，不再單獨定義 index 變量。 </span></li>
+<li><span>使用條件表達式統一處理 GitHub 用戶名的空值情況。</span></li>
+</ul><br />w6 Task << <a href='w6 Task.html'>Previous</a> <a href='w10 task2.html'>Next</a> >> w10 task2</div>
 
     <!-- footer -->
       <div class="container">
