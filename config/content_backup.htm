@@ -8,7 +8,7 @@
 <p style="padding-left: 30px;"><a href="https://github.com/mdecycu/cmsimde_site"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">https://github.com/mdecycu/cmsimde_site</span></span></a></p>
 <p style="padding-left: 30px;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">此範本將cmsimde作為子目錄硬體子模組，使用者可依需求自行修改</span></span></p>
 <p style="padding-left: 30px;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">對應倉儲網站： https: </span></span><a href="https://mde.tw/cmsimde_site"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">//mde.tw/cmsimde_site</span></span></a></p>
-<h1>Practice</h1>
+<p style="padding-left: 30px;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"></span></span></p><h1>Practice</h1>
 <p><strong><span style="background-color: #ffff00;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">練習1：</span></span></span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">請各包製作一個以Web為基礎的網誌與簡報，了解如何利用隨身碟、  </span></span><a href="https://replit.com/"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">Replit</span></span></a><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"> 與 </span></span><a href="https://www.google.com/search?q=github+codespaces"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">Codespaces</span></span></a><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"> 中維護個人與包的網站內容？</span></span></strong></p>
 <p><strong><span style="background-color: #ff0000;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">答：</span></span></span><span style="vertical-align: inherit;"></span><br/><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">每個一個Blog</span><span style="vertical-align: inherit;">都有&lt;code&gt;，在完成建立組Blog後有code就可以修改版本。</span><span style="vertical-align: inherit;">是另一個設定</span></span><br/><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">。開始運作後要執行python3 main。 -replit </span></span><br/><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">。編輯器</span></span><br/><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">。月給定數量相同，編輯可以在界面外，上傳時開啟就好，使用完後要記得關閉，每月用量平均好就可以一直免費使用。</span></span></strong></p>
 <p><span style="background-color: #ffff00;"><strong><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">練習2：</span></span></strong></span><strong><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">請各包製作一個基於Web的網誌與簡報，說明如何在 </span></span></strong><strong><a href="https://www.coppeliarobotics.com/"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">CoppeliaSim</span></span></a><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"> 環境中，利用IPv6  </span></span><a href="https://manual.coppeliarobotics.com/en/zmqRemoteApiOverview.htm"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">ZeroMQ Remote API</span></span></a><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">  Python進行兩個自由度的鋼球平衡台自動控制系統模擬？</span></span></strong></p>
@@ -387,75 +387,62 @@ def fetch_csv_data():
 # 呼叫函式讀取 CSV 資料
 fetch_csv_data()</pre>
 <p><span style="color: #ff0000;"><strong>chatgpt相似不同寫法程式碼:</strong></span></p>
-<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">import requests
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">from browser import ajax, document, html
 
 def fetch_csv_data():
-    # CSV文件的URL
+    # CSV 文件的 URL
     url = "https://mdecd2024.github.io/2astud-2asite/downloads/2a.txt"
-    
-    # 發送GET請求來獲取CSV數據
-    response = requests.get(url)
-    
-    # 檢查請求是否成功
-    if response.status_code == 200:
-        # 解析CSV數據
-        lines = response.text.split('\n')
-        data = [line.split(',') for line in lines if line.strip()]
-        
-        # 刪除標題行
-        data = data[1:]
-        
-        # 獲取插入鏈接的HTML元素
-        brython_div = document["brython_div1"]
-        course_title = "cd2024"
 
-        # 處理每個學生的數據
-        for index, items in enumerate(data, start=1):
-            student_id, github_username, group = items
-            
-            # 如果未提供GitHub用戶名，則設置默認值
-            if not github_username:
-                github_username = "000"
-            
-            # 構造網站和倉庫鏈接
-            site_url = f"https://{github_username}.github.io/{course_title}"
-            repo_url = f"https://github.com/{github_username}/{course_title}"
-            group_site_url = f"https://mdecd2024.github.io/2a-midag{group}"
-            group_repo_url = f"https://github.com/mdecd2024/2a-midag{group}"
-            
-            # 將鏈接插入到brython_div中
-            brython_div &lt;= f"{index}. " + html.A(student_id, href=site_url)  # 學生網站鏈接
-            brython_div &lt;= " ("  # 左括號
-            brython_div &lt;= html.A("repo", href=repo_url)  # 倉庫鏈接
-            brython_div &lt;= ") | "  # 右括號和分隔符
-            brython_div &lt;= html.A("Group Site", href=group_site_url)  # 小組網站鏈接
-            brython_div &lt;= " | "  # 分隔符
-            brython_div &lt;= html.A("Group Repo", href=group_repo_url)  # 小組倉庫鏈接
-            brython_div &lt;= html.BR()  # 換行
-    else:
-        print("錯誤:", response.text)
+    def on_complete(req):
+        if req.status == 200 or req.status == 0:
+            # 读取 CSV 文件内容
+            content = req.text
 
-# 調用函數來獲取CSV數據
+            # 解析 CSV 数据并去除标题行
+            data = [line.strip().split(',') for line in content.split('\n')[1:] if line.strip()]
+
+            # 获取 HTML 中的标记位置
+            brython_div = document["brython_div1"]
+            course_title = "cd2024"
+
+            # 生成学生信息链接并添加到 brython_div 中
+            for index, (student_id, github_username, group) in enumerate(data, start=1):
+                github_username = github_username if github_username else "000"
+                site_url = f"https://{github_username}.github.io/{course_title}"
+                repo_url = f"https://github.com/{github_username}/{course_title}"
+                group_site_url = f"https://mdecd2024.github.io/2a-midag{group}"
+                group_repo_url = f"https://github.com/mdecd2024/2a-midag{group}"
+
+                brython_div &lt;= f"{index}. " + html.A(student_id, href=site_url)
+                brython_div &lt;= " ("
+                brython_div &lt;= html.A("repo", href=repo_url)
+                brython_div &lt;= ") | "
+                brython_div &lt;= html.A("Group Site", href=group_site_url)
+                brython_div &lt;= " | "
+                brython_div &lt;= html.A("Group Repo", href=group_repo_url)
+                brython_div &lt;= html.BR()
+
+        else:
+            print("Error:", req.text)
+
+    # 发送 AJAX 请求
+    req = ajax.ajax()
+    req.bind('complete', on_complete)
+    req.open('GET', url, True)
+    req.set_header('content-type', 'application/x-www-form-urlencoded')
+    req.send()
+
+# 调用函数读取 CSV 数据
 fetch_csv_data()
 </pre>
 <p></p>
 <p><span style="color: #ff0000;">兩者差別:</span></p>
-<p>段程式碼是為了從 CSV 文件中獲取數據並生成相應的 HTML 鏈接，和之前提供的程式碼相比，主要有以下幾點不同：</p>
-<ol>
-<li>
-<p><strong>使用 <code>requests</code> 函式庫進行請求</strong>：與之前使用的 <code>ajax.ajax()</code> 不同，這裡使用了 <code>requests</code> 函式庫來發送 GET 請求以獲取 CSV 數據。</p>
-</li>
-<li>
-<p><strong>CSV 數據的解析</strong>：在這個程式碼中，CSV 數據通過 <code>response.text</code> 直接讀取並解析，而不是透過 <code>split('\n')</code> 進行分割。</p>
-</li>
-<li>
-<p><strong>使用 <code>enumerate</code> 函式</strong>：在處理學生數據時，使用了 <code>enumerate</code> 函式來獲取索引值，這樣可以更加簡潔地處理序號。</p>
-</li>
-<li>
-<p><strong>錯誤處理</strong>：這段程式碼包含了一個錯誤處理部分，用於處理請求失敗時的情況，並輸出相應的錯誤信息。</p>
-</li>
-</ol>
-<p>除了這些主要的不同之外，其餘部分基本相同，都是根據 CSV 數據生成相應的 HTML 鏈接並插入到特定的 HTML 元素中。</p><h3>w10 task2</h3>
+<p><span>這段代碼與之前的代碼相比，主要的改進在於我要求其精簡化，相比之前73行，這段精簡程式碼只有47行 及可做跟73行相同方式列出學員數據，寫法講解如下。</span></p>
+<ul>
+<li><span>使用列表推導式來解析 CSV 數據，並在生成學生信息時省略了對空白行的額外判斷。</span></li>
+<li><span> 直接在 enumerate() 函數中指定 start=1，不再單獨定義 index 變量。 </span></li>
+<li><span>使用條件表達式統一處理 GitHub 用戶名的空值情況。</span></li>
+</ul><h3>w10 task2</h3>
 <p><span style="background-color: #ffff00;">任務二:</span>鋼球平衡台 PID 控制與模擬</p>
 <p></p><h3>w10 task3</h3>
 <p><span style="background-color: #ffff00;">任務三:</span>鋼球平衡台零組件繪圖</p><h1>blog</h1>
