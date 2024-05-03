@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>網際內容管理系統 - w7</title><link href="./" rel="alternate"></link><link href="./feeds/w7.atom.xml" rel="self"></link><id>./</id><updated>2024-04-26T18:07:33+08:00</updated><entry><title>2a-midag8 2024 w7 Spring 課程</title><link href="./2024-Spring-w7-blog-tutorial.html" rel="alternate"></link><published>2024-04-07T21:25:00+08:00</published><updated>2024-04-26T18:07:33+08:00</updated><author><name>41023108</name></author><id>tag:None,2024-04-07:./2024-Spring-w7-blog-tutorial.html</id><summary type="html">&lt;p&gt;各週上課內容心得及實作項目&lt;/p&gt;
-</summary><content type="html">&lt;p&gt;各週上課內容心得及實作項目&lt;/p&gt;
-
-
-&lt;h1&gt;更分組網站內容&lt;/h1&gt;
-&lt;p&gt;指派任務與組員，並要求其查找練習2說明如何在 CoppeliaSim 環境中, 利用 IPv6 ZeroMQ Remote API Python 進行兩個自由度的鋼球平衡檯自動控制系統模擬?相關內容。&lt;/p&gt;</content><category term="w7"></category><category term="網誌編寫"></category></entry></feed>
