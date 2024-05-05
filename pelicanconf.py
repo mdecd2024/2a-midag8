@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = 'KMOL'
-SITENAME = '網際內容管理系統'
+AUTHOR = '41023108，41023110，41023155，41023211'
+SITENAME = '2a-midag8'
 # 不要用文章所在目錄作為類別
 USE_FOLDER_AS_CATEGORY = False
 
