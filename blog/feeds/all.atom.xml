@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>2a-midag8</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2024-05-09T21:35:25+08:00</updated><entry><title>2a-midag8 2024 w10~w11 Spring 課程</title><link href="./2024-Spring-w10~11-blog-tutorial.html" rel="alternate"></link><published>2024-05-09T20:39:00+08:00</published><updated>2024-05-09T21:35:25+08:00</updated><author><name>41023108</name></author><id>tag:None,2024-05-09:./2024-Spring-w10~11-blog-tutorial.html</id><summary type="html">&lt;p&gt;第十~十一週實作內容報告&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2a-midag8</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2024-05-09T21:53:10+08:00</updated><entry><title>2a-midag8 2024 w10~w11 Spring 課程</title><link href="./2024-Spring-w10~11-blog-tutorial.html" rel="alternate"></link><published>2024-05-09T20:39:00+08:00</published><updated>2024-05-09T21:53:10+08:00</updated><author><name>41023108</name></author><id>tag:None,2024-05-09:./2024-Spring-w10~11-blog-tutorial.html</id><summary type="html">&lt;p&gt;第十~十一週實作內容報告&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;第十~十一週實作內容報告&lt;/p&gt;
 
 &lt;h1&gt;建立各班學員的倉儲、網站與分組連結&lt;/h1&gt;
-&lt;p&gt;我們透過老師給予的列出 2a 各學員評分相關網站這分資料取得老師所寫得的程式，詢問chatgpt找出相應程式碼，並加入到&lt;a href="https://mdecd2024.github.io/2a-midag8/content/w10%20Task.html頁面。"&gt;2a-midag8 w10 Task&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;我們透過老師給予的列出 2a 各學員評分相關網站這分資料取得老師所寫得的程式，詢問chatgpt找出相應程式碼，並加入到&lt;a href="https://mdecd2024.github.io/2a-midag8/content/w10%20Task.html"&gt;2a-midag8 w10 Task&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;兩個程式碼最大差別在於本來有74行程式被寫得只剩下40幾行，chatgpt用更簡短方式列印出跟老師所寫的內容一致的結果，畢竟是直接沿用寫好的程式碼，所以列出的結果才會一樣。&lt;/p&gt;
 &lt;h1&gt;鋼球平衡台 PID 控制與模擬&lt;/h1&gt;
 &lt;p&gt;從六個述說平衡台pdf報告中分別撰寫各報告摘要。
@@ -11,14 +11,14 @@
 &lt;h1&gt;鋼球平衡台零組件繪圖&lt;/h1&gt;
 &lt;p&gt;從此Solvespace_model _2d_for_cd2024_w6.7z解壓縮檔案中開啟零件，根據零件尺寸在NX中進行鋼球平衡台繪製，過程中覺得最難用的部分是在組合，因不熟悉介面操作，前後花費半小時再組裝，本來有錄製完整組裝零件但因上傳限制又剪成大概13分鐘長，這部份在
 [2a-midag8 w10 task3]
-[2a-midag8 w10 task3]:https://mdecd2024.github.io/2a-midag8/content/w10%20task3.html中 有詳細影片及所有零件/組合圖壓縮檔可供下載。&lt;/p&gt;</content><category term="w10~11"></category><category term="網誌編寫"></category></entry><entry><title>2024 協同課程a-w9</title><link href="./2024-%E5%8D%94%E5%90%8C%E8%AA%B2%E7%A8%8Ba-w9-41023110.html" rel="alternate"></link><published>2024-05-03T16:36:00+08:00</published><updated>2024-05-09T21:35:25+08:00</updated><author><name>41023110</name></author><id>tag:None,2024-05-03:./2024-協同課程a-w9-41023110.html</id><summary type="html">&lt;p&gt;2024 Spring 網際內容管理與協同產品設計實習課程教學導引&lt;/p&gt;
+[2a-midag8 w10 task3]:https://mdecd2024.github.io/2a-midag8/content/w10%20task3.html中 有詳細影片及所有零件/組合圖壓縮檔可供下載。&lt;/p&gt;</content><category term="w10~11"></category><category term="網誌編寫"></category></entry><entry><title>2024 協同課程a-w9</title><link href="./2024-%E5%8D%94%E5%90%8C%E8%AA%B2%E7%A8%8Ba-w9-41023110.html" rel="alternate"></link><published>2024-05-03T16:36:00+08:00</published><updated>2024-05-09T21:53:10+08:00</updated><author><name>41023110</name></author><id>tag:None,2024-05-03:./2024-協同課程a-w9-41023110.html</id><summary type="html">&lt;p&gt;2024 Spring 網際內容管理與協同產品設計實習課程教學導引&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;2024 Spring 網際內容管理與協同產品設計實習課程教學導引&lt;/p&gt;
 
 
 &lt;h1&gt;w4-1 教學影片分組整理&lt;/h1&gt;
 &lt;p&gt;w9協同帳號資料處理，根據老師給的範例去作出一個新的網站連結，連結內的 Ace 編輯器執行後可以正常列出班級協同相關網站。
 網球平衡台PID控制與模擬。根據老師給的7z檔中6個PDF檔，閱讀後並每篇解讀寫一個文中的摘要與弊端報告。
-用NX與Solvespace繪製網球台零件。並用ZMQ RemoteAPI Python 控制程式模擬鋼球平衡台場景&lt;/p&gt;</content><category term="a-w9-41023110"></category><category term="網誌編寫 41023110"></category></entry><entry><title>2024 Spring 課程 W3</title><link href="./2024-Spring-W3-blog-tutorial.html" rel="alternate"></link><published>2024-04-26T14:11:00+08:00</published><updated>2024-05-09T21:35:25+08:00</updated><author><name>41023108 41023110 41023155 41023211</name></author><id>tag:None,2024-04-26:./2024-Spring-W3-blog-tutorial.html</id><summary type="html">&lt;p&gt;2024 Spring 網際內容管理與協同產品設計實習課程教學導引.&lt;/p&gt;
+用NX與Solvespace繪製網球台零件。並用ZMQ RemoteAPI Python 控制程式模擬鋼球平衡台場景&lt;/p&gt;</content><category term="a-w9-41023110"></category><category term="網誌編寫 41023110"></category></entry><entry><title>2024 Spring 課程 W3</title><link href="./2024-Spring-W3-blog-tutorial.html" rel="alternate"></link><published>2024-04-26T14:11:00+08:00</published><updated>2024-05-09T21:53:10+08:00</updated><author><name>41023108 41023110 41023155 41023211</name></author><id>tag:None,2024-04-26:./2024-Spring-W3-blog-tutorial.html</id><summary type="html">&lt;p&gt;2024 Spring 網際內容管理與協同產品設計實習課程教學導引.&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;2024 Spring 網際內容管理與協同產品設計實習課程教學導引.&lt;/p&gt;
 
 &lt;h1&gt;將英文文章翻譯成中文並整理&lt;/h1&gt;
@@ -239,7 +239,7 @@ Steel Ball Balancing Platform System Design}
 &lt;h1&gt;w3利用 Github Classroom 指定分組倉儲&lt;/h1&gt;
 &lt;p&gt;1.由組長建立2a-midagx名稱的倉儲分組網站，並找定組員join至剛建立的網站，使用codespaces維護倉儲網站，可直接安裝模組啟動動態網站，做法上和replit很像，一樣使用python3 main.py進入分組動態網站，使用python3 -m http.sever開啟靜態網站，說明codespaces使用上的限制。 2.使用replit管理github分組倉儲&lt;/p&gt;
 &lt;h1&gt;利用 Codespaces 維護倉儲與網站&lt;/h1&gt;
-&lt;p&gt;利用code中的Codespaces維護，開啟後用終端機開啟動態靜態網站，也可以在裡面更新網誌，記得在開啟python3前需要先安裝模組，就跟replit一樣需先確認是否有安裝過模組。&lt;/p&gt;</content><category term="W3"></category><category term="網誌編寫"></category></entry><entry><title>2024 Spring 課程 W2</title><link href="./2024-Spring-w2-blog-tutorial.html" rel="alternate"></link><published>2024-04-12T17:56:00+08:00</published><updated>2024-05-09T21:35:25+08:00</updated><author><name>41023108 41023110 41023155 41023211</name></author><id>tag:None,2024-04-12:./2024-Spring-w2-blog-tutorial.html</id><summary type="html">&lt;p&gt;2024 Spring 網際內容管理與協同產品設計實習課程教學導引.&lt;/p&gt;
+&lt;p&gt;利用code中的Codespaces維護，開啟後用終端機開啟動態靜態網站，也可以在裡面更新網誌，記得在開啟python3前需要先安裝模組，就跟replit一樣需先確認是否有安裝過模組。&lt;/p&gt;</content><category term="W3"></category><category term="網誌編寫"></category></entry><entry><title>2024 Spring 課程 W2</title><link href="./2024-Spring-w2-blog-tutorial.html" rel="alternate"></link><published>2024-04-12T17:56:00+08:00</published><updated>2024-05-09T21:53:10+08:00</updated><author><name>41023108 41023110 41023155 41023211</name></author><id>tag:None,2024-04-12:./2024-Spring-w2-blog-tutorial.html</id><summary type="html">&lt;p&gt;2024 Spring 網際內容管理與協同產品設計實習課程教學導引.&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;2024 Spring 網際內容管理與協同產品設計實習課程教學導引.&lt;/p&gt;
 
 &lt;h1&gt;甲班第一組組長如何建立 midag1 Team&lt;/h1&gt;
@@ -330,7 +330,7 @@ code每月給定數量相同，編輯可以在介面外，在上傳時開啟就�
 &lt;p&gt;2a 建個人課程倉儲 登入個人github帳號，使用老師給的 https://github.com/mdecycu/cmsimde_site 網址倉儲建立名稱為github名稱/cd2024倉儲。&lt;/p&gt;
 &lt;p&gt;將個人倉儲 import 至 Replit 登入replit，建議以github直接登入可以在後續認證時他會幫你做相關連接查驗。&lt;/p&gt;
 &lt;p&gt;設定 Github 帳號的雙重認證 進入個人倉儲settings中的ssh and gpg key 項目裡two-factor authentication選項啟動雙重認證，可以綁定手機或手錶，軟體名稱為authy app 有一點別重要，那就是當認證遺失只能以回復碼，才能找回帳號。&lt;/p&gt;
-&lt;p&gt;如何 import 倉儲至 Replit 進行改版 Replit中設定個人網誌的方法，使用markdown目錄原始檔做複製，可複製Pelican的程式碼，只需將其中的內容改成自己所要發表的內容即可，而Pelican轉換完的網誌內容則會出現在blog目錄下，如要將markdown中.md檔轉入blog中變成.html檔指令為pelican markdown -o blog -s local_publishconf.py，除了這個設定外還有其他別的的方式設定，這就得看使用者的帳號是甚麼在做其他設定。&lt;/p&gt;</content><category term="w2"></category><category term="網誌編寫"></category></entry><entry><title>2a-midag8 2024 w8 Spring 課程</title><link href="./2024-Spring-w8-blog-tutorial.html" rel="alternate"></link><published>2024-04-08T14:19:00+08:00</published><updated>2024-05-09T21:35:25+08:00</updated><author><name>41023108</name></author><id>tag:None,2024-04-08:./2024-Spring-w8-blog-tutorial.html</id><summary type="html">&lt;p&gt;第八週實作內容報告&lt;/p&gt;
+&lt;p&gt;如何 import 倉儲至 Replit 進行改版 Replit中設定個人網誌的方法，使用markdown目錄原始檔做複製，可複製Pelican的程式碼，只需將其中的內容改成自己所要發表的內容即可，而Pelican轉換完的網誌內容則會出現在blog目錄下，如要將markdown中.md檔轉入blog中變成.html檔指令為pelican markdown -o blog -s local_publishconf.py，除了這個設定外還有其他別的的方式設定，這就得看使用者的帳號是甚麼在做其他設定。&lt;/p&gt;</content><category term="w2"></category><category term="網誌編寫"></category></entry><entry><title>2a-midag8 2024 w8 Spring 課程</title><link href="./2024-Spring-w8-blog-tutorial.html" rel="alternate"></link><published>2024-04-08T14:19:00+08:00</published><updated>2024-05-09T21:53:10+08:00</updated><author><name>41023108</name></author><id>tag:None,2024-04-08:./2024-Spring-w8-blog-tutorial.html</id><summary type="html">&lt;p&gt;第八週實作內容報告&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;第八週實作內容報告&lt;/p&gt;
 
 
@@ -340,12 +340,12 @@ code每月給定數量相同，編輯可以在介面外，在上傳時開啟就�
 &lt;h2&gt;41023108&lt;/h2&gt;
 &lt;h2&gt;41023110&lt;/h2&gt;
 &lt;h2&gt;41023155&lt;/h2&gt;
-&lt;h2&gt;41023211&lt;/h2&gt;</content><category term="w8"></category><category term="網誌編寫"></category></entry><entry><title>2a-midag8 2024 w7 Spring 課程</title><link href="./2024-Spring-w7-blog-tutorial.html" rel="alternate"></link><published>2024-04-07T21:25:00+08:00</published><updated>2024-05-09T21:35:25+08:00</updated><author><name>41023108</name></author><id>tag:None,2024-04-07:./2024-Spring-w7-blog-tutorial.html</id><summary type="html">&lt;p&gt;各週上課內容心得及實作項目&lt;/p&gt;
+&lt;h2&gt;41023211&lt;/h2&gt;</content><category term="w8"></category><category term="網誌編寫"></category></entry><entry><title>2a-midag8 2024 w7 Spring 課程</title><link href="./2024-Spring-w7-blog-tutorial.html" rel="alternate"></link><published>2024-04-07T21:25:00+08:00</published><updated>2024-05-09T21:53:10+08:00</updated><author><name>41023108</name></author><id>tag:None,2024-04-07:./2024-Spring-w7-blog-tutorial.html</id><summary type="html">&lt;p&gt;各週上課內容心得及實作項目&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;各週上課內容心得及實作項目&lt;/p&gt;
 
 
 &lt;h1&gt;更分組網站內容&lt;/h1&gt;
-&lt;p&gt;指派任務與組員，並要求其查找練習2說明如何在 CoppeliaSim 環境中, 利用 IPv6 ZeroMQ Remote API Python 進行兩個自由度的鋼球平衡檯自動控制系統模擬?相關內容。&lt;/p&gt;</content><category term="w7"></category><category term="網誌編寫"></category></entry><entry><title>2a-midag8 2024 Spring 課程w6</title><link href="./2024-Spring-w6-blog-tutorial.html" rel="alternate"></link><published>2024-03-29T15:00:00+08:00</published><updated>2024-05-09T21:35:25+08:00</updated><author><name>41023108 41023211</name></author><id>tag:None,2024-03-29:./2024-Spring-w6-blog-tutorial.html</id><summary type="html">&lt;p&gt;2024 Spring 網際內容管理與協同產品設計實習課程教學導引.&lt;/p&gt;
+&lt;p&gt;指派任務與組員，並要求其查找練習2說明如何在 CoppeliaSim 環境中, 利用 IPv6 ZeroMQ Remote API Python 進行兩個自由度的鋼球平衡檯自動控制系統模擬?相關內容。&lt;/p&gt;</content><category term="w7"></category><category term="網誌編寫"></category></entry><entry><title>2a-midag8 2024 Spring 課程w6</title><link href="./2024-Spring-w6-blog-tutorial.html" rel="alternate"></link><published>2024-03-29T15:00:00+08:00</published><updated>2024-05-09T21:53:10+08:00</updated><author><name>41023108 41023211</name></author><id>tag:None,2024-03-29:./2024-Spring-w6-blog-tutorial.html</id><summary type="html">&lt;p&gt;2024 Spring 網際內容管理與協同產品設計實習課程教學導引.&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;2024 Spring 網際內容管理與協同產品設計實習課程教學導引.&lt;/p&gt;
 
 &lt;p&gt;第六週實作內容報告&lt;/p&gt;
@@ -364,13 +364,13 @@ code每月給定數量相同，編輯可以在介面外，在上傳時開啟就�
 &lt;h1&gt;41023211&lt;/h1&gt;
 &lt;p&gt;組員自評: 70分&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://mdecd2024.github.io/2a-midag8/content/w4%202a%20hw2(w1.html"&gt;2a-midag8 w4 2a hw1&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;將w4-w5週影片剪輯實作網址個別建立在此頁每個組員學號下方，並讓其自評自己的分數 也能知道剪輯的各週影片都有什麼?&lt;/p&gt;</content><category term="w6"></category><category term="網誌編寫"></category><category term="pelican"></category></entry><entry><title>2a-midag8 2024 Spring 課程w5</title><link href="./2024-Spring-w5-blog-tutorial.html" rel="alternate"></link><published>2024-03-15T15:00:00+08:00</published><updated>2024-05-09T21:35:25+08:00</updated><author><name>41023108 41023211</name></author><id>tag:None,2024-03-15:./2024-Spring-w5-blog-tutorial.html</id><summary type="html">&lt;p&gt;2024 Spring 網際內容管理與協同產品設計實習課程教學導引.&lt;/p&gt;
+&lt;p&gt;將w4-w5週影片剪輯實作網址個別建立在此頁每個組員學號下方，並讓其自評自己的分數 也能知道剪輯的各週影片都有什麼?&lt;/p&gt;</content><category term="w6"></category><category term="網誌編寫"></category><category term="pelican"></category></entry><entry><title>2a-midag8 2024 Spring 課程w5</title><link href="./2024-Spring-w5-blog-tutorial.html" rel="alternate"></link><published>2024-03-15T15:00:00+08:00</published><updated>2024-05-09T21:53:10+08:00</updated><author><name>41023108 41023211</name></author><id>tag:None,2024-03-15:./2024-Spring-w5-blog-tutorial.html</id><summary type="html">&lt;p&gt;2024 Spring 網際內容管理與協同產品設計實習課程教學導引.&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;2024 Spring 網際內容管理與協同產品設計實習課程教學導引.&lt;/p&gt;
 
 &lt;h1&gt;w5&lt;/h1&gt;
 &lt;p&gt;統整網誌
 將組員個人網誌納入分組倉儲目錄下，並持續更新各影片剪輯後製，在嶔入影片過程中多次校正文檔，我們使用的軟體是https://www.capcut.com/my-edit這個軟體，目前字幕只支援簡體中文所以我們必須在翻完後再重新拉回進度條去逐字更改翻錯的內容及將簡體字改成繁體字，20分鐘以上的影片通常都會要剪上1hr以上時間。&lt;/p&gt;
-&lt;p&gt;這周比較枯燥乏味江老師的影片從第一週到第四周的影片上字幕，我們因人手不足每個人至少都要減8至9片的影片，用CAPCUT城市去剪片，剪完影片字幕還是簡體中文，還得回去影片的中間把簡體中文改成繁體中文，剪完還要上傳到YOUTUBE，YOUTUBE影片只要影片超過20分鐘還會跳出提示影片過長，又要回去剪片軟體把影片分成上下兩部，這對我們這組完全不利，四個人要把1~4周的影片剪完還要用網誌內容等等，時間就要花比其他組的還要多。&lt;/p&gt;</content><category term="w5"></category><category term="網誌編寫"></category><category term="pelican"></category></entry><entry><title>2a-midag8 2024 w4 Spring 課程</title><link href="./2024-Spring-w4-blog-tutorial.html" rel="alternate"></link><published>2024-03-13T16:18:00+08:00</published><updated>2024-05-09T21:35:25+08:00</updated><author><name>41023108,41023110</name></author><id>tag:None,2024-03-13:./2024-Spring-w4-blog-tutorial.html</id><summary type="html">&lt;p&gt;第四週實作內容報告&lt;/p&gt;
+&lt;p&gt;這周比較枯燥乏味江老師的影片從第一週到第四周的影片上字幕，我們因人手不足每個人至少都要減8至9片的影片，用CAPCUT城市去剪片，剪完影片字幕還是簡體中文，還得回去影片的中間把簡體中文改成繁體中文，剪完還要上傳到YOUTUBE，YOUTUBE影片只要影片超過20分鐘還會跳出提示影片過長，又要回去剪片軟體把影片分成上下兩部，這對我們這組完全不利，四個人要把1~4周的影片剪完還要用網誌內容等等，時間就要花比其他組的還要多。&lt;/p&gt;</content><category term="w5"></category><category term="網誌編寫"></category><category term="pelican"></category></entry><entry><title>2a-midag8 2024 w4 Spring 課程</title><link href="./2024-Spring-w4-blog-tutorial.html" rel="alternate"></link><published>2024-03-13T16:18:00+08:00</published><updated>2024-05-09T21:53:10+08:00</updated><author><name>41023108,41023110</name></author><id>tag:None,2024-03-13:./2024-Spring-w4-blog-tutorial.html</id><summary type="html">&lt;p&gt;第四週實作內容報告&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;第四週實作內容報告&lt;/p&gt;
 
 
@@ -382,7 +382,7 @@ code每月給定數量相同，編輯可以在介面外，在上傳時開啟就�
 &lt;h1&gt;w4-1 教學影片分組整理&lt;/h1&gt;
 &lt;p&gt;w4 2a 分組任務
 負責w3 a.b的影片
-使用capcut編輯字幕與影片剪輯，把翻譯好的影片上傳到youtube並嵌入在txt，在記事本依檔照程序碼排版。上傳到組與個人downloads。&lt;/p&gt;</content><category term="w4"></category><category term="網誌編寫"></category></entry><entry><title>2024 Spring 課程 W1</title><link href="./2024-Spring-w1-blog-tutorial.html" rel="alternate"></link><published>2024-02-18T11:56:00+08:00</published><updated>2024-05-09T21:35:25+08:00</updated><author><name>kmol</name></author><id>tag:None,2024-02-18:./2024-Spring-w1-blog-tutorial.html</id><summary type="html">&lt;p&gt;2024 Spring 網際內容管理與協同產品設計實習課程教學導引.&lt;/p&gt;
+使用capcut編輯字幕與影片剪輯，把翻譯好的影片上傳到youtube並嵌入在txt，在記事本依檔照程序碼排版。上傳到組與個人downloads。&lt;/p&gt;</content><category term="w4"></category><category term="網誌編寫"></category></entry><entry><title>2024 Spring 課程 W1</title><link href="./2024-Spring-w1-blog-tutorial.html" rel="alternate"></link><published>2024-02-18T11:56:00+08:00</published><updated>2024-05-09T21:53:10+08:00</updated><author><name>kmol</name></author><id>tag:None,2024-02-18:./2024-Spring-w1-blog-tutorial.html</id><summary type="html">&lt;p&gt;2024 Spring 網際內容管理與協同產品設計實習課程教學導引.&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;2024 Spring 網際內容管理與協同產品設計實習課程教學導引.&lt;/p&gt;
 
 
