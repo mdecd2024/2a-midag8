@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>2a-midag8 - W3</title><link href="./" rel="alternate"></link><link href="./feeds/w3.atom.xml" rel="self"></link><id>./</id><updated>2024-05-09T22:01:49+08:00</updated><entry><title>2024 Spring 課程 W3</title><link href="./2024-Spring-W3-blog-tutorial.html" rel="alternate"></link><published>2024-04-26T14:11:00+08:00</published><updated>2024-05-09T22:01:49+08:00</updated><author><name>41023108 41023110 41023155 41023211</name></author><id>tag:None,2024-04-26:./2024-Spring-W3-blog-tutorial.html</id><summary type="html">&lt;p&gt;2024 Spring 網際內容管理與協同產品設計實習課程教學導引.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2a-midag8 - w3</title><link href="./" rel="alternate"></link><link href="./feeds/w3.atom.xml" rel="self"></link><id>./</id><updated>2024-05-11T23:13:40+08:00</updated><entry><title>2a-midag8 2024 w3 Spring 課程</title><link href="./2024-Spring-w3-blog-tutorial.html" rel="alternate"></link><published>2024-03-06T14:00:00+08:00</published><updated>2024-05-11T23:13:40+08:00</updated><author><name>41023108,41023110,41023155,41023211</name></author><id>tag:None,2024-03-06:./2024-Spring-w3-blog-tutorial.html</id><summary type="html">&lt;p&gt;2024 Spring 網際內容管理與協同產品設計實習課程教學導引.&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;2024 Spring 網際內容管理與協同產品設計實習課程教學導引.&lt;/p&gt;
 
 &lt;h1&gt;將英文文章翻譯成中文並整理&lt;/h1&gt;
@@ -220,4 +220,4 @@ Steel Ball Balancing Platform System Design}
 &lt;h1&gt;w3利用 Github Classroom 指定分組倉儲&lt;/h1&gt;
 &lt;p&gt;1.由組長建立2a-midagx名稱的倉儲分組網站，並找定組員join至剛建立的網站，使用codespaces維護倉儲網站，可直接安裝模組啟動動態網站，做法上和replit很像，一樣使用python3 main.py進入分組動態網站，使用python3 -m http.sever開啟靜態網站，說明codespaces使用上的限制。 2.使用replit管理github分組倉儲&lt;/p&gt;
 &lt;h1&gt;利用 Codespaces 維護倉儲與網站&lt;/h1&gt;
-&lt;p&gt;利用code中的Codespaces維護，開啟後用終端機開啟動態靜態網站，也可以在裡面更新網誌，記得在開啟python3前需要先安裝模組，就跟replit一樣需先確認是否有安裝過模組。&lt;/p&gt;</content><category term="W3"></category><category term="網誌編寫"></category></entry></feed>
+&lt;p&gt;利用code中的Codespaces維護，開啟後用終端機開啟動態靜態網站，也可以在裡面更新網誌，記得在開啟python3前需要先安裝模組，就跟replit一樣需先確認是否有安裝過模組。&lt;/p&gt;</content><category term="w3"></category><category term="網誌編寫"></category></entry></feed>
