@@ -491,11 +491,181 @@ fetch_csv_data()
 <p><a href="https://kehueisin.github.io/cd2024/content/w12%20task1.html">41023108 繪製零件</a></p>
 <p><strong>41023110 繪製零件</strong></p>
 <p><strong>41023155 繪製零件</strong></p>
-<p><strong>41023211 繪製零件</strong></p><h2>w12 task</h2>
+<p><strong>41023211 繪製零件</strong></p>
+<h2>w12 task</h2>
 <p>此部分和前面的w10-w11合併一起</p>
 <p>若要繪製python版零組件教學如下範例影片所示:</p>
 <p><span style="color: #ff0000;">建立 block 與挖孔</span></p>
-<p><span style="color: #ff0000;"></span> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/XVTnEnrcbis?si=t_ex6DKhN8j2Q0o1" title="YouTube video player" width="560"></iframe></p><h1>blog</h1>
+<p><span style="color: #ff0000;"></span> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/XVTnEnrcbis?si=t_ex6DKhN8j2Q0o1" title="YouTube video player" width="560"></iframe></p>
+<h3>w12 task2</h3>
+<h3>w12 task3</h3>
+<p><span style="background-color: #ff6600;">在執行前須先安裝Python 模組</span>: pip install pyzmq cbor keyboard</p>
+<p><span style="background-color: #ffcc00;">網頁開啟</span>:http://<span>IP位置</span>:23020 </p>
+<p>控制整個場景的judge.py檔，唯一更動部分只有client = RemoteAPIClient('IP位置', 23000)這行括號中的Ip位置。</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false"># pip install pyzmq cbor keyboard
+from zmqRemoteApi import RemoteAPIClient
+from zmqRemoteApi_IPv6 import RemoteAPIClient
+import keyboard
+import random
+
+client = RemoteAPIClient('球場所在電腦_IP_位址或符號名稱', 23000)
+
+print('Program started')
+sim = client.getObject('sim')
+sim.startSimulation()
+print('Simulation started')
+
+def avoid(x,y):
+    #bubbleRob = sim.getObject('/brickRob')
+    #bubbleRob2 = sim.getObject('/brickRob2')
+    #b1=sim.getObjectPosition(bubbleRob,-1)
+    #b2=sim.getObjectPosition(bubbleRob2,-1)
+    
+    #while (((b1[0]&lt;x+0.5) and (b1[0]&gt;x-0.5)) and ((b1[1]&lt;y+0.5) and (b1[1]&gt;y-0.5)))or(((b2[0]&lt;x+0.5) and (b2[0]&gt;x-0.5)) and ((b2[1]&lt;y+0.5) and (b2[1]&gt;y-0.5))):
+    #x=random.uniform(-1,1)
+    #y=random.uniform(-1,1)
+       # print(x)
+       # print(y)
+    position2= [x, y, 2]
+    ball = sim.createPureShape(1, options, size, 1, None)
+    sim.setObjectPosition(ball, -1, position2)
+    
+size = [0.1, 0.1, 0.1]
+position = [0, 0, 2]
+options = 8
+def existball():
+    try:
+        Sphere= sim.getObject('/Sphere')
+    except Exception as e:
+        #print("Failed to get object: ", e)
+        return 1
+    return 0
+
+if existball()==1:    
+    ball = sim.createPureShape(1, options, size, 1, None)
+    sim.setObjectPosition(ball, -1, position)
+    ball = sim.getObject('/Sphere')
+    sim.setObjectSpecialProperty(ball, sim.objectspecialproperty_detectable)
+
+while True:
+
+    ball = sim.getObject('/Sphere')
+    ball_position =sim.getObjectPosition(ball,-1)
+    if ball_position[1]&lt;-1.865 or ball_position[1]&gt;1.865:
+        #sim.removeObject(ball)
+        sim.setObjectAlias(ball, 'ball')
+        ball2=sim.getObject('/ball')
+        sim.removeObject(ball2)
+        avoid(random.uniform(-1,1),random.uniform(-1,1))
+        #avoid(0,2)
+        ball = sim.getObject('/Sphere')
+        sim.setObjectSpecialProperty(ball, sim.objectspecialproperty_detectable)
+ 
+
+
+
+
+</pre>
+<p></p>
+<p>各球員控制是player.py這個檔，跟上面一樣改的差不多，就是球員編號部分要改成相應的玩家。</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false"># pip install pyzmq cbor keyboard
+from zmqRemoteApi import RemoteAPIClient
+from zmqRemoteApi_IPv6 import RemoteAPIClient
+import keyboard
+import random
+import math
+
+
+
+client = RemoteAPIClient('球場所在電腦_IP_位址或符號名稱', 23000)
+#client = RemoteAPIClient('2001:288:6004:17:2023:cda:4:6', 23000)
+
+print('Program started')
+sim = client.getObject('sim')
+#sim.startSimulation()
+print('Simulation started')
+
+v=8
+a=40
+
+#選擇控制的球員 ## 此處要注意!!
+player='/a_player1'
+#player='/a_player2'
+#player='/a_player3'
+#player='/a_player4'
+#player='/b_player1'
+#player='/b_player2'
+#player='/b_player3'
+#player='/b_player4'
+
+
+
+def setVelocity(lfwV, rfwV,lbwV, rbwV):
+    leftMotor1 = sim.getObject(player+'/joint_lf')
+    rightMotor1 = sim.getObject(player+'/joint_rf')
+    leftMotor2 = sim.getObject(player+'/joint_lb')
+    rightMotor2 = sim.getObject(player+'/joint_rb')
+    sim.setJointTargetVelocity(leftMotor1, lfwV)
+    sim.setJointTargetVelocity(rightMotor1, rfwV)
+    sim.setJointTargetVelocity(leftMotor2, lbwV)
+    sim.setJointTargetVelocity(rightMotor2, rbwV)
+    #輸入四個變數分別給四個軸速度
+    
+def setangel(y):
+    ontology= sim.getObject(player)
+    angel = [-90*math.pi/180, y*math.pi/180, 0*math.pi/180]
+    leftMotor = sim.getObject(player+'/joint_lf')
+    rightMotor = sim.getObject(player+'/joint_rf')
+    sim.setObjectOrientation(leftMotor, ontology, angel)
+    sim.setObjectOrientation(rightMotor, ontology, angel)
+    #輸入一個變數改變前輪方向
+def controlangel(y):
+    if keyboard.is_pressed('a'):
+        setangel(-y)
+    elif keyboard.is_pressed('d'):
+        setangel(y)
+    else:
+        setangel(0)
+def turnover():
+    floor= sim.getObject('/Floor')
+    player1 = sim.getObject(player)
+    a=sim.getObjectOrientation(player1,floor)
+    b=sim.getObjectPosition(player1,floor)
+    a[0]=0
+    a[1]=0
+    b[2]=0.3
+    sim.setObjectPosition(player1,floor,b)
+    sim.setObjectOrientation(player1,floor,a)
+def playercontrol(x,y):
+    if keyboard.is_pressed('w'):
+        setVelocity(x,x,x,x)
+        controlangel(y)
+    elif keyboard.is_pressed('s'):
+        setVelocity(-x,-x,-x,-x)
+        controlangel(y)
+    elif keyboard.is_pressed('a'):
+        setVelocity(-x,x,-x,x)
+    elif keyboard.is_pressed('d'):
+        setVelocity(x,-x,x,-x)
+    elif keyboard.is_pressed('space'):
+        turnover()
+    elif keyboard.is_pressed('q'):
+        # stop simulation
+        sim.stopSimulation()
+    else:
+        setVelocity(0, 0, 0, 0)
+        setangel(0)
+  
+while True:
+    if keyboard.is_pressed('shift'):
+        playercontrol(v+4,a-20)
+    else:
+        playercontrol(v,a)</pre>
+<p></p>
+<p>實際操作影片:</p>
+<p></p>
+<p><span style="background-color: #ffcc00;">問題探討:</span></p>
+<p>我們這組只有4位組員，所以我將另外4台車子刪除，其中在刪除<span>player.py這個檔時，沒注意到車子編碼，導致在執行player這個檔案一直出錯，後將車子相應程式碼改回就能做動，這部分在執行時，要特別注意!!!</span></p><h1>blog</h1>
 <p><span style="color: #ff0000;">Replit/Codespaces</span></p>
 <ol>
 <li>
