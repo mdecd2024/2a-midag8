@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2a-midag8 - w2</title><link href="./" rel="alternate"></link><link href="./feeds/w2.atom.xml" rel="self"></link><id>./</id><updated>2024-05-19T15:29:34+08:00</updated><entry><title>2a-midag8 2024 w2 Spring 課程</title><link href="./2024-Spring-w2-blog-tutorial.html" rel="alternate"></link><published>2024-03-01T14:00:00+08:00</published><updated>2024-05-19T15:29:34+08:00</updated><author><name>41023108,41023110,41023155,41023211</name></author><id>tag:None,2024-03-01:./2024-Spring-w2-blog-tutorial.html</id><summary type="html">&lt;p&gt;2024 Spring 網際內容管理與協同產品設計實習課程教學導引.&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;2024 Spring 網際內容管理與協同產品設計實習課程教學導引.&lt;/p&gt;
+
+&lt;h1&gt;甲班第一組組長如何建立 midag1 Team&lt;/h1&gt;
+&lt;p&gt;在這部影片我學到了如何用Codespaces維護2a-midag8分組倉儲 操作歸納如下
+用 Codespaces 開啟動態網頁
+執行以下命令使 init_replit 檔案具有執行權限：
+chmod u+x init_replit
+執行 init_replit 檔案：
+./init_replit
+執行 main.py 檔案：
+python3 main.py
+用 Codespaces 開啟靜態網頁
+執行以下命令啟動 Python 內建的簡易伺服器：
+python3 -m http.server
+如何進行改版
+使用 git status 命令查看目前的修改狀態。
+使用 git add . 命令將所有修改的檔案添加到暫存區。
+使用 git commit -m "新增的的內容" 命令提交修改，並填入適合的提交訊息。
+使用 git push 將本地的提交推送到遠端倉儲。&lt;/p&gt;
+&lt;h1&gt;如何利用近端可攜系統維護分組網站&lt;/h1&gt;
+&lt;p&gt;在這部影片我學到了如何用近端可攜系統維護分組網站 操作歸納如下
+1.SSH 金鑰： 使用 Puttygen 建立一把 SSH 金鑰並將其存儲為 .ppk 格式的檔案。
+2.SSH 金鑰導入 Putty： 使用 Putty 將 SSH 金鑰導入，以便在遠端伺服器上進行身份驗證。
+3.PuTTY 會話設定： 在 Regedit 中找到 HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\Sessions\github.com 鍵，將其匯出為 .reg 檔案，這將保存你的 PuTTY 會話設定。
+4.本地端進行改版：
+切換到暫存目錄：
+cd tmp
+克隆倉庫：
+git clone --recurse-submodules git@github.com:mdecd2024/2a-midag1.git
+進入克隆的倉庫目錄：
+cd 2a-midag1
+進行修改和提交：&lt;/p&gt;
+&lt;h1&gt;進行修改...&lt;/h1&gt;
+&lt;p&gt;git add .
+git commit -m "自己要推的東西"
+推送到遠端倉庫：
+git push
+5.其他使用者推送：
+獲取你的 IPv4 地址：
+ipconfig
+在組別下的 Python 腳本中導入你的 IPv4 環境。
+允許組別中的其他成員更新和推送修改。&lt;/p&gt;
+&lt;h1&gt;如何利用近端可攜系統維護分組網站w2-1 說明甲班第一組組長如何建立 midag1 Team, 並利用 Codespaces 維護 2a-midag1 分組倉儲&lt;/h1&gt;
+&lt;p&gt;用github classroom建立組別倉儲，組長在or create a new team處以midag X 來稱謂組別名稱並+create team創立。在組別創立後，組員各自去join進入組別內。倉儲完全建立好後去到倉儲的settings並選取pages就可進入主分支。啟動完github pages就可以做code，並使用codespaces來維護內容。在codespaces中有許多終端機許多埠號資源可使用，不需要再公用443。啟動終端機要先安裝模組。使用者+執行+檔案位置=chmod u+x init_replit執行，執行安裝好後會直接給予2記憶體容量。但沒有run了，所以要在自己設定python3 main.py執行動態，利用8080幫我們開啟瀏覽器。連結埠號會呈現亂碼，所以別人無法進入。login進入動態後就可更改內容。終端機每個人每月都有120code小時。要push倉儲要新增終端機後，進行git add-&amp;gt;git commit"網頁標題"，執行後就會直接推上不需要在轉檔。啟動靜態要在新增終端機，有python3內建模組了就可以直接http.server直接啟動埠號，8000會自動開啟瀏覽器連結，就可以直接進入到靜態。用完codespaces要在關閉code讓計時暫停。&lt;/p&gt;
+&lt;h1&gt;w2-2 說明如何利用Replit管理從 Classroom 取得的分組倉儲&lt;/h1&gt;
+&lt;p&gt;在Replit中需要新建import中不會有分組的網站，需要用from url來導入。導入後要改成python模式在import，就會推入分組倉儲，但是權限並沒有Replit上。我們還沒有身分去維護分組倉儲，要在shell中執行ssh-keygen就會跟s.cycu上一樣。之後要去找導入的倉儲位置，利用出現+工作=pwd執行，就會出現倉儲位置在home runnre下面。就知道讓分組倉儲跳到runner就可以進入.ssh。回到shell中利用更換目錄cd ../執行就可以跳到runner下，在常列印ls -l執行。就可以看到出現的pub在組長下，就有可用pub。再來要建立個人id。到檔案中尋找putty，確認有putty就要新增ssh並複製上import儲存。再去到putty內看到puttygen.exe要對應格式，在puttygen.exe要generate產生亂數，並出現內容全部複製到對應組長倉儲設定下settings，在settings中貼上複製的內容。id要存兩個地方，另一個要在ssh裡就是rsa，兩個id都儲存後就會載入並秀出pub key。&lt;/p&gt;
+&lt;h1&gt;w2-3 如何利用近端可攜環境與外部 IPv4 開啟動態網站。&lt;/h1&gt;
+&lt;p&gt;用ssh來啟動它，要克隆它去到靜態拉出putty，近端中沒有任何settings。建立之後會存在系統登錄閘，在黑窗用regedit機制跑可以使三個倉儲同步，就不怕code用完。並且有外擴ipv4等同有一個伺服器，就算在遠端去到防火牆設置ip就能進入。用PuTTY Configuration輸入ip定github.com，在sessions也是輸入github.com，並到ssh把剛設立的ppk給予它。倉儲要在常用資料位置，讓他可以隨時啟動，啟動近端時目錄可以方便鎖定。在ssh的credentials中的機制設置對應的資料夾中的ppk位置，在任何一台開起可攜環境後續就不會出現跑掉的問題。save後open後會給予一把key，此key連線時是無法取得的。存取github.com的檔案要匯出在可攜環境。若有對應的key並有open過了兩條件，那是可以有權限用ssh抓取下來。改版後就可以推回倉儲。在近端就自由了，可以啟動動態進入。之後小組可以各自獨立編輯，不會受他人干擾。若要讓組員連接過來，要先改密碼之後查詢ip，並複製到槽中的init.py去修改，丟入外部ip儲存，使其電腦變成一台主機。在cms一次組員就可以動作了&lt;/p&gt;
+&lt;h1&gt;w2-4如何用Github Codespaces維護網站內容。&lt;/h1&gt;
+&lt;p&gt;每一個倉儲都有，在完成建立組倉儲後有code就可以改版。
+任何一個倉儲中都有配置code，codespaces是一個線上整合環境與replit相似，只是介面是另一個配置。
+在倉儲下可以建一個在主分之來建codespaces。
+先啟動動態在功能表還原終端系統，並新增一個終端系統，有兩意思給指令分別啟動動態與靜態。
+在開始run後要執行python3 main.py，遇到執行時沒有flask模組。
+就要去chmod u+x init-replit讓程式可以執行，讓他幫其安裝對應模組。最後在./init-replit。
+網站就會給一個阜可以開啟動態。要在python3 mhttp.senver 啟動一個模組，因系統帶有一個動態一個靜態。
+靜態還有一個index，更且有一個index可以啟動，帶進編輯器。
+index阻礙小輸送快速，約0秒就跳進content跟index，只要用這指令啟用靜態就可以看到更改了，改版會力馬有反應。
+每一次阜號都是不一樣安全性高。
+code每月給定數量相同，編輯可以在介面外，在上傳時開啟就好，使用完後要記得關閉，每月用量平均好就可以一直免費使用。&lt;/p&gt;
+&lt;h1&gt;w2-5說明如何利用近端可攜系統維護分組網站。&lt;/h1&gt;
+&lt;p&gt;用ssh來動倉儲，需要有settings。
+去到PuTTY Configuration中可看到盡端還沒有settings，表示見了之後會存到系統的登入閘。
+所以可用regedit看到三個倉儲都可同步。
+從PuTTY開始連線到github.com並把settings也存到github.com，要把剛才的ppy給它。
+但目前ppk是在C槽中，開關機的話就會不見，所以要拉到外部隨身碟，就編可攜的。
+在實體的路徑下去進入，就可以去clone下來，並切換到c槽git clone+submodules git+帳號+倉儲作業名稱執行。
+有對應settings的key並且open過了，就有權限可以拉下來。&lt;/p&gt;
+&lt;h1&gt;W2&lt;/h1&gt;
+&lt;p&gt;建立Github Classroom 指定分組倉儲，並使用replit、Codespaces及可攜環境維護分組倉儲，在git clone至近端執行動態網站.&lt;/p&gt;
+&lt;h2&gt;利用 Github Classroom 指定分組倉儲&lt;/h2&gt;
+&lt;p&gt;1.由組長建立2a-midagx名稱的倉儲分組網站，並找定組員join至剛建立的網站，使用codespaces維護倉儲網站，可直接安裝模組啟動動態網站，做法上和replit很像，一樣使用python3 main.py進入分組動態網站，使用python3 -m http.sever開啟靜態網站，說明codespaces使用上的限制。
+2.使用replit管理github分組倉儲&lt;/p&gt;
+&lt;h2&gt;利用 Codespaces 維護倉儲與網站&lt;/h2&gt;
+&lt;p&gt;利用code中的Codespaces維護，開啟後用終端機開啟動態靜態網站，也可以在裡面更新網誌，記得在開啟python3前需要先安裝模組，就跟replit一樣需先確認是否有安裝過模組。&lt;/p&gt;
+&lt;h2&gt;在近端執行動態網站&lt;/h2&gt;
+&lt;p&gt;可攜環境需先至mde.tw網站上下載 portable_2024.7z 這個壓縮檔案，解壓縮至個人隨身系統，步驟如下&lt;/p&gt;
+&lt;pre class="brush: python"&gt;
+1.創建putty中的key
+2.開啟可攜系統cmd
+3.開啟後輸入cd tmp 導入tmp目錄中
+4.進去tmp後 輸入git clone --recurse-submodules 倉儲網址.git(克隆遠端數據庫)
+5.確認tmp目錄下有自己倉儲目錄後 輸入cd 倉儲名稱
+6.進入倉儲目錄後，cms即可開啟動態網站
+&lt;/pre&gt;
+&lt;h1&gt;W2 2024 Spring 網際內容管理與協同產品設計實習課程教學導引.&lt;/h1&gt;
+&lt;p&gt;建立個人課程倉儲，下載當期可攜環境檔案後將個人倉儲 import 至 Replit，以及設定個人網誌.&lt;/p&gt;
+&lt;p&gt;2a 建個人課程倉儲 登入個人github帳號，使用老師給的 https://github.com/mdecycu/cmsimde_site 網址倉儲建立名稱為github名稱/cd2024倉儲。&lt;/p&gt;
+&lt;p&gt;將個人倉儲 import 至 Replit 登入replit，建議以github直接登入可以在後續認證時他會幫你做相關連接查驗。&lt;/p&gt;
+&lt;p&gt;設定 Github 帳號的雙重認證 進入個人倉儲settings中的ssh and gpg key 項目裡two-factor authentication選項啟動雙重認證，可以綁定手機或手錶，軟體名稱為authy app 有一點別重要，那就是當認證遺失只能以回復碼，才能找回帳號。&lt;/p&gt;
+&lt;p&gt;如何 import 倉儲至 Replit 進行改版 Replit中設定個人網誌的方法，使用markdown目錄原始檔做複製，可複製Pelican的程式碼，只需將其中的內容改成自己所要發表的內容即可，而Pelican轉換完的網誌內容則會出現在blog目錄下，如要將markdown中.md檔轉入blog中變成.html檔指令為pelican markdown -o blog -s local_publishconf.py，除了這個設定外還有其他別的的方式設定，這就得看使用者的帳號是甚麼在做其他設定。&lt;/p&gt;</content><category term="w2"></category><category term="w2 網誌編寫"></category></entry></feed>
