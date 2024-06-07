@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2a-midag8 - a-w12-41023110</title><link href="./" rel="alternate"></link><link href="./feeds/a-w12-41023110.atom.xml" rel="self"></link><id>./</id><updated>2024-06-07T23:40:33+08:00</updated><entry><title>2024 協同課程a-w12</title><link href="./2024-%E5%8D%94%E5%90%8C%E8%AA%B2%E7%A8%8Ba-w12-41023110.html" rel="alternate"></link><published>2024-06-07T10:02:00+08:00</published><updated>2024-06-07T23:40:33+08:00</updated><author><name>kmol</name></author><id>tag:None,2024-06-07:./2024-協同課程a-w12-41023110.html</id><summary type="html">&lt;p&gt;2024 Spring 網際內容管理與協同產品設計實習課程教學導引.&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;2024 Spring 網際內容管理與協同產品設計實習課程教學導引.&lt;/p&gt;
+
+
+&lt;h1&gt;w12-1&lt;/h1&gt;
+&lt;p&gt;W12 任務一
+使用Siwmens NX Journal設計專案，在其中可使用NXOpen程式執行儲存格式 。在使用軟體時建議使用英文介面，因為中文翻譯的介面並不明確。
+在設定選擇用語時，選擇Python方便後續網際上延伸編輯後續。
+組別分配網球平衡台零件繪製，並用NXOpen Python執行。之後試著把每個零件組合起來，並且做出啟動一個程式時全部的零組件可以在一程式域內快速組合起來。&lt;/p&gt;
+&lt;h1&gt;w12-2&lt;/h1&gt;
+&lt;p&gt;W12 任務二
+將分組倉儲設為評分子模組，直接在Repilt進行git clear、import跟git push過了。
+直接在倉儲做git submodule add+分組倉儲+組別，其為做子模組的方式。後續acp確認是否有丟上成功。
+後續試著子模組能否整合。&lt;/p&gt;
+&lt;h1&gt;w12-3&lt;/h1&gt;
+&lt;p&gt;W12 任務三
+進行足球機器人網際場景模擬，在cd2024 blog上下載去年的倉儲資料，並安裝跟改過的CoppeliaSim ipv6。
+要確認軟體內modules之connectivity的三個visualization stream、ws remote api server、zmq remote api server分別都是running的狀態。visualization stream是在瀏覽器上輸入埠號為23020的localhost可看到目前的模擬場景。
+開啟下載到的模擬場景，有兩個程式可以執行，分別judge.py與player.py。&lt;/p&gt;</content><category term="a-w12-41023110"></category><category term="網誌編寫 41023110"></category></entry></feed>
