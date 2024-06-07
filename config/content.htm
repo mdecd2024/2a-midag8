@@ -734,13 +734,16 @@ while True:
 <p><span style="background-color: #ffff00;">上半部</span>分主要是在做w10-12週鋼球平台繪製後續延伸，將繪製完成的檔案轉成.slvs檔，在丟入CoppeliaSim中給予相應接頭，從YouTube中找到由<span>Pranav Bhounsule</span>這位作者使用CoppeliaSim模擬<a href="https://www.youtube.com/watch?v=H_Li3QeVM-M">平板落球教學</a>相關影片，而其餘各接頭接法參考 <a href="https://40923157.github.io/cd2024/content/W14~15%E4%BB%BB%E5%8B%99.html">40923157</a> 影片作出。</p>
 <p>鋼球平台<a href="/downloads/鋼球平台.zip">下載</a></p>
 <p>使用接頭有:</p>
-<p><span style="color: #800000;">1.旋轉接頭:</span></p>
-<p><span style="color: #800000;">2.球接頭:</span></p>
+<p><span style="color: #800000;">1.旋轉接頭</span></p>
+<p><span style="color: #800000;">2.球接頭</span></p>
 <p><span style="background-color: #ffff00;">第一版:</span></p>
-<p><span style="background-color: #ffff00;"></span></p>
+<p>先嘗試將各接合處以旋轉接頭表示，組裝完成後發現鰾面看似都有接再一起也有作動，實際卻是接合處旋轉接頭作動時正個是跑掉狀態。</p>
+<p><span style="background-color: #ffff00;"></span><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/LzPHWkJzXmc?si=NSLEUCrek-1pvyQB" title="YouTube video player" width="560"></iframe></p>
 <p><span style="background-color: #ffff00;">第二版:</span></p>
+<p>將platform與link接合處改成球接頭，在嘗試作動。</p>
 <p><span style="background-color: #ffff00;"></span><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/Chj4IKNKhy0?si=-7eY5xXOwd_yMRjD" title="YouTube video player" width="560"></iframe></p>
 <p><span style="background-color: #ffff00;">第三版:</span></p>
+<p>因前兩版下半部base與s_link沒太大問題沒做大更動，只將兩個連接base的link接頭 Dynamic properties 中的 control mode 改成 Position。</p>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/k7kKFxgpvxU?si=iHugQgJ67YG8Mm5C" title="YouTube video player" width="560"></iframe></p>
 <p><span style="background-color: #ffff00;"></span></p>
 <p><span style="background-color: #ffff00;">下半部</span>執行python程式做動:</p>
