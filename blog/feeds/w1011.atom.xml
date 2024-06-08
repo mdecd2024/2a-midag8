@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>2a-midag8 - w10~11</title><link href="./" rel="alternate"></link><link href="./feeds/w1011.atom.xml" rel="self"></link><id>./</id><updated>2024-06-07T23:40:33+08:00</updated><entry><title>2a-midag8 2024 w10~w11 Spring 課程</title><link href="./2024-Spring-w10~11-blog-tutorial.html" rel="alternate"></link><published>2024-05-09T20:39:00+08:00</published><updated>2024-06-07T23:40:33+08:00</updated><author><name>41023108</name></author><id>tag:None,2024-05-09:./2024-Spring-w10~11-blog-tutorial.html</id><summary type="html">&lt;p&gt;第十~十一週實作內容報告&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2a-midag8 - w10~11</title><link href="./" rel="alternate"></link><link href="./feeds/w1011.atom.xml" rel="self"></link><id>./</id><updated>2024-06-08T20:11:31+08:00</updated><entry><title>2a-midag8 2024 w10~w11 Spring 課程</title><link href="./2024-Spring-w10~11-blog-tutorial.html" rel="alternate"></link><published>2024-05-09T20:39:00+08:00</published><updated>2024-06-08T20:11:31+08:00</updated><author><name>41023108</name></author><id>tag:None,2024-05-09:./2024-Spring-w10~11-blog-tutorial.html</id><summary type="html">&lt;p&gt;第十~十一週實作內容報告&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;第十~十一週實作內容報告&lt;/p&gt;
 
 &lt;h1&gt;建立各班學員的倉儲、網站與分組連結&lt;/h1&gt;
@@ -11,4 +11,4 @@
 &lt;h1&gt;鋼球平衡台零組件繪圖&lt;/h1&gt;
 &lt;p&gt;從此Solvespace_model _2d_for_cd2024_w6.7z解壓縮檔案中開啟零件，根據零件尺寸在NX中進行鋼球平衡台繪製，過程中覺得最難用的部分是在組合，因不熟悉介面操作，前後花費半小時再組裝，本來有錄製完整組裝零件但因上傳限制又剪成大概13分鐘長，這部份在
 [2a-midag8 w10 task3]
-[2a-midag8 w10 task3]:https://mdecd2024.github.io/2a-midag8/content/w10%20task3.html  中有詳細影片及所有零件/組合圖壓縮檔可供下載。&lt;/p&gt;</content><category term="w10~11"></category><category term="網誌編寫"></category></entry></feed>
+[2a-midag8 w10 task3]:https://mdecd2024.github.io/2a-midag8/content/w10%20task3.html  中有詳細影片及所有零件/組合圖壓縮檔可供下載。&lt;/p&gt;</content><category term="w10~11"></category><category term="41023108網誌編寫"></category></entry></feed>
