@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2a-midag8 - 協同課程a-w2-41023110</title><link href="./" rel="alternate"></link><link href="./feeds/xie-tong-ke-cheng-a-w2-41023110.atom.xml" rel="self"></link><id>./</id><updated>2024-06-15T18:11:42+08:00</updated><entry><title>2024 協同課程a-w2</title><link href="./2024-%E5%8D%94%E5%90%8C%E8%AA%B2%E7%A8%8Ba-w2-41023110.html" rel="alternate"></link><published>2024-02-24T16:38:00+08:00</published><updated>2024-06-15T18:11:42+08:00</updated><author><name>41023110</name></author><id>tag:None,2024-02-24:./2024-協同課程a-w2-41023110.html</id><summary type="html">&lt;p&gt;2024 Spring 網際內容管理與協同產品設計實習課程教學導引.&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;2024 Spring 網際內容管理與協同產品設計實習課程教學導引.&lt;/p&gt;
+
+
+&lt;h1&gt;-1 說明甲班第一組組長如何建立 midag1 Team, 並利用 Codespaces 維護 2a-midag1 分組倉儲&lt;/h1&gt;
+&lt;p&gt;終端機每個人每月都有120code小時。要push倉儲要新增終端機後，進行git add-&amp;gt;git commit"網頁標題"，執行後就會直接推上不需要在轉檔。啟動靜態要在新增終端機，有python3內建模組了就可以直接http.server直接啟動埠號，8000會自動開啟瀏覽器連結，就可以直接進入到靜態。用完codespaces要在關閉code讓計時暫停。&lt;/p&gt;
+&lt;p&gt;利用 Codespaces 維護 :&lt;/p&gt;
+&lt;p&gt;一.在 GitHub Classroom 中建立組別倉儲：&lt;/p&gt;
+&lt;p&gt;a.組長在 "or create a new team" 處以 "midag X" 命名組別，然後點擊 "+create team" 創建。&lt;/p&gt;
+&lt;p&gt;b.組員各自加入組別。&lt;/p&gt;
+&lt;p&gt;二.完成倉儲建立後：&lt;/p&gt;
+&lt;p&gt;a.前往倉儲的 settings 選取 pages 進入主分支，啟動 GitHub Pages。&lt;/p&gt;
+&lt;p&gt;b.使用 Codespaces 維護內容。&lt;/p&gt;
+&lt;p&gt;三.在 Codespaces 中：&lt;/p&gt;
+&lt;p&gt;a.不需要使用公用的 443 埠號，有許多終端機和埠號資源可用。&lt;/p&gt;
+&lt;p&gt;b.啟動終端機並安裝模組：執行 chmod u+x init_replit，安裝完成後會有 2GB 記憶體。&lt;/p&gt;
+&lt;p&gt;c.使用 python3 main.py 執行動態應用，並使用 8080 埠號開啟瀏覽器。&lt;/p&gt;
+&lt;p&gt;d.連結埠號會顯示亂碼，保證安全性。&lt;/p&gt;
+&lt;p&gt;e.登入後可以更改內容。&lt;/p&gt;
+&lt;h1&gt;-2 說明如何利用Replit管理從 Classroom 取得的分組倉儲&lt;/h1&gt;
+&lt;p&gt;一.在 Replit 中建立網站：&lt;/p&gt;
+&lt;p&gt;a.使用 from url 導入資料，改成 Python 模式並 import 到分組倉儲，但在 Replit 上無法直接維護分組倉儲。&lt;/p&gt;
+&lt;p&gt;二.生成 SSH 密鑰：&lt;/p&gt;
+&lt;p&gt;a.在 shell 中執行 ssh-keygen，跟 s.cycu 相同。&lt;/p&gt;
+&lt;p&gt;b.執行 pwd 確認倉儲位置在 home/runner 下。&lt;/p&gt;
+&lt;p&gt;c.使用 cd ../ 切換到 runner 目錄，執行 ls -l 查看 pub 鍵。&lt;/p&gt;
+&lt;p&gt;三.建立個人 ID：&lt;/p&gt;
+&lt;p&gt;a.確認有 putty，新增 SSH 並複製 import 資料。&lt;/p&gt;
+&lt;p&gt;b.打開 puttygen.exe，生成亂數，複製內容到組長倉儲的 settings。&lt;/p&gt;
+&lt;p&gt;c.將 ID 存在 settings 和 .ssh 目錄中。&lt;/p&gt;
+&lt;p&gt;這樣就可以載入並顯示 pub key。&lt;/p&gt;
+&lt;h1&gt;-3 如何利用近端可攜環境與外部 IPv4 開啟動態網站。&lt;/h1&gt;
+&lt;p&gt;一.使用 SSH 啟動並克隆倉儲：&lt;/p&gt;
+&lt;p&gt;a.使用 PuTTY 進入 Replit，沒有任何 settings。&lt;/p&gt;
+&lt;p&gt;b.在系統中用 regedit 使三個倉儲同步。&lt;/p&gt;
+&lt;p&gt;c.設置外擴 IPv4，使遠端可通過防火牆設置進入。&lt;/p&gt;
+&lt;p&gt;二.使用 PuTTY 設置連接：&lt;/p&gt;
+&lt;p&gt;a.在 PuTTY Configuration 中輸入 github.com 作為 IP。&lt;/p&gt;
+&lt;p&gt;b.在 Sessions 和 SSH 中設置 ppk 文件。&lt;/p&gt;
+&lt;p&gt;c.將倉儲設在常用資料位置，以便隨時啟動。&lt;/p&gt;
+&lt;p&gt;三.設定 SSH 資料夾：&lt;/p&gt;
+&lt;p&gt;a.在 SSH 的 credentials 中設置 ppk 文件的位置。&lt;/p&gt;
+&lt;p&gt;b.保存後 open，會給予一把 key，連線時無法取得。&lt;/p&gt;
+&lt;p&gt;四.存取 GitHub 檔案：&lt;/p&gt;
+&lt;p&gt;a.匯出檔案到可攜環境，若有對應 key 且已 open，則可用 SSH 抓取並推回倉儲。&lt;/p&gt;
+&lt;p&gt;b.在近端自由啟動動態：&lt;/p&gt;
+&lt;p&gt;小組成員可以獨立編輯，不受他人干擾。&lt;/p&gt;
+&lt;p&gt;連接組員：&lt;/p&gt;
+&lt;p&gt;改密碼後查詢 IP，並複製到 init.py 中修改，設置外部 IP 儲存，使電腦變成主機。
+這樣可以使組員在 CMS 中一次完成動作。&lt;/p&gt;</content><category term="協同課程a-w2-41023110"></category><category term="網誌編寫w2 41023110"></category></entry></feed>

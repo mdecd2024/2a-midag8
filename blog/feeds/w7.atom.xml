@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>2a-midag8 - w7</title><link href="./" rel="alternate"></link><link href="./feeds/w7.atom.xml" rel="self"></link><id>./</id><updated>2024-06-08T20:11:31+08:00</updated><entry><title>2a-midag8 2024 w7 Spring 課程</title><link href="./2024-Spring-w7-blog-tutorial.html" rel="alternate"></link><published>2024-04-07T21:25:00+08:00</published><updated>2024-06-08T20:11:31+08:00</updated><author><name>41023108</name></author><id>tag:None,2024-04-07:./2024-Spring-w7-blog-tutorial.html</id><summary type="html">&lt;p&gt;各週上課內容心得及實作項目&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2a-midag8 - w7</title><link href="./" rel="alternate"></link><link href="./feeds/w7.atom.xml" rel="self"></link><id>./</id><updated>2024-06-15T18:11:42+08:00</updated><entry><title>2a-midag8 2024 w7 Spring 課程</title><link href="./2024-Spring-w7-blog-tutorial.html" rel="alternate"></link><published>2024-04-07T21:25:00+08:00</published><updated>2024-06-15T18:11:42+08:00</updated><author><name>41023108</name></author><id>tag:None,2024-04-07:./2024-Spring-w7-blog-tutorial.html</id><summary type="html">&lt;p&gt;各週上課內容心得及實作項目&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;各週上課內容心得及實作項目&lt;/p&gt;
 
 
 &lt;h1&gt;更分組網站內容&lt;/h1&gt;
-&lt;p&gt;指派任務與組員，並要求其查找練習2說明如何在 CoppeliaSim 環境中, 利用 IPv6 ZeroMQ Remote API Python 進行兩個自由度的鋼球平衡檯自動控制系統模擬?相關內容。&lt;/p&gt;</content><category term="w7"></category><category term="41023108網誌編寫"></category></entry></feed>
+&lt;p&gt;指派任務與組員，並要求其查找練習2說明如何在 CoppeliaSim 環境中, 利用 IPv6 ZeroMQ Remote API Python 進行兩個自由度的鋼球平衡檯自動控制系統模擬?相關內容。&lt;/p&gt;</content><category term="w7"></category><category term="41023108網誌編寫"></category></entry><entry><title>2024 w7 Spring 課程</title><link href="./2024-Spring-w7-blog-tutorial.html" rel="alternate"></link><published>2024-04-05T15:26:00+08:00</published><updated>2024-06-15T18:11:42+08:00</updated><author><name>41023155</name></author><id>tag:None,2024-04-05:./2024-Spring-w7-blog-tutorial.html</id><summary type="html">&lt;p&gt;2024 Spring 網際內容管理與協同產品設計實習課程教學導引.&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;2024 Spring 網際內容管理與協同產品設計實習課程教學導引.&lt;/p&gt;
+
+&lt;p&gt;，&lt;/p&gt;
+&lt;h1&gt;快樂兒童節及清明節放假&lt;/h1&gt;
+&lt;p&gt;這週因為放假因此沒有上課，剛好下下週要考期中考，利用這次的放假時間來彌補自己在課業上不懂的地方，也看自己還有沒有報告還沒做完的盡快補上，這個假剛好給我一個跟上進度的機會真的好慶幸 哈哈&lt;/p&gt;</content><category term="w7"></category><category term="網誌編寫"></category></entry></feed>
